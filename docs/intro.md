@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-### What's the aim of **Sde Babu Content** ?
+### What is the aim of **Sde Babu Content** ?
 
 1. provide content related to **Software Development** field
 2. consists of problem solving content such as:
