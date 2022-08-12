@@ -1,0 +1,101 @@
+---
+sidebar_position: 1
+title: Running Sum Array 
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#25c2a0">Easy</Highlight>
+
+### Brute Force Method
+
+- iterate through the `nums` array 
+- run a inner loop to get the sum of all the previous element, including the element at current index `i` 
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+    public int[] runningSum(int[] nums) {
+        int n = nums.length;
+        int[] result = new int[n];
+        for(int i=0;i<n;i++){
+            if(i==0)result[i] = nums[i];
+            else{
+                for(int j=0;j<=i;j++){
+                    result[i]+=nums[j];
+                }
+            }
+        }
+        return result;
+}
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+#### Complexity
+  > Time Complexity: `O(N^2)`
+
+  > Space Complexity: `O(1)`
+
+
+### Optimal Approach
+
+- create a `prefix_sum` array and iterate through the `nums` array
+- if `index==0` means for first element , `prefix_sum[index]=nums[index]`
+- else just add the `previous` element to `current` element, `prefix_sum[index]=nums[index]+prefix_sum[index-1]`
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+ public int[] runningSum(int[] nums) {
+        int n = nums.length;
+        int[] prefix_sum = new int[n];
+        for(int i=0;i<n;i++){
+            if(i==0)prefix_sum[i] = nums[i];
+            else prefix_sum[i] = nums[i]+prefix_sum[i-1];
+        }
+        return prefix_sum;
+}
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+#### Complexity
+  > Time Complexity: `O(N)`
+
+  > Space Complexity: `O(1)`

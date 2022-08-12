@@ -1,0 +1,60 @@
+---
+sidebar_position: 2
+title: Balanced Binary Tree 
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#25c2a0">Easy</Highlight>
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+    public int height(TreeNode root){
+        // if root is null then height is 0
+        if(root==null)return 0;
+        // move to extreme left : bottome up approach
+        int left = height(root.left);
+        int right = height(root.right);
+        // if any one return -1 means tree is not balanced
+        if(left==-1 || right==-1)return -1;
+        // if diff is biiger then return -1
+        int diff = Math.abs(left-right);
+        if(diff > 1)return -1; 
+        // return the height of tree
+        return Math.max(left,right)+1;
+    }
+    public boolean isBalanced(TreeNode root) {
+        return height(root)!=-1 ? true : false;
+    }
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+#### Complexity
+  > Time Complexity: `O(N^2)`
+
+  > Space Complexity: `O(h) ~ O(N)` where `h` is the height of binary tree

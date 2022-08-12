@@ -1,0 +1,8 @@
+{
+  "label": "Queue",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Queue data structure [FIFO] which is used in so many problems and the most important data structure"
+  }
+}

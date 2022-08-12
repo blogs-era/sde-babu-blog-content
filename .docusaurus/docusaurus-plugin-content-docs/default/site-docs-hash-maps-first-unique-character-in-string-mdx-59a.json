@@ -1,0 +1,28 @@
+{
+  "unversionedId": "HashMaps/first_unique_character_in_string",
+  "id": "HashMaps/first_unique_character_in_string",
+  "title": "First Unique Character in a String",
+  "description": "Level - Easy",
+  "source": "@site/docs/HashMaps/first_unique_character_in_string.mdx",
+  "sourceDirName": "HashMaps",
+  "slug": "/HashMaps/first_unique_character_in_string",
+  "permalink": "/docs/HashMaps/first_unique_character_in_string",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/HashMaps/first_unique_character_in_string.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "First Unique Character in a String"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "HashMaps",
+    "permalink": "/docs/category/hashmaps"
+  },
+  "next": {
+    "title": "Queue",
+    "permalink": "/docs/category/queue"
+  }
+}

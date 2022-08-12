@@ -1,0 +1,66 @@
+---
+sidebar_position: 2
+title: Balance a Binary Search Tree 
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+
+
+```js
+    public void inorder(TreeNode root,ArrayList<Integer> in){
+        if(root==null)return;
+        
+        inorder(root.left,in);
+        in.add(root.val);
+        inorder(root.right,in);
+    }
+    public TreeNode generate(int start,int end,ArrayList<Integer> in){
+        if(start <= end){
+            int mid = (start + end)/2;
+            TreeNode root = new TreeNode(in.get(mid));
+            root.left = generate(start,mid-1,in);
+            root.right = generate(mid+1,end,in);
+            return root;
+        }
+        return null;
+    }
+    public TreeNode balanceBST(TreeNode root) {
+        ArrayList<Integer> in = new ArrayList<>();
+        inorder(root,in);
+        System.out.println();
+        int start = 0,end = in.size();
+        return generate(start,end-1,in);
+    }
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

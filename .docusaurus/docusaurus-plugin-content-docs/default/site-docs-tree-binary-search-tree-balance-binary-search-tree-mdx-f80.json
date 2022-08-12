@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinarySearchTree/balance_binary_search_tree",
+  "id": "Tree/BinarySearchTree/balance_binary_search_tree",
+  "title": "Balance a Binary Search Tree",
+  "description": "Level - Medium",
+  "source": "@site/docs/Tree/BinarySearchTree/balance_binary_search_tree.mdx",
+  "sourceDirName": "Tree/BinarySearchTree",
+  "slug": "/Tree/BinarySearchTree/balance_binary_search_tree",
+  "permalink": "/docs/Tree/BinarySearchTree/balance_binary_search_tree",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Tree/BinarySearchTree/balance_binary_search_tree.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Balance a Binary Search Tree"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Create a Balanced Binary Search Tree with sorted Array",
+    "permalink": "/docs/Tree/BinarySearchTree/create_bst_with_sorted_array"
+  },
+  "next": {
+    "title": "Height of Binary Tree",
+    "permalink": "/docs/Tree/BinaryTree/height_of_binary_tree"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "HashMaps",
+  "description": "HashMap data structure which can store key value pairs and help a lot in most of the questions",
+  "slug": "/category/hashmaps",
+  "permalink": "/docs/category/hashmaps",
+  "navigation": {
+    "previous": {
+      "title": "Introduction",
+      "permalink": "/docs/intro"
+    },
+    "next": {
+      "title": "First Unique Character in a String",
+      "permalink": "/docs/HashMaps/first_unique_character_in_string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Arrays/Prefix-Sum/running_sum",
+  "id": "Arrays/Prefix-Sum/running_sum",
+  "title": "Running Sum Array",
+  "description": "Level - Easy",
+  "source": "@site/docs/Arrays/Prefix-Sum/running_sum.mdx",
+  "sourceDirName": "Arrays/Prefix-Sum",
+  "slug": "/Arrays/Prefix-Sum/running_sum",
+  "permalink": "/docs/Arrays/Prefix-Sum/running_sum",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Arrays/Prefix-Sum/running_sum.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Running Sum Array"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Arrays",
+    "permalink": "/docs/category/arrays"
+  },
+  "next": {
+    "title": "Create a Balanced Binary Search Tree with sorted Array",
+    "permalink": "/docs/Tree/BinarySearchTree/create_bst_with_sorted_array"
+  }
+}

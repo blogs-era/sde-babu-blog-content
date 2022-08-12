@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinarySearchTree/create_bst_with_sorted_array",
+  "id": "Tree/BinarySearchTree/create_bst_with_sorted_array",
+  "title": "Create a Balanced Binary Search Tree with sorted Array",
+  "description": "Level - Easy",
+  "source": "@site/docs/Tree/BinarySearchTree/create_bst_with_sorted_array.mdx",
+  "sourceDirName": "Tree/BinarySearchTree",
+  "slug": "/Tree/BinarySearchTree/create_bst_with_sorted_array",
+  "permalink": "/docs/Tree/BinarySearchTree/create_bst_with_sorted_array",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Tree/BinarySearchTree/create_bst_with_sorted_array.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Create a Balanced Binary Search Tree with sorted Array"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Running Sum Array",
+    "permalink": "/docs/Arrays/Prefix-Sum/running_sum"
+  },
+  "next": {
+    "title": "Balance a Binary Search Tree",
+    "permalink": "/docs/Tree/BinarySearchTree/balance_binary_search_tree"
+  }
+}

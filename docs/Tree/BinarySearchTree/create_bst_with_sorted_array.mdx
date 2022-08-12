@@ -1,0 +1,55 @@
+---
+sidebar_position: 1
+title: Create a Balanced Binary Search Tree with sorted Array 
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#25c2a0">Easy</Highlight>
+
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+
+
+```js
+    public TreeNode generate(int start,int end,int[] in){
+        if(start <= end){
+            int mid = (start + end)/2;
+            TreeNode root = new TreeNode(in[mid]);
+            root.left = generate(start,mid-1,in);
+            root.right = generate(mid+1,end,in);
+            return root;
+        }
+        return null;
+    }
+    public TreeNode sortedArrayToBST(int[] nums) {
+        return generate(0,nums.length-1,nums);   
+    }
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

@@ -1,0 +1,8 @@
+{
+  "label": "HashMaps",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "HashMap data structure which can store key value pairs and help a lot in most of the questions"
+  }
+}
