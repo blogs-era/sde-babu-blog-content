@@ -1,0 +1,341 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "328": [
+      85,
+      532,
+      918,
+      328
+    ],
+    "972": [
+      972
+    ],
+    "17896441": [
+      328,
+      532,
+      918
+    ],
+    "main": [
+      303,
+      532,
+      179
+    ],
+    "runtime~main": [
+      179,
+      532,
+      303
+    ],
+    "0e384e19": [
+      671
+    ],
+    "14eb3368": [
+      532,
+      817
+    ],
+    "1be78505": [
+      532,
+      972
+    ],
+    "1f391b9e": [
+      328,
+      532,
+      85
+    ],
+    "2dc17942": [
+      532,
+      113
+    ],
+    "393be207": [
+      414
+    ],
+    "3d5ab785": [
+      415
+    ],
+    "516180da": [
+      870
+    ],
+    "59a9c4a1": [
+      532,
+      382
+    ],
+    "85a1d08c": [
+      261
+    ],
+    "8a466cf0": [
+      532,
+      735
+    ],
+    "8e1a6f09": [
+      532,
+      348
+    ],
+    "935f2afb": [
+      53
+    ],
+    "c32f2101": [
+      532,
+      118
+    ],
+    "c4f5d8e4": [
+      532,
+      195
+    ],
+    "c7883d51": [
+      170
+    ],
+    "e91c510a": [
+      532,
+      239
+    ],
+    "f772fcfb": [
+      599
+    ],
+    "f80de86f": [
+      532,
+      37
+    ],
+    "styles": [
+      37,
+      85,
+      113,
+      118,
+      179,
+      195,
+      239,
+      303,
+      328,
+      348,
+      382,
+      514,
+      735,
+      817,
+      918,
+      532
+    ]
+  },
+  "assets": {
+    "37": {
+      "js": [
+        {
+          "file": "assets/js/f80de86f.aa15d7c8.js",
+          "hash": "7c5896ab06743271",
+          "publicPath": "/sde-babu-blog-content/assets/js/f80de86f.aa15d7c8.js"
+        }
+      ]
+    },
+    "53": {
+      "js": [
+        {
+          "file": "assets/js/935f2afb.04f591c8.js",
+          "hash": "b63fd3da0de78d83",
+          "publicPath": "/sde-babu-blog-content/assets/js/935f2afb.04f591c8.js"
+        }
+      ]
+    },
+    "85": {
+      "js": [
+        {
+          "file": "assets/js/1f391b9e.cf67303d.js",
+          "hash": "ef5c85de11c1d707",
+          "publicPath": "/sde-babu-blog-content/assets/js/1f391b9e.cf67303d.js"
+        }
+      ]
+    },
+    "113": {
+      "js": [
+        {
+          "file": "assets/js/2dc17942.ccc300c1.js",
+          "hash": "df42d2c4e7f6443b",
+          "publicPath": "/sde-babu-blog-content/assets/js/2dc17942.ccc300c1.js"
+        }
+      ]
+    },
+    "118": {
+      "js": [
+        {
+          "file": "assets/js/c32f2101.93f7fd43.js",
+          "hash": "1fde1002b92b286e",
+          "publicPath": "/sde-babu-blog-content/assets/js/c32f2101.93f7fd43.js"
+        }
+      ]
+    },
+    "170": {
+      "js": [
+        {
+          "file": "assets/js/c7883d51.8f55f5cd.js",
+          "hash": "3c2683930e7c7719",
+          "publicPath": "/sde-babu-blog-content/assets/js/c7883d51.8f55f5cd.js"
+        }
+      ]
+    },
+    "179": {
+      "js": [
+        {
+          "file": "assets/js/main.7aab6a75.js",
+          "hash": "79eccf03f1515b7f",
+          "publicPath": "/sde-babu-blog-content/assets/js/main.7aab6a75.js"
+        }
+      ]
+    },
+    "195": {
+      "js": [
+        {
+          "file": "assets/js/c4f5d8e4.f701584c.js",
+          "hash": "18d2b3cac02dd286",
+          "publicPath": "/sde-babu-blog-content/assets/js/c4f5d8e4.f701584c.js"
+        }
+      ]
+    },
+    "239": {
+      "js": [
+        {
+          "file": "assets/js/e91c510a.0b0bd4fb.js",
+          "hash": "f6127a65ed62ef7f",
+          "publicPath": "/sde-babu-blog-content/assets/js/e91c510a.0b0bd4fb.js"
+        }
+      ]
+    },
+    "261": {
+      "js": [
+        {
+          "file": "assets/js/85a1d08c.9705cd0a.js",
+          "hash": "d0773d0cc84e752c",
+          "publicPath": "/sde-babu-blog-content/assets/js/85a1d08c.9705cd0a.js"
+        }
+      ]
+    },
+    "303": {
+      "js": [
+        {
+          "file": "assets/js/runtime~main.fdf59feb.js",
+          "hash": "f7e74ea3199d31e3",
+          "publicPath": "/sde-babu-blog-content/assets/js/runtime~main.fdf59feb.js"
+        }
+      ]
+    },
+    "328": {
+      "js": [
+        {
+          "file": "assets/js/328.931e93b6.js",
+          "hash": "1ce73809ca57e7ef",
+          "publicPath": "/sde-babu-blog-content/assets/js/328.931e93b6.js"
+        }
+      ]
+    },
+    "348": {
+      "js": [
+        {
+          "file": "assets/js/8e1a6f09.2ab4db3e.js",
+          "hash": "dc94bb82dfcdb799",
+          "publicPath": "/sde-babu-blog-content/assets/js/8e1a6f09.2ab4db3e.js"
+        }
+      ]
+    },
+    "382": {
+      "js": [
+        {
+          "file": "assets/js/59a9c4a1.3d658f9c.js",
+          "hash": "10ae90bb98d91b7a",
+          "publicPath": "/sde-babu-blog-content/assets/js/59a9c4a1.3d658f9c.js"
+        }
+      ]
+    },
+    "414": {
+      "js": [
+        {
+          "file": "assets/js/393be207.0d63d509.js",
+          "hash": "1e40e03107ab7567",
+          "publicPath": "/sde-babu-blog-content/assets/js/393be207.0d63d509.js"
+        }
+      ]
+    },
+    "415": {
+      "js": [
+        {
+          "file": "assets/js/3d5ab785.d91215eb.js",
+          "hash": "bf054c002f001956",
+          "publicPath": "/sde-babu-blog-content/assets/js/3d5ab785.d91215eb.js"
+        }
+      ]
+    },
+    "532": {
+      "css": [
+        {
+          "file": "assets/css/styles.7a0b6621.css",
+          "hash": "5af953cdab62b69e",
+          "publicPath": "/sde-babu-blog-content/assets/css/styles.7a0b6621.css"
+        }
+      ]
+    },
+    "599": {
+      "js": [
+        {
+          "file": "assets/js/f772fcfb.c1e65220.js",
+          "hash": "2bbb0229b39aa126",
+          "publicPath": "/sde-babu-blog-content/assets/js/f772fcfb.c1e65220.js"
+        }
+      ]
+    },
+    "671": {
+      "js": [
+        {
+          "file": "assets/js/0e384e19.93fa2e20.js",
+          "hash": "90118e398fa93c9c",
+          "publicPath": "/sde-babu-blog-content/assets/js/0e384e19.93fa2e20.js"
+        }
+      ]
+    },
+    "735": {
+      "js": [
+        {
+          "file": "assets/js/8a466cf0.ed8d144d.js",
+          "hash": "5dc3040013bc1d42",
+          "publicPath": "/sde-babu-blog-content/assets/js/8a466cf0.ed8d144d.js"
+        }
+      ]
+    },
+    "817": {
+      "js": [
+        {
+          "file": "assets/js/14eb3368.2ad19f8a.js",
+          "hash": "caf4c684c8b61f5b",
+          "publicPath": "/sde-babu-blog-content/assets/js/14eb3368.2ad19f8a.js"
+        }
+      ]
+    },
+    "870": {
+      "js": [
+        {
+          "file": "assets/js/516180da.ede42438.js",
+          "hash": "b99424d8dbaacc58",
+          "publicPath": "/sde-babu-blog-content/assets/js/516180da.ede42438.js"
+        }
+      ]
+    },
+    "918": {
+      "js": [
+        {
+          "file": "assets/js/17896441.dfd372db.js",
+          "hash": "cd951f38f1fd3814",
+          "publicPath": "/sde-babu-blog-content/assets/js/17896441.dfd372db.js"
+        }
+      ]
+    },
+    "972": {
+      "js": [
+        {
+          "file": "assets/js/972.52dd48bb.js",
+          "hash": "1029e680e3359925",
+          "publicPath": "/sde-babu-blog-content/assets/js/972.52dd48bb.js"
+        },
+        {
+          "file": "assets/js/1be78505.35d9067a.js",
+          "hash": "6bd883292242850c",
+          "publicPath": "/sde-babu-blog-content/assets/js/1be78505.35d9067a.js"
+        }
+      ]
+    }
+  }
+}

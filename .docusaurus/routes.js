@@ -3,120 +3,85 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '335'),
+    path: '/sde-babu-blog-content/markdown-page',
+    component: ComponentCreator('/sde-babu-blog-content/markdown-page', '663'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '52c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'd71'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'd64'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '825'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', 'cf8'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '3a8'),
-    exact: true
-  },
-  {
-    path: '/markdown-page',
-    component: ComponentCreator('/markdown-page', '649'),
-    exact: true
-  },
-  {
-    path: '/docs',
-    component: ComponentCreator('/docs', '666'),
+    path: '/sde-babu-blog-content/docs',
+    component: ComponentCreator('/sde-babu-blog-content/docs', '18c'),
     routes: [
       {
-        path: '/docs/Arrays/Prefix-Sum/running_sum',
-        component: ComponentCreator('/docs/Arrays/Prefix-Sum/running_sum', 'e99'),
+        path: '/sde-babu-blog-content/docs/Arrays/Prefix-Sum/running_sum',
+        component: ComponentCreator('/sde-babu-blog-content/docs/Arrays/Prefix-Sum/running_sum', 'a75'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/category/arrays',
-        component: ComponentCreator('/docs/category/arrays', '6e2'),
+        path: '/sde-babu-blog-content/docs/category/arrays',
+        component: ComponentCreator('/sde-babu-blog-content/docs/category/arrays', 'ebf'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/category/hashmaps',
-        component: ComponentCreator('/docs/category/hashmaps', '793'),
+        path: '/sde-babu-blog-content/docs/category/hashmaps',
+        component: ComponentCreator('/sde-babu-blog-content/docs/category/hashmaps', '5b5'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/category/queue',
-        component: ComponentCreator('/docs/category/queue', 'b84'),
+        path: '/sde-babu-blog-content/docs/category/queue',
+        component: ComponentCreator('/sde-babu-blog-content/docs/category/queue', '7bc'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/HashMaps/first_unique_character_in_string',
-        component: ComponentCreator('/docs/HashMaps/first_unique_character_in_string', 'c80'),
+        path: '/sde-babu-blog-content/docs/HashMaps/first_unique_character_in_string',
+        component: ComponentCreator('/sde-babu-blog-content/docs/HashMaps/first_unique_character_in_string', '745'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/intro',
-        component: ComponentCreator('/docs/intro', 'aed'),
+        path: '/sde-babu-blog-content/docs/intro',
+        component: ComponentCreator('/sde-babu-blog-content/docs/intro', '0ff'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/Queue/sliding_window_maximum',
-        component: ComponentCreator('/docs/Queue/sliding_window_maximum', '23b'),
+        path: '/sde-babu-blog-content/docs/Queue/sliding_window_maximum',
+        component: ComponentCreator('/sde-babu-blog-content/docs/Queue/sliding_window_maximum', '5c9'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/Tree/BinarySearchTree/balance_binary_search_tree',
-        component: ComponentCreator('/docs/Tree/BinarySearchTree/balance_binary_search_tree', '398'),
+        path: '/sde-babu-blog-content/docs/Tree/BinarySearchTree/balance_binary_search_tree',
+        component: ComponentCreator('/sde-babu-blog-content/docs/Tree/BinarySearchTree/balance_binary_search_tree', '249'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/Tree/BinarySearchTree/create_bst_with_sorted_array',
-        component: ComponentCreator('/docs/Tree/BinarySearchTree/create_bst_with_sorted_array', '12c'),
+        path: '/sde-babu-blog-content/docs/Tree/BinarySearchTree/create_bst_with_sorted_array',
+        component: ComponentCreator('/sde-babu-blog-content/docs/Tree/BinarySearchTree/create_bst_with_sorted_array', '75d'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/Tree/BinaryTree/balanced_binary_tree',
-        component: ComponentCreator('/docs/Tree/BinaryTree/balanced_binary_tree', 'fa0'),
+        path: '/sde-babu-blog-content/docs/Tree/BinaryTree/balanced_binary_tree',
+        component: ComponentCreator('/sde-babu-blog-content/docs/Tree/BinaryTree/balanced_binary_tree', '59b'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/Tree/BinaryTree/height_of_binary_tree',
-        component: ComponentCreator('/docs/Tree/BinaryTree/height_of_binary_tree', '4d4'),
+        path: '/sde-babu-blog-content/docs/Tree/BinaryTree/height_of_binary_tree',
+        component: ComponentCreator('/sde-babu-blog-content/docs/Tree/BinaryTree/height_of_binary_tree', '7ff'),
         exact: true,
         sidebar: "tutorialSidebar"
       }
     ]
   },
   {
-    path: '/',
-    component: ComponentCreator('/', '208'),
+    path: '/sde-babu-blog-content/',
+    component: ComponentCreator('/sde-babu-blog-content/', 'a48'),
     exact: true
   },
   {

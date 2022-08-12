@@ -1,68 +1,68 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/sde-babu-blog-content/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/docs",
+          "path": "/sde-babu-blog-content/docs",
           "mainDocId": "intro",
           "docs": [
             {
               "id": "Arrays/Prefix-Sum/running_sum",
-              "path": "/docs/Arrays/Prefix-Sum/running_sum",
+              "path": "/sde-babu-blog-content/docs/Arrays/Prefix-Sum/running_sum",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "HashMaps/first_unique_character_in_string",
-              "path": "/docs/HashMaps/first_unique_character_in_string",
+              "path": "/sde-babu-blog-content/docs/HashMaps/first_unique_character_in_string",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "intro",
-              "path": "/docs/intro",
+              "path": "/sde-babu-blog-content/docs/intro",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Queue/sliding_window_maximum",
-              "path": "/docs/Queue/sliding_window_maximum",
+              "path": "/sde-babu-blog-content/docs/Queue/sliding_window_maximum",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Tree/BinarySearchTree/balance_binary_search_tree",
-              "path": "/docs/Tree/BinarySearchTree/balance_binary_search_tree",
+              "path": "/sde-babu-blog-content/docs/Tree/BinarySearchTree/balance_binary_search_tree",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Tree/BinarySearchTree/create_bst_with_sorted_array",
-              "path": "/docs/Tree/BinarySearchTree/create_bst_with_sorted_array",
+              "path": "/sde-babu-blog-content/docs/Tree/BinarySearchTree/create_bst_with_sorted_array",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Tree/BinaryTree/balanced_binary_tree",
-              "path": "/docs/Tree/BinaryTree/balanced_binary_tree",
+              "path": "/sde-babu-blog-content/docs/Tree/BinaryTree/balanced_binary_tree",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Tree/BinaryTree/height_of_binary_tree",
-              "path": "/docs/Tree/BinaryTree/height_of_binary_tree",
+              "path": "/sde-babu-blog-content/docs/Tree/BinaryTree/height_of_binary_tree",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "/category/hashmaps",
-              "path": "/docs/category/hashmaps",
+              "path": "/sde-babu-blog-content/docs/category/hashmaps",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "/category/queue",
-              "path": "/docs/category/queue",
+              "path": "/sde-babu-blog-content/docs/category/queue",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "/category/arrays",
-              "path": "/docs/category/arrays",
+              "path": "/sde-babu-blog-content/docs/category/arrays",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -70,7 +70,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/intro",
+                "path": "/sde-babu-blog-content/docs/intro",
                 "label": "intro"
               }
             }

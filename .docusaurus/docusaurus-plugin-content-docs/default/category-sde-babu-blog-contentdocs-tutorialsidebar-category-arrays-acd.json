@@ -1,0 +1,16 @@
+{
+  "title": "Arrays",
+  "description": "Arrays data structure, a primitive data structure for storing data with same data type",
+  "slug": "/category/arrays",
+  "permalink": "/sde-babu-blog-content/docs/category/arrays",
+  "navigation": {
+    "previous": {
+      "title": "Sliding Window Maximum",
+      "permalink": "/sde-babu-blog-content/docs/Queue/sliding_window_maximum"
+    },
+    "next": {
+      "title": "Running Sum Array",
+      "permalink": "/sde-babu-blog-content/docs/Arrays/Prefix-Sum/running_sum"
+    }
+  }
+}

@@ -4,15 +4,15 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
-  "tagline": "Dinosaurs are cool",
-  "url": "https://your-docusaurus-test-site.com",
-  "baseUrl": "/",
-  "onBrokenLinks": "throw",
+  "title": "Sde Babu",
+  "tagline": "Enhance Your Software Developer Skills",
+  "url": "https://github.com",
+  "baseUrl": "/sde-babu-blog-content/",
+  "onBrokenLinks": "warn",
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.svg",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "organizationName": "blogs-era",
+  "projectName": "sde-babu-blog-content",
   "i18n": {
     "defaultLocale": "en",
     "locales": [
@@ -25,11 +25,11 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/home/runner/DecentBaggyDegree/sidebars.js",
+          "sidebarPath": "/home/runner/sde-babu-blog-content/sidebars.js",
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "theme": {
-          "customCss": "/home/runner/DecentBaggyDegree/src/css/custom.css"
+          "customCss": "/home/runner/sde-babu-blog-content/src/css/custom.css"
         }
       }
     ]

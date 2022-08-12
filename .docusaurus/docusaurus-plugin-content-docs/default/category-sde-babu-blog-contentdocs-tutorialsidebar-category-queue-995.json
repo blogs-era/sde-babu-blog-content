@@ -1,0 +1,16 @@
+{
+  "title": "Queue",
+  "description": "Queue data structure [FIFO] which is used in so many problems and the most important data structure",
+  "slug": "/category/queue",
+  "permalink": "/sde-babu-blog-content/docs/category/queue",
+  "navigation": {
+    "previous": {
+      "title": "First Unique Character in a String",
+      "permalink": "/sde-babu-blog-content/docs/HashMaps/first_unique_character_in_string"
+    },
+    "next": {
+      "title": "Sliding Window Maximum",
+      "permalink": "/sde-babu-blog-content/docs/Queue/sliding_window_maximum"
+    }
+  }
+}

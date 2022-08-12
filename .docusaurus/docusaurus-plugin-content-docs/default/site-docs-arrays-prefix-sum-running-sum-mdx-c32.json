@@ -6,7 +6,7 @@
   "source": "@site/docs/Arrays/Prefix-Sum/running_sum.mdx",
   "sourceDirName": "Arrays/Prefix-Sum",
   "slug": "/Arrays/Prefix-Sum/running_sum",
-  "permalink": "/docs/Arrays/Prefix-Sum/running_sum",
+  "permalink": "/sde-babu-blog-content/docs/Arrays/Prefix-Sum/running_sum",
   "draft": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Arrays/Prefix-Sum/running_sum.mdx",
   "tags": [],
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Arrays",
-    "permalink": "/docs/category/arrays"
+    "permalink": "/sde-babu-blog-content/docs/category/arrays"
   },
   "next": {
     "title": "Create a Balanced Binary Search Tree with sorted Array",
-    "permalink": "/docs/Tree/BinarySearchTree/create_bst_with_sorted_array"
+    "permalink": "/sde-babu-blog-content/docs/Tree/BinarySearchTree/create_bst_with_sorted_array"
   }
 }
