@@ -11,7 +11,7 @@
       {
         "type": "link",
         "label": "Introduction",
-        "href": "/sde-babu-blog-content/docs/intro",
+        "href": "/docs/intro",
         "docId": "intro"
       },
       {
@@ -23,11 +23,11 @@
           {
             "type": "link",
             "label": "First Unique Character in a String",
-            "href": "/sde-babu-blog-content/docs/HashMaps/first_unique_character_in_string",
+            "href": "/docs/HashMaps/first_unique_character_in_string",
             "docId": "HashMaps/first_unique_character_in_string"
           }
         ],
-        "href": "/sde-babu-blog-content/docs/category/hashmaps"
+        "href": "/docs/category/hashmaps"
       },
       {
         "type": "category",
@@ -38,11 +38,11 @@
           {
             "type": "link",
             "label": "Sliding Window Maximum",
-            "href": "/sde-babu-blog-content/docs/Queue/sliding_window_maximum",
+            "href": "/docs/Queue/sliding_window_maximum",
             "docId": "Queue/sliding_window_maximum"
           }
         ],
-        "href": "/sde-babu-blog-content/docs/category/queue"
+        "href": "/docs/category/queue"
       },
       {
         "type": "category",
@@ -59,13 +59,13 @@
               {
                 "type": "link",
                 "label": "Running Sum Array",
-                "href": "/sde-babu-blog-content/docs/Arrays/Prefix-Sum/running_sum",
+                "href": "/docs/Arrays/Prefix-Sum/running_sum",
                 "docId": "Arrays/Prefix-Sum/running_sum"
               }
             ]
           }
         ],
-        "href": "/sde-babu-blog-content/docs/category/arrays"
+        "href": "/docs/category/arrays"
       },
       {
         "type": "category",
@@ -82,13 +82,13 @@
               {
                 "type": "link",
                 "label": "Create a Balanced Binary Search Tree with sorted Array",
-                "href": "/sde-babu-blog-content/docs/Tree/BinarySearchTree/create_bst_with_sorted_array",
+                "href": "/docs/Tree/BinarySearchTree/create_bst_with_sorted_array",
                 "docId": "Tree/BinarySearchTree/create_bst_with_sorted_array"
               },
               {
                 "type": "link",
                 "label": "Balance a Binary Search Tree",
-                "href": "/sde-babu-blog-content/docs/Tree/BinarySearchTree/balance_binary_search_tree",
+                "href": "/docs/Tree/BinarySearchTree/balance_binary_search_tree",
                 "docId": "Tree/BinarySearchTree/balance_binary_search_tree"
               }
             ]
@@ -102,13 +102,13 @@
               {
                 "type": "link",
                 "label": "Height of Binary Tree",
-                "href": "/sde-babu-blog-content/docs/Tree/BinaryTree/height_of_binary_tree",
+                "href": "/docs/Tree/BinaryTree/height_of_binary_tree",
                 "docId": "Tree/BinaryTree/height_of_binary_tree"
               },
               {
                 "type": "link",
                 "label": "Balanced Binary Tree",
-                "href": "/sde-babu-blog-content/docs/Tree/BinaryTree/balanced_binary_tree",
+                "href": "/docs/Tree/BinaryTree/balanced_binary_tree",
                 "docId": "Tree/BinaryTree/balanced_binary_tree"
               }
             ]

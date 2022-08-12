@@ -1,63 +1,63 @@
 {
-  "/sde-babu-blog-content/markdown-page-663": {
+  "/markdown-page-a8a": {
     "__comp": "1f391b9e",
     "__context": {
       "plugin": "85a1d08c"
     },
     "content": "393be207"
   },
-  "/sde-babu-blog-content/docs-18c": {
+  "/docs-597": {
     "__comp": "1be78505",
     "__context": {
       "plugin": "c7883d51"
     },
     "versionMetadata": "935f2afb"
   },
-  "/sde-babu-blog-content/docs/Arrays/Prefix-Sum/running_sum-a75": {
+  "/docs/Arrays/Prefix-Sum/running_sum-e99": {
     "__comp": "17896441",
     "content": "c32f2101"
   },
-  "/sde-babu-blog-content/docs/category/arrays-ebf": {
+  "/docs/category/arrays-6e2": {
     "__comp": "14eb3368",
-    "categoryGeneratedIndex": "3d5ab785"
+    "categoryGeneratedIndex": "92969f16"
   },
-  "/sde-babu-blog-content/docs/category/hashmaps-5b5": {
+  "/docs/category/hashmaps-793": {
     "__comp": "14eb3368",
-    "categoryGeneratedIndex": "f772fcfb"
+    "categoryGeneratedIndex": "a8101835"
   },
-  "/sde-babu-blog-content/docs/category/queue-7bc": {
+  "/docs/category/queue-b84": {
     "__comp": "14eb3368",
-    "categoryGeneratedIndex": "516180da"
+    "categoryGeneratedIndex": "de0b456a"
   },
-  "/sde-babu-blog-content/docs/HashMaps/first_unique_character_in_string-745": {
+  "/docs/HashMaps/first_unique_character_in_string-c80": {
     "__comp": "17896441",
     "content": "59a9c4a1"
   },
-  "/sde-babu-blog-content/docs/intro-0ff": {
+  "/docs/intro-aed": {
     "__comp": "17896441",
     "content": "0e384e19"
   },
-  "/sde-babu-blog-content/docs/Queue/sliding_window_maximum-5c9": {
+  "/docs/Queue/sliding_window_maximum-23b": {
     "__comp": "17896441",
     "content": "e91c510a"
   },
-  "/sde-babu-blog-content/docs/Tree/BinarySearchTree/balance_binary_search_tree-249": {
+  "/docs/Tree/BinarySearchTree/balance_binary_search_tree-398": {
     "__comp": "17896441",
     "content": "f80de86f"
   },
-  "/sde-babu-blog-content/docs/Tree/BinarySearchTree/create_bst_with_sorted_array-75d": {
+  "/docs/Tree/BinarySearchTree/create_bst_with_sorted_array-12c": {
     "__comp": "17896441",
     "content": "2dc17942"
   },
-  "/sde-babu-blog-content/docs/Tree/BinaryTree/balanced_binary_tree-59b": {
+  "/docs/Tree/BinaryTree/balanced_binary_tree-fa0": {
     "__comp": "17896441",
     "content": "8e1a6f09"
   },
-  "/sde-babu-blog-content/docs/Tree/BinaryTree/height_of_binary_tree-7ff": {
+  "/docs/Tree/BinaryTree/height_of_binary_tree-4d4": {
     "__comp": "17896441",
     "content": "8a466cf0"
   },
-  "/sde-babu-blog-content/-a48": {
+  "/-bfc": {
     "__comp": "c4f5d8e4",
     "__context": {
       "plugin": "85a1d08c"

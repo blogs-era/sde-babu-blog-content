@@ -7,7 +7,7 @@ export default {
   "title": "Sde Babu",
   "tagline": "Enhance Your Software Developer Skills",
   "url": "https://github.com",
-  "baseUrl": "/sde-babu-blog-content/",
+  "baseUrl": "/",
   "onBrokenLinks": "warn",
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.svg",
