@@ -10,12 +10,13 @@ sidebar_position: 1
 2. consists of problem solving content such as:
     - Data Structures and Algorithm
     - System Design
-    -  Technologies at Workplace
+    - Technologies at Workplace
 
 ### What's the unique point about **Sde Babu Content** ?
 
 1. whole content is organized in such manner that every reader can follow the content
 2. many websites contains lots of content, but not organized
+3. this content will try to cover a wide range from `beginner` to `experienced`
 
 ### What are the Prerequisites for **Sde Babu Content** ?
 
