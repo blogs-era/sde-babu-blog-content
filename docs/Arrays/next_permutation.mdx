@@ -1,0 +1,159 @@
+---
+sidebar_position: 1
+title: Next Permutation of a given array 
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> given a array `arr` and you have to return its `next permutation`
+
+### what is next permutation ?
+
+> The `next permutation` of an array of integers is the next `lexicographically` greater permutation of its integer.
+
+```
+1 2 3
+1 3 2
+2 1 3
+2 3 1
+3 1 2
+3 2 1
+```
+
+### Example 1
+
+Input: nums = `[3,2,1]`
+Output: `[1,2,3]`
+
+### Example 2
+
+Input: nums = `[2,1,3]`
+Output: `[2,3,1]`
+
+### Brute Force Approach
+
+- first take copy of the array and `sort` the array which you have copied
+- then recursively take all the permutaions and store it into the list
+- after that search for original array in `permutation` list
+
+<Tabs>
+<TabItem value="java" label="pseudo_code">
+
+```js
+    
+    public void swap(int[] arr,int i,int j){
+        int t = arr[i];
+        arr[i] = arr[j];
+        arr[j] = t;
+    }
+    
+    public void permute(int[] arr,ArrayList<int[]> permutations,int index){
+        if(index==arr.length){
+            int[] res = new int[arr.length];
+            for(int j=0;j<arr.length;j++)res[j] = arr[j];
+            permutations.add(res);
+            return;
+        }
+        for(int i=index;i<arr.length;i++){
+            swap(arr,index,i);
+            permute(arr,permutations,index+1);
+            swap(arr,index,i);
+        }
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+#### Complexity
+  > Time Complexity: `O(N * N!)`
+  
+  > Space Complexity: `O(N)`
+
+
+
+
+### Optimal Approach 
+
+### Explaination
+
+#### Algorithm
+![intution_image](https://share.sketchpad.app/22/05a-5e59-b6438d.png)
+#### Intution behind Algorithm
+![intution_image](https://share.sketchpad.app/22/1c1-ae18-8d11c2.png)
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+    public void swap(int[] nums,int index1,int index2){
+        int temp = nums[index1];
+        nums[index1] = nums[index2];
+        nums[index2] = temp;
+    }
+    public void nextPermutation(int[] nums) {
+        int index1 = nums.length-2,index2;
+        // task 1 in algo to find the peak
+        while(index1>=0 && nums[index1] >= nums[index1+1])index1--;
+        // task 2 in algo is to get the first element which is greater the element at index1   
+        if(index1 >= 0){
+            index2 = nums.length-1;
+            while(nums[index1] >= nums[index2])index2--;
+            // swap the element at index1 and index2
+            swap(nums,index1,index2);
+        }
+        // reverse the arr from [index1+1, last]
+        int last = nums.length-1;
+        index1++;
+        while(index1 <= last){
+            swap(nums,index1,last);
+            index1++;
+            last--;
+        }
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+#### Complexity
+  > Time Complexity: `O(N)`
+  
+  > Space Complexity: `O(1)`
