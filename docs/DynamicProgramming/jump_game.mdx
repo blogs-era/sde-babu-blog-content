@@ -1,0 +1,221 @@
+---
+sidebar_position: 1
+title: Jump Game 
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> given a array `arr` of non-negative integers `nums`, you are initially positioned at the `first index` of the array.at each index `nums[i]` represents the maximum jump length you can take from the index `i`
+
+
+### You can try it at:
+
+- https://leetcode.com/problems/jump-game-ii/
+
+### Example 1
+
+`Input`: nums = [2,3,0,1,4]
+`Output`: 2
+`Explaination` : in above nums this jump route `0 -> 1 -> 4` will give you minimum jumps to reach at the end   
+
+### Constraints
+
+- 1 <= nums.length <= 104
+- 0 <= nums[i] <= 1000
+
+
+### Brute Force Approach
+
+- try all the possible approaches to jump from index 0 to last index
+- when we reach at last index we can compare the `jumps` with `min_jumps` till now
+
+### Explaination
+
+![intution_image](https://share.sketchpad.app/22/679-3785-9182da.png)
+
+
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+    
+    // given in constraints
+    int MAX_JUMPS = 10000;
+    public int dfs(int[] nums,int index){
+        
+        if(index>=nums.length){
+            return MAX_JUMPS;   
+        }
+        
+        if(index==nums.length-1){ 
+            return 0;
+        }
+        
+        int min_jump = MAX_JUMPS; 
+        for(int i=1;i<=nums[index];i++){
+            int jump_count = 1+dfs(nums,index+i);
+            min_jump = Math.min(min_jump,jump_count);   
+        }
+        return min_jump;
+    }
+    
+    public int jump(int[] nums) {
+        return dfs(nums,0);
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+#### Complexity
+  > Time Complexity: `O(N^N)`
+  
+  > Space Complexity: `O(N)`
+
+### Optimize this Approach by Memoization
+
+> `Memoization` is the technique to save the previous results 
+
+### Explaination
+
+![intution_image](https://share.sketchpad.app/22/86d-dbf2-686aff.png)
+
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+    
+    // given in constraints
+    int MAX_JUMPS = 10000;
+    public int dfs(int[] nums,int index,int[] dp){
+        
+        if(index>=nums.length){
+            return MAX_JUMPS;   
+        }
+        
+        if(index==nums.length-1){ 
+            return 0;
+        }
+        
+        if(dp[index]!=0)return dp[index];
+        
+        int min_jump = MAX_JUMPS; 
+        for(int i=1;i<=nums[index];i++){
+            int jump_count = 1+dfs(nums,index+i,dp);
+            min_jump = Math.min(min_jump,jump_count);   
+        }
+        dp[index] = min_jump;
+        return min_jump;
+    }
+    
+    public int jump(int[] nums) {
+        int[] dp = new int[nums.length];
+        return dfs(nums,0,dp);
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+#### Complexity
+  > Time Complexity: `O(N*N)`
+  
+  > Space Complexity: `O(N)`
+
+
+:::note
+
+in an interview you don't need to tell `Iterative approach` but if you want to grasp DP Concepts Iterative Method will help you to better understand the question
+  
+
+:::
+
+### Iterative Approach/Bottom Up Approach
+
+
+### Explaination
+
+![intution_image](https://share.sketchpad.app/22/240-0c19-ba6b03.png)
+
+
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+
+    // given in constraints
+    int MAX_JUMPS = 10000;
+    public int jump(int[] nums) {
+        int n = nums.length;
+        int[] dp = new int[n];
+        
+        for(int i=n-2;i>=0;i--){
+            int min_jump = MAX_JUMPS;
+            for(int j=1;j<=nums[i];j++){
+                if(j+i < nums.length)
+                min_jump = Math.min(min_jump,1+dp[i+j]);   
+            }
+            dp[i] = min_jump;
+        }
+        return dp[0];
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+#### Complexity
+  > Time Complexity: `O(N*N)`
+  
+  > Space Complexity: `O(N)`
+
