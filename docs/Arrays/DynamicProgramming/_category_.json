@@ -1,0 +1,8 @@
+{
+  "label": "DynamicProgramming",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Dynamic Programming which mostly help us to solve the recursive problem in optimized way"
+  }
+}
