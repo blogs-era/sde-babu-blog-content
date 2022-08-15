@@ -18,8 +18,31 @@ export const Highlight = ({children, color,txt}) => (
   </span>
 );
 
+
 Level - <Highlight color="#fece2f">Medium</Highlight>
 
+### Statement
+
+> Given the root of a binary search tree, return a balanced binary search tree with the same node values. If there is more than one answer, return any of them.
+
+### You can try it at:
+- https://leetcode.com/problems/balance-a-binary-search-tree/
+
+### Example 1
+
+```
+Input: root = [1,null,2,null,3,null,4,null,null]
+Output: [2,1,3,null,null,null,4]
+Explanation: This is not the only correct answer, [3,1,4,null,2] is also correct.
+
+```
+![example](https://assets.leetcode.com/uploads/2021/08/10/balance1-tree.jpg)
+
+
+### Approach
+
+- first create the `inorder` of given binary search tree, as `inorder` of BST is in `sorted manner`
+- then follow the same approach as discussed in [create bst with sorted order](./create_bst_with_sorted_array.mdx)
 
 <Tabs>
 <TabItem value="java" label="Java">
@@ -45,10 +68,11 @@ Level - <Highlight color="#fece2f">Medium</Highlight>
         return null;
     }
     public TreeNode balanceBST(TreeNode root) {
+        // get the inorder of bst
         ArrayList<Integer> in = new ArrayList<>();
         inorder(root,in);
-        System.out.println();
         int start = 0,end = in.size();
+        // generate the balanced binary search tree
         return generate(start,end-1,in);
     }
 ```
