@@ -1,0 +1,150 @@
+---
+sidebar_position: 1
+title: Unique Binary Search Trees / Catalan Numbers
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> Given an integer `n`, return the number of structurally unique BST's (binary search trees) which has exactly `n` nodes of unique values from `1 to n`.
+
+### You can try it at:
+
+- https://leetcode.com/problems/unique-binary-search-trees/
+
+### Example 1:
+
+
+![input](https://assets.leetcode.com/uploads/2021/01/18/uniquebstn3.jpg)
+```
+
+Input: n = 3
+Output: 5
+
+```
+
+```
+Input: n = 1
+Output: 1
+
+```
+
+### Approach: 
+
+
+#### Let's observe the pattern: 
+
+![pattern](https://share.sketchpad.app/22/5d1-e72f-2a24f2.png)
+
+- so in above image we are trying to represent some pattern, so that we can draw the `recursive solution`
+- so for base case we mention that if `n=0 || n=1` then clearly number of unique BST is `1`
+- now lets try to observe for `n=2` so there are `2` parts, in `first part` we have `0 node on left and 1 node on right` and in `second part` we have `1 node on left and 0 node on right`
+- now lets talk about `n=3` so there are `3` parts, in `first part` we have `2(left) and 0(right)`, `second part` have `1(left) and 1(right)`, `third part` have `0(left) and 2(right)` 
+
+#### How to calculate the unique bst count:
+![image](https://share.sketchpad.app/22/a54-3bf7-c6783d.png)
+
+#### Recursive pattern:
+![recursion](https://share.sketchpad.app/22/966-13d6-a5a455.png)
+
+
+### Recursive Approach:
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+public int numTrees(int n) {
+      // base case as discussed
+      if (n == 0 || n == 1) {
+        return 1;
+      }
+      int sum = 0;
+      // if n is 3 then creating 3 parts 
+      for (int i = 1; i <= n; ++i) {
+        // adding all the left-right patterns to sum
+        sum += numTrees(i - 1) * numTrees(n - i);
+      }
+      return sum;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+#### Complexity
+  > Time Complexity: `O(3^N)`
+  
+  > Space Complexity: `O(N)`
+
+
+### Iterative / Bottom Up Approach:
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+    public int numTrees(int n) {
+      // base case
+      if(n==0 || n==1)return 1;
+      // create 1d dp array
+      int[] dp = new int[n+1];
+      dp[0] = 1;dp[1] = 1;
+        
+      // iterate all the parts 
+      for (int i = 2;i <= n; ++i) {
+        // generating all the left and right
+        int l = 0,r = i-1;
+        while(r>=0 && l<=i-1){
+            dp[i]+=dp[l++]*dp[r--];
+        }    
+      }
+        
+      return dp[n];
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+#### Complexity
+  > Time Complexity: `O(N*N)`
+  
+  > Space Complexity: `O(N)`
+
