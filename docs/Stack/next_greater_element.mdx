@@ -1,0 +1,132 @@
+---
+sidebar_position: 1
+title: Next Greater Element 
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> Given an array arr[ ] of size N having distinct elements, the task is to find the next greater element for each element of the array 
+
+#### What is next greater element ?
+
+> Next greater element of an element in the array is the nearest element on the right which is greater than the current element.
+
+### You can try it at:
+
+- https://practice.geeksforgeeks.org/problems/next-larger-element-1587115620/1
+
+
+### Example:
+
+```
+Input: N = 5, arr[] [6 8 0 1 3]
+
+Output:
+8 -1 1 3 -1
+
+Explanation:
+
+6 -> 8
+8 -> -1
+0 -> 1
+1 -> 3
+3-> -1
+
+```
+
+### Brute Force Approach
+
+- just loop though all the arr element and find the `next greater` element by using the inner_loop
+
+#### Time Complexity: O(N^2) Space Complexity: O(1)
+
+```js 
+
+for(int i=0;i<n;i++){
+    for(int j=i+1;j<n;j++){
+        if(arr[j] > arr[i]){
+            res[i] = arr[j];
+            break;
+        }
+    }
+}
+res[n-1] = -1;// for last element
+
+```
+
+
+### Optimal Approach
+
+- iterate from last of the array and on each step perform below tasks:
+    - first of all check that if we add the `current arr element` to the `stack` then it should be less than `top element of stack` because we need to maintain the increasing order from top to bottom
+    - so remove the `stack peek` until it is bigger than the `current arr element`
+    - now the element on the `top of the stack` is `next grater element` for `current arr element`
+    - and in last step push the `current arr element` to the stack
+
+
+### Dry Run
+
+![approach](https://share.sketchpad.app/22/ed0-106c-248e47.png)
+
+### Intution
+
+![intution_image](https://share.sketchpad.app/22/d48-66e7-678682.png)
+
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+public static long[] nextLargerElement(long[] arr, int n)
+    { 
+        long[] res = new long[n];
+        Stack<Long> st = new Stack<>();
+        
+        for(int i=n-1;i>=0;i--){
+            // peek element should be bigger to maintain the increasing order from top to bottom of the stack
+            while(!st.isEmpty() && st.peek() <= arr[i]){
+                st.pop();
+            }
+            // update the result 
+            if(st.isEmpty())res[i] = -1;
+            else res[i] = st.peek();
+            // push the cuurent element to the stack      
+            st.push(arr[i]);
+        }
+        return res;
+    } 
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+
+#### Time Complexity: ` O(N)`
+#### Space Comaplexity: `O(N)`
