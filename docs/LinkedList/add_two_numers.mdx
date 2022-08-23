@@ -1,0 +1,108 @@
+---
+sidebar_position: 1
+title: Add Two Numbers
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement:
+
+> You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+### You can try it at:
+
+- https://leetcode.com/problems/add-two-numbers/
+
+### Example 1
+![eg](https://assets.leetcode.com/uploads/2020/10/02/addtwonumber1.jpg)
+
+```
+Input: l1 = [2,4,3], l2 = [5,6,4]
+Output: [7,0,8]
+Explanation: 342 + 465 = 807
+```
+### Example 2
+```
+Input: l1 = [0], l2 = [0]
+Output: [0]
+```
+
+### Example 3
+```
+Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+Output: [8,9,9,9,0,0,0,1]
+```
+
+### Solution Explaination
+
+#### Case where no carry left
+![no_carry](https://share.sketchpad.app/22/f7f-0647-ef7573.png)
+
+#### Case where carry left
+![carry](https://share.sketchpad.app/22/52e-e8ef-4833ec.png)
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+    /**
+    * Definition for singly-linked list.
+    * public class ListNode {
+    *     int val;
+    *     ListNode next;
+    *     ListNode() {}
+    *     ListNode(int val) { this.val = val; }
+    *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    * }
+    */
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        int carry = 0;
+        ListNode start = new ListNode(0);
+        ListNode end = start;
+        
+        while(carry > 0 || l1!=null || l2!=null){
+            int nl1 = l1!=null ? l1.val: 0;
+            int nl2 = l2!=null ? l2.val: 0;
+            
+            int value = nl1 + nl2 + carry;
+            carry = value / 10;
+            end.next = new ListNode(value%10);
+            end = end.next;
+            
+            if(l1!=null)l1 = l1.next;
+            if(l2!=null)l2 = l2.next;
+        }
+        
+        return start.next;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

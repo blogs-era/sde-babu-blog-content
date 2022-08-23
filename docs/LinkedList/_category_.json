@@ -1,0 +1,8 @@
+{
+  "label": "LinkedList",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Linked List a linear data structure which contains multiple nodes and each node is mainly a collection of data and addresses.all the nodes are connected"
+  }
+}
