@@ -1,0 +1,307 @@
+# Segment Trees
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+### Definition
+
+> Segment Tree is a data structure that stores the information about the range of an array.so this data structure can help us to answer the range related questions in efficient manner.
+
+### Use case
+
+> let suppose we have `arr[]` -> `0,1,8,2,1,5` and `query` as Q = `[[1,4],[2,4],[0,2]]`, now we need to return sum of elements in the range for each `query`.where `query` represents `[start,end]`
+
+- for query: [1,4] -> `1 + 8 + 2 + 1`
+- for query: [2,4] -> `8 + 2 + 1`
+- for query: [0,2] -> `0 + 1 + 8`
+
+> now what will the time complexity for `brute force` method ?
+
+>> so it will be `O(N*Q)` becuase for `Q` query we have to calculate the sum of the elements in the range.
+
+### Conclusion 
+
+#### hence for reducing the time complexity we use Segment Trees
+
+### How Segment Trees can help ?
+
+#### 1. first we need to know how to build the Segment tree for given array for `range sum query`
+
+#### Segment Tree Representation
+![representation](https://share.sketchpad.app/22/a61-1b3d-01f1b1.png)
+
+#### Example of Segment Tree for given array
+![eg](https://share.sketchpad.app/22/bd3-2dca-535ea9.png)
+
+### Code for building Segment Tree
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+    /**
+    * SegmentTree
+    */
+    public class SegmentTree {
+        int[] arr;
+        int[] segment_tree;
+
+        // constructor
+        SegmentTree(int n){
+            arr = new int[n];
+            // we take size of segment tree as 4 times of n (upperlimit) 
+            segment_tree = new int[4*n];
+        }
+        // build the segment tree
+        void build(int low,int high,int index){
+            // base case if low is equals to high then only one element is there 
+            if(low==high){
+                segment_tree[index] = arr[low];
+                return;
+            }
+            int mid = (low+high)/2;
+            build(low, mid, 2*index+1);
+            build(mid+1, high, 2*index+2);
+
+            // fill this index after returning from recursion
+            segment_tree[index] = segment_tree[2*index+1] + segment_tree[2*index+2];
+        }
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+#### 2. after building the segment tree we have to write a `query` function to calculate the sum for the given range
+
+- first take the complete array as our range then reduce the range of our search 
+- so we have to consider three cases for reducing the complete range 
+- `first` is `no-overlap` it happens when `[l h] q[0] q[1]` or `q[0] q[1] [l h]` means the query range and our search range does'nt overlap then there is no contribution in `sum` so return `0`.
+- `second` is `complete overlap` means `q[0] l h q[1]` so take `segment_tree[index]`.
+- `third` is `partial overlap` then we have to recurse the same process for sub-section from `l - m` and `m+1 - h`  
+
+#### Lets understand with an example
+
+![eg](https://share.sketchpad.app/22/87f-62e6-e499fe.png)
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+
+/**
+ * SegmentTree
+ */
+class SegmentTree {
+    int[] arr;
+    int[] segment_tree;
+
+    // constructor
+    SegmentTree(int n,int[] _arr){
+        arr = _arr;
+        // we take size of segment tree as 4 times of n (upperlimit) 
+        segment_tree = new int[4*n];
+    }
+    // build the segment tree
+    void build(int low,int high,int index){
+        // base case if low is equals to high then only one element is there 
+        if(low==high){
+            segment_tree[index] = arr[low];
+            return;
+        }
+        int mid = (low+high)/2;
+        build(low, mid, 2*index+1);
+        build(mid+1, high, 2*index+2);
+
+        // fill this index after returning from recursion
+        segment_tree[index] = segment_tree[2*index+1] + segment_tree[2*index+2];
+    }
+
+    // query
+    int query(int[] q,int low,int high,int index){
+        // no-overlap [l h]  q[0] q[1] or q[0] q[1] [l h] 
+        if(low > q[1] || high < q[0])return 0;
+        // complete overlap q[0] l h q[1]
+        if(low>=q[0] && high<=q[1])return segment_tree[index];
+        // partial overlap
+        int mid = (low+high)/2;
+        int left = query(q, low, mid, 2*index+1);
+        int right = query(q, mid+1, high, 2*index+2);
+        return left+right;
+    }
+}
+
+class Main{
+    public static void main(String args[]){
+        int[] arr = {4,3,0,5};
+        SegmentTree segmentTree = new SegmentTree(4, arr);
+        segmentTree.build(0, 3, 0);
+        int[][] query = {{1,3},{0,2}}; 
+        
+        for(int[] q: query){
+            int res = segmentTree.query(q, 0, 3, 0);
+            System.out.println(res);
+        }
+    } 
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+> **Output**
+
+```
+8
+7
+```
+
+Time complexity: for `query`: `O(log(n))` and for `build`: `O(n)`
+
+### Next Topic is Point Updates
+
+> what is point updates ?
+
+> let suppose there is one more type of query in which we have to update the element at index `i` with value `val`.
+
+> let suppose we have `arr[]` -> `0,1,8,2,1,5` and `query` as Q = `[[1,4,1],[2,4,1],[3,9,2],[2,4,1]]`, now we need to return sum of elements in the range for each `query`.where `query` represents `[start,end,1](type 1 query)` for sum in given range and `[index,val,2](type 2 query)` for update
+
+- for query: [1,4,1] -> `1 + 8 + 2 + 1` = 12
+- for query: [2,4,1] -> `8 + 2 + 1` = 11
+- for query: [3,9,2] -> arr[3] = 9 so now arr=`0,1,8,9,1,5`
+- for query: [2,4,1] -> `8 + 9 + 1` = 18
+
+### what we have to change in our existing approach ?
+
+> so our approach is same but we need to update our `segment tree` when there is `type 2` query.
+
+- so what we have to do is from top down reach to that index where we need to change the arr and update the segment tree with `val`.
+- now recusre back and update the `sum` at current index as `may be` the `child nodes` are updated.
+
+![Explaination](https://share.sketchpad.app/22/fd9-605e-fe1a6d.png)
+
+#### Code for point updates
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+/**
+ * SegmentTree
+ */
+class SegmentTree {
+    int[] arr;
+    int[] segment_tree;
+
+    // constructor
+    SegmentTree(int n,int[] _arr){
+        arr = _arr;
+        // we take size of segment tree as 4 times of n (upperlimit) 
+        segment_tree = new int[4*n];
+    }
+    // build the segment tree
+    void build(int low,int high,int index){
+        // base case if low is equals to high then only one element is there 
+        if(low==high){
+            segment_tree[index] = arr[low];
+            return;
+        }
+        int mid = (low+high)/2;
+        build(low, mid, 2*index+1);
+        build(mid+1, high, 2*index+2);
+
+        // fill this index after returning from recursion
+        segment_tree[index] = segment_tree[2*index+1] + segment_tree[2*index+2];
+    }
+
+    // query
+    int query(int[] q,int low,int high,int index){
+        // no-overlap [l h]  q[0] q[1] or q[0] q[1] [l h] 
+        if(low > q[1] || high < q[0])return 0;
+        // complete overlap q[0] l h q[1]
+        if(low>=q[0] && high<=q[1])return segment_tree[index];
+        // partial overlap
+        int mid = (low+high)/2;
+        int left = query(q, low, mid, 2*index+1);
+        int right = query(q, mid+1, high, 2*index+2);
+        return left+right;
+    }
+    // update
+    void update(int[] q,int low,int high,int index){
+        // we reach to the target index to change
+        if(low==high){
+            segment_tree[index] = q[1];
+            return;
+        }   
+        int mid = (low+high)/2;
+        // if q[0] means index where we need to update the element is less then mid go to left
+        if(q[0] <= mid){
+            update(q, low, mid, 2*index+1);
+        }else{
+            update(q, mid+1, high, 2*index+2);
+        }
+        segment_tree[index] = segment_tree[2*index+1] + segment_tree[2*index+2];
+    }
+}
+
+class Main{
+    public static void main(String args[]){
+        int[] arr = {0,1,8,2,1,5};
+        SegmentTree segmentTree = new SegmentTree(4, arr);
+        segmentTree.build(0, 5, 0);
+        int[][] query = {{1,4,1},{2,4,1},{3,9,2},{2,4,1}}; 
+        
+        for(int[] q: query){
+            if(q[2]==1){
+                int res = segmentTree.query(q, 0, 5, 0);
+                System.out.println(res);
+            }else{
+                segmentTree.update(q, 0, 5, 0);
+            }
+        }
+    } 
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+> **Output**
+
+```
+12
+11
+18
+```
+
+Time complexity: for `query`: `O(log(n))` and for `build`: `O(n)` and for `update`: `O(log(n))`
