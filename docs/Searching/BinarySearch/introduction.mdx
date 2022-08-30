@@ -1,0 +1,78 @@
+---
+sidebar_position: 1
+title: Introduction of Binary Search
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+### Definition
+
+> **Binary Search** is a `efficient` search technique in which we keep reducing our search space by dividing the array into `2 halves` and select any one half as a new search space.
+
+:::note
+Binary Search can only be applied on array which is already sorted
+:::
+
+### Approach
+
+- initially our search space is from `low=0` to `high=n-1` means our target lie in this range.
+- now extract the mid element because we want to reduce our search space by `half`.
+- if mid element is our target then return the `mid(index)`
+- if mid element is not our target then check
+    - if target > `arr[mid]`, then our element lies in right half. hence now our search space is `low=mid+1 to high=high`
+    - else our element lies in left half. hence now our search space is `low=low to high=mid-1`
+
+
+![approach](https://share.sketchpad.app/22/a45-4c47-a48420.png)
+
+
+
+
+### Code
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+
+class Main{
+    public static int binarySearch(int[] arr,int target) {
+        int l = 0,h = arr.length-1;
+        int mid = (l+h)/2;
+        while(l<=h){
+            // if the element is found at the mid return mid(index)
+            if(arr[mid]==target)return mid;
+            // if target is biiger than mid means our search space should be changed to [mid+1 to h]
+            else if(target > arr[mid])l = mid+1;
+            // if target is less than mid means our search space should be changed to [l to mid-1]
+            else h = mid-1;
+            // update the mid
+            mid = (l+h)/2;
+        }
+        return -1;
+    }
+    public static void main(String args[]){
+        int[] arr = {0,3,4,8};
+        int target = 4;
+        int index = binarySearch(arr, target);
+        System.out.print(target+" found at index: "+index);
+    } 
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+#### Complexity
+  > Time Complexity: `O(log(N))`

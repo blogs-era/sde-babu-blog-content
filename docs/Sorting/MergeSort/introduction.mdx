@@ -1,0 +1,101 @@
+---
+sidebar_position: 1
+title: Introduction of Merge Sort
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+### Definition
+
+> `merge sort` is one of the `sorted` techniques which uses `divide and conquer` approach.it is one of the efficient alforithm in which we keep dividing our array until we left with one element then recurse back to merge all the partition in `sorted manner`.
+
+
+### Simple Representation
+
+![simple_representation](https://share.sketchpad.app/22/362-af26-0c72c6.png)
+
+### Approach
+
+- divide the array into 2 halves until we can divide it.
+- now process of dividing the array is over because only one element left.
+- now start merging the divided arrays in a sorted manner.
+- merge function is responsible to merge the divided arrays, the divided arrays are already sorted.
+
+![intution](https://share.sketchpad.app/22/142-228e-4b7bff.png)
+
+
+### Code
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+
+class Main{
+    public static void merge(int[] arr,int l,int mid,int h){
+        int start_arr1 = l,end_arr1 = mid;
+        int start_arr2 = mid+1,end_arr2 = h;
+        int[] temp_arr = new int[h-l+1];
+        int index = 0;
+
+        while(start_arr1 <= end_arr1 && start_arr2 <= end_arr2){
+            if(arr[start_arr1] < arr[start_arr2]){
+                temp_arr[index++] = arr[start_arr1++];
+            }else{
+                temp_arr[index++] = arr[start_arr2++];
+            }
+        }
+
+        // now one array is completely traverse in above loop
+        // now add all the left elements in temp_array
+        while(start_arr1 <= end_arr1){
+            temp_arr[index++] = arr[start_arr1++];
+        } 
+        while(start_arr2 <= end_arr2){
+            temp_arr[index++] = arr[start_arr2++];
+        } 
+        // update the arr
+        index = 0;
+        for(int i=l;i<=h;i++){
+            arr[i] = temp_arr[index++];
+        }
+        return;
+    }
+    public static void mergeSort(int[] arr,int l,int h){
+        if(l < h){
+            int mid = (l+h)/2;
+            // divide into 2 halves
+            mergeSort(arr, l, mid);
+            mergeSort(arr, mid+1, h);
+            // start merging the segments
+            merge(arr, l, mid, h);
+        }
+    } 
+    public static void main(String args[]){
+        int[] arr = {8,3,0,4};
+        mergeSort(arr,0,3);
+        for(int a: arr)System.out.print(a+" ");
+    } 
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+#### Complexity
+  > Time Complexity: `O(Nlog(N))`
+  
+  > `Best Case Time Complexity`: O(n*log n) `Worst Case Time Complexity`: O(n*log n) `Average Time Complexity`: O(n*log n)
+
+  > Space Complexity: `O(N)`
