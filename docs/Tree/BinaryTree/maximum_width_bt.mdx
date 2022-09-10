@@ -1,6 +1,6 @@
 ---
-sidebar_position: 
-title: 8 
+sidebar_position: 8
+title: Maximum Width of Binary Tree
 ---
 
 import Tabs from '@theme/Tabs';
@@ -34,7 +34,42 @@ Level - <Highlight color="#fece2f">Medium</Highlight>
 <TabItem value="java" label="Java">
 
 ```js
+class Solution {
+    public int widthOfBinaryTree(TreeNode root) {
+        // we will use level order traversal to get the difference between the index of first and last node in a level
+        int ans = 0;
+        // init the queue by adding root node in queue
+        Queue<Node> q = new LinkedList<>();
+        q.add(new Node(root,0));
+        // iterate in level order manner
+        while(!q.isEmpty()){
+            int size = q.size();   
+            int first_index = 0,last_index = 0;
+            for(int i=0;i<size;i++){
+                // poll from queue
+                Node peek = q.poll();
+                int index = peek.index;
+                // record first and last index to get the dif
+                if(i==0)first_index = index;
+                if(i==size-1)last_index = index;
+                // add the left and right child in queue
+                if(peek.node.left!=null)q.add(new Node(peek.node.left,2*index+1));
+                if(peek.node.right!=null)q.add(new Node(peek.node.right,2*index+2));
+            }
+            ans = Math.max(last_index-first_index+1,ans);
+        }
+        return ans;
+    }
+}
 
+class Node{
+    TreeNode node;
+    int index;
+    Node(TreeNode _node,int _index){
+        this.node = _node;
+        this.index = _index;
+    }
+}
 
 ```
 
