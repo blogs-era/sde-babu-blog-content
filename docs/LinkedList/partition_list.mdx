@@ -1,0 +1,76 @@
+---
+sidebar_position: 2
+title: Partition List
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://leetcode.com/problems/partition-list/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+    public ListNode partition(ListNode head, int x) {
+        // init the left_start and left_end with dummy node to record nodes with val < x
+        ListNode left_start = new ListNode(0);
+        ListNode left_end = left_start;
+        // init the right_start and right_end with dummy node to record nodes with val >= x
+        ListNode  right_start = new ListNode(0);
+        ListNode right_end = right_start;
+        ListNode ptr = head;
+        
+        while(ptr!=null){
+            if(ptr.val < x){
+                // add current node to the left list
+                left_end.next = ptr;
+                left_end = left_end.next;
+            }else{
+                // // add current node to the left list
+                right_end.next = ptr;
+                right_end = right_end.next;
+            }
+            ptr = ptr.next; 
+        }
+        // connect the left_end to right_start to connect both list
+        left_end.next = right_start.next;
+        right_end.next = null;
+        return left_start.next;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

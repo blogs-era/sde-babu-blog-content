@@ -1,0 +1,79 @@
+---
+sidebar_position: 4
+title:  Segregate even and odd nodes in a Link List
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://practice.geeksforgeeks.org/problems/segregate-even-and-odd-nodes-in-a-linked-list5035/1 
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+    Node divide(int N, Node head){
+        //example 1 -> 2 -> 3 -> 4 -> 5 -> null
+        // init the odd list and even list dummy pointers
+        Node odd_start = new Node(0);
+        Node odd_end = odd_start;
+        Node even_start = new Node(0);
+        Node even_end = even_start;
+        
+        
+        while(head!=null){
+            // when odd then add it to the odd list
+            if(head.data%2==1){
+                odd_end.next = head;
+                odd_end = odd_end.next;
+            }else{
+                even_end.next = head;
+                even_end = even_end.next;
+            }
+            head = head.next;
+        }
+        // after the while loop and segregation our both list become
+        /*
+        odd -> 0 -> 1 -> 3 -> 5 -> null where odd_end is 5
+        even -> 0-> 2 -> 4 -> 5 -> null where even_end is 4
+        */
+        odd_end.next = null; // to prevent the loop you can test this when test case is 1->2->3->4 ->null
+        even_end.next = odd_start.next;
+        return even_start.next;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
