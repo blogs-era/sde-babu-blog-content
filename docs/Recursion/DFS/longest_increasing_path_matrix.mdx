@@ -1,0 +1,72 @@
+---
+sidebar_position: 1
+title: Longest Increasing Path in a Matrix 
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#cc0000">Hard</Highlight>
+
+### Statement
+
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+public int dfs(int x,int y,int[][] matrix,int n,int m,int[][] dp){
+        // memo
+        if(dp[x][y]!=-1)return dp[x][y];
+        
+        int[] dx = {-1,1,0,0};
+        int[] dy = {0,0,-1,1};
+        int max_length = 0;
+        for(int i=0;i<4;i++){
+            int new_x = dx[i]+x;
+            int new_y = dy[i]+y;
+            if(new_x >= 0 && new_y >= 0 && new_x < n && new_y < m && matrix[new_x][new_y] >  matrix[x][y])
+            dp[x][y] = Math.max(dfs(new_x,new_y,matrix,n,m,dp),dp[x][y]);
+        }
+        return ++dp[x][y];
+    }
+    public int longestIncreasingPath(int[][] matrix) {
+        int n = matrix.length,m = matrix[0].length;
+        // max_length is 1 as always there is one element
+        int max_length = 1;
+        int[][] dp = new int[n][m];
+        for(int i=0;i<n;i++)Arrays.fill(dp[i],-1);
+        // traverse through the matrix
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                max_length = Math.max(1+dfs(i,j,matrix,n,m,dp),max_length);
+            }
+        }
+        return max_length;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

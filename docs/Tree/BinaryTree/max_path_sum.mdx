@@ -1,0 +1,65 @@
+---
+sidebar_position: 7 
+title:  Binary Tree Maximum Path Sum
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#cc0000">Hard</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://leetcode.com/problems/binary-tree-maximum-path-sum/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+    int maxi = Integer.MIN_VALUE;
+    public int dfs(TreeNode root){
+        if(root==null)return 0;
+        // go to left and right but don't count the negative element
+        int left = Math.max(0,dfs(root.left));
+        int right = Math.max(0,dfs(root.right));
+        // compare with max 
+        maxi = Math.max(maxi,root.val+left+right);
+        // return max value to choose the path either left or right 
+        return root.val + Math.max(left,right);
+    }
+    public int maxPathSum(TreeNode root) {
+        dfs(root);
+        return maxi;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

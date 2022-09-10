@@ -1,0 +1,70 @@
+---
+sidebar_position: 6
+title:  Path Sum 3
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://leetcode.com/problems/path-sum-iii/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+
+// ans to store the counter
+    private int ans = 0;
+    public int pathSum(TreeNode root, int sum) {
+        if(root == null) return 0;
+        // use long to handle the overflow and check for the path using helper function
+        helper(root, (long)sum);
+        // repeat for left and right
+        pathSum(root.left, sum);
+        pathSum(root.right, sum);
+        
+        return ans;
+    }
+
+    public void helper(TreeNode root, long sum) {
+        if (root == null) return;
+        if (sum == root.val) ans++;
+        sum = sum-root.val;
+        helper(root.left, sum);
+        helper(root.right, sum);
+    }
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

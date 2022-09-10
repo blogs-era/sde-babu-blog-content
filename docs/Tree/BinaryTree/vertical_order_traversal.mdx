@@ -1,0 +1,85 @@
+---
+sidebar_position: 4
+title: Vertical Order Traversal of a Binary Tree
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#cc0000">Hard</Highlight>
+
+### Statement
+
+> 
+
+### You can try it at
+
+- https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+public void dfs(TreeNode root,int col,int row,TreeMap<Integer,TreeMap<Integer,List<Integer>>> map){
+        if(root==null)return;
+        // add the current element in map
+        TreeMap<Integer,List<Integer>> by_col = map.getOrDefault(col,new TreeMap<>());
+        List<Integer> by_row = by_col.getOrDefault(row,new ArrayList<>());
+        by_row.add(root.val);
+        by_col.put(row,by_row);
+        map.put(col,by_col);
+        // traverse in left and right
+        dfs(root.left,col-1,row+1,map);
+        dfs(root.right,col+1,row+1,map);
+        return;
+    }
+    public List<List<Integer>> verticalTraversal(TreeNode root) {
+        // hash map for storing nodes in row and column wise alignment
+        TreeMap<Integer,TreeMap<Integer,List<Integer>>> map = new TreeMap<>();
+        // recursive function call
+        dfs(root,0,0,map);
+        // final result
+        List<List<Integer>> result = new ArrayList<>();
+        // iterate through the col and row
+        for(Integer col: map.keySet()){
+            List<Integer> entry = new ArrayList<>();
+            // map by row entry
+            TreeMap<Integer,List<Integer>> by_col = map.get(col);
+            // iterate through all the rows
+            for(Map.Entry<Integer,List<Integer>> row_entry: by_col.entrySet()){
+                // get and sort the row_list
+                List<Integer> row_entry_list = row_entry.getValue();
+                Collections.sort(row_entry_list);
+                // add all in the entry
+                entry.addAll(row_entry_list);
+            }
+            // add entry to the result
+            result.add(entry);
+        }
+        return result;
+    }
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

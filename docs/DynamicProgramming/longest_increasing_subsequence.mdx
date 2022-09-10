@@ -1,0 +1,69 @@
+---
+sidebar_position: 3
+title:  Longest Increasing Subsequence
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> Given an integer array nums, return the length of the longest strictly increasing subsequence.
+
+A subsequence is a sequence that can be derived from an array by deleting some or no elements without changing the order of the remaining elements. For example, `[3,6,2,7]` is a subsequence of the array `[0,3,1,6,2,2,7]`.
+
+
+### Iterative Method
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+public int lengthOfLIS(int[] nums) {
+        // max_length will be 1 beacuse only one element is always increasing
+        int max_length = 1;
+        // dp[i] indicate the longest increasing subsequence till ith index where last number is always nums[i] 
+        int[] dp = new int[nums.length];
+        // fill the dp with 1
+        Arrays.fill(dp,1);
+        
+        for(int i=1;i<nums.length;i++){
+            // from 0 to i-1 if nums[i] > nums[j] means it will contribute to the subsequence
+            for(int j=0;j<i;j++){
+                if(nums[i] > nums[j] && dp[i] < dp[j]+1){
+                    dp[i] = dp[j]+1;
+                }
+            }
+            // compare the dp[i] with max_length
+            max_length = Math.max(max_length,dp[i]);
+        }
+        return max_length;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

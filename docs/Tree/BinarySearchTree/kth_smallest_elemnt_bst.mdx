@@ -1,0 +1,72 @@
+---
+sidebar_position: 3
+title:  Kth Smallest Element in a BST
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+    // count and ans
+    int count = 1,ans = -1;
+    // is_added to avoid any other ans you can test this by removing is_added==false condition
+    boolean is_added = false;
+    public void dfs(TreeNode root,int k){
+        //base case
+        if(root==null)return;
+        // in order
+        dfs(root.left,k);
+        // check 
+        if(count==k && is_added==false){
+            ans = root.val;
+            is_added = true;
+            return;
+        }
+        count++;        
+        dfs(root.right,k);
+    }
+    public int kthSmallest(TreeNode root, int k) {
+        dfs(root,k);
+        return ans;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

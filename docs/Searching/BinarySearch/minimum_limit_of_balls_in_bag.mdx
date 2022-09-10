@@ -1,0 +1,76 @@
+---
+sidebar_position: 3
+title: Capacity To Ship Packages Within D Days 
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+// maximize the minimum of all or minimize the maximum of all
+    // in these cases we use binary search
+    
+    public boolean predicateFun(int peak,int[] nums, int maxOperations){
+        for(int num: nums){
+            maxOperations -= num / peak;
+            if(num%peak==0)maxOperations++;
+        }
+        return maxOperations >= 0;
+    }
+    public int minimumSize(int[] nums, int maxOperations) {
+        int l = 1,h = Integer.MIN_VALUE;
+        for(int n: nums){
+            h = Math.max(h,n);
+        }
+        
+        int ans = -1;
+        while(l<=h){
+            int mid = (l+h)/2;
+            if(predicateFun(mid,nums,maxOperations)){
+                h = mid-1;
+                ans = mid;
+            }else{
+                l = mid+1;
+            }
+        }
+        return ans;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

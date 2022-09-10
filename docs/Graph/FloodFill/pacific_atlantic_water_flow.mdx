@@ -1,0 +1,62 @@
+---
+sidebar_position: 1
+title: Pacific Atlantic Water Flow 
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+  void rec(int x,int y,int n,int m,int[][] heights,int val,int[][] reach){
+      // means already visit , no need to visit once more to prevent infinite loop  
+      if(reach[x][y] >= val)return;
+        int[] dx = {-1,1,0,0};
+        int[] dy = {0,0,-1,1};
+        reach[x][y]+=val;
+        for(int i=0;i<4;i++){
+            int nx = dx[i]+x,ny = dy[i]+y;
+            if(nx>=0 && ny>=0 && nx<n && ny<m && heights[nx][ny]>=heights[x][y]){
+               rec(nx,ny,n,m,heights,val,reach); 
+            }
+        }
+   }
+    
+   List<List<Integer>> pacificAtlantic(int[][] heights) {
+        List<List<Integer>> res  = new ArrayList<>();
+        int n = heights.length,m = heights[0].length;
+        int[][] reach = new int[n][m];
+        // pacific ocean
+        for(int i=0;i<n;i++)rec(i,0,n,m,heights,1,reach);
+        for(int i=0;i<m;i++)rec(0,i,n,m,heights,1,reach);
+        //atlantic ocean
+        for(int i=0;i<n;i++)rec(i,m-1,n,m,heights,2,reach);
+        for(int j=0;j<m;j++)rec(n-1,j,n,m,heights,2,reach);
+        // create ans
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(reach[i][j]==3){
+                    List<Integer> entry = new ArrayList<Integer>(Arrays.asList(i,j));
+                    res.add(entry);
+                }
+            }
+        }
+        return res;
+    }
+    
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
