@@ -53,7 +53,7 @@ before visiting this optimal approach please read about [next greater element](.
 :::
 
 - lets take an example to understand the optimal approach, `eg:[3,1,2,4]`
-- lets take first element which is `3`, so `3` can be minimum in range `[3]`, so number of subarrays formed is `i-start_index+1` x end_index-i+1` so, `(0-0+1) x (0-0+1) = 1`
+- lets take first element which is `3`, so `3` can be minimum in range `[3]`, so number of subarrays formed is `i-start_index+1 * end_index-i+1` so, `(0-0+1) * (0-0+1) = 1`
 - lets take second element which is `1`, so `1` can be minimum in range `[3,1,2,4]`, so number of subarrays formed is `(1-0+1)*(3-1+1) = 3*2 = 6`
 - lets take third element which is `2`, so `2` can be minimum in range `[2,4]`, so number of subarrays formed is `(2-2+1)*(3-2+1) = 2`
 - lets take fourth element which is `4`, so `4` can be minimum in range `[4]` so number of subarrays formed is `(3-3+1)*(3-3+1) = 1`
