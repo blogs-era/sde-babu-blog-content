@@ -61,7 +61,7 @@ before visiting this optimal approach please read about [next greater element](.
 - so `number_of_subbary[i]` = `left[i]*right[i]` where `left[i]` is `a[i]-start_index+1` and `right[i]` is `end_index-arr[i]+1`
 - now we need to calculate the sum so simply iterate through arr and add `number_of_subbary[i]*arr[i]` to the sum, so we get `3*1 + 1*6 + 2*2 + 4*1` = `17`
 - now the main challenge is to get range for each element in array for that we use stack to calculate next smaller element from left and right side
-- so lets understand why we use `next smaller element` so for eg: [3,1,2,4] lets take 2 as an current element, in left `next smaller element` is `1` difference in index is `2-1` and in right side no `next smaller element` so take the index 4 so difference is `4-2`, hence `left[i]=1 and right[i]=2`
+- so lets understand why we use `next smaller element` so for eg: [3,1,2,4] lets take 2 as an current element, in left `next smaller element` is `1` difference in index is `2-1` and in right side no `next smaller element` so take the index `4` so difference is `4-2`, hence `left[i]=1 and right[i]=2` and number of subarray where 2 is considered to be minimum is `left[i]*right[i]=1*2`
 
 ### Base case
 
