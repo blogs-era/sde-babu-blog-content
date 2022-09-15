@@ -48,7 +48,7 @@ u = 0, v = 2, w = 6 -> edge 3
 - hence from above image we can see that first we add the source node in the `min-heap-priority-queue`
 - then iterate the process until the queue is empty
     - first poll from the queue we got `node` and `weight` then go to each and every neighbour and compare the `dist[neighbour_node]` and `weight+weight[node->neightbour_node]` if `weight+weight[node->neightbour_node]` <  `dist[neighbour_node]` hence update the `dist[neighbour_node]=weight+weight[node->neightbour_node]`
-    - and put `(neighbour_node,dist[neighbour_node])`
+    - and put `(neighbour_node,dist[neighbour_node])` in the priority queue
 - when priority-queue becomes empty return dist array.
 
 :::note
