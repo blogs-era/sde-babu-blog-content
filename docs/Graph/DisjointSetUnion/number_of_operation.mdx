@@ -1,0 +1,122 @@
+---
+sidebar_position: 3
+title: Number of Operations to Make Network Connected
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://leetcode.com/problems/number-of-operations-to-make-network-connected/
+
+### Example 1
+
+![eg1](https://assets.leetcode.com/uploads/2020/01/02/sample_1_1677.png)
+
+```
+Input: n = 4, connections = [[0,1],[0,2],[1,2]]
+Output: 1
+Explanation: Remove cable between computer 1 and 2 and place between computers 1 and 3.
+
+```
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+class Solution {
+    public int makeConnected(int n, int[][] connections) {
+        // if n is the number of computers then edges should be atleast bigger then n-1
+        // hence number of connections should be bigger then n-1
+        if(n-1 > connections.length){
+           return -1; 
+        }
+        int available_edges = n-1;// if n computers then to connect all the computer we need n-1 edges
+        // create DSU and assume that no computer is connected as for now
+        DSU dsu = new DSU(n);
+        // loop through all the connections
+        for(int i=0;i<connections.length;i++){
+            // get ultimate parent of u and v
+            int u = connections[i][0],v = connections[i][1];
+            int pu = dsu.findPar(u),pv = dsu.findPar(v);
+            // if parent of both the nodes are same means they are already connected
+            if(pu==pv)continue;
+            // else connect them
+            else{
+                dsu.unionBySize(u,v);// union , means connect both the computers
+                available_edges--;
+            }
+        }
+        return available_edges;
+    }
+}
+
+
+
+class DSU{
+    int n;
+    int[] parent;
+    int[] size;
+    DSU(int n){
+        this.n = n;
+        parent = new int[n];
+        size = new int[n];
+        for(int i=0;i<n;i++){
+            parent[i]=i;
+            size[i] = 1;
+        }
+    }
+    int findPar(int node){
+        if(node==parent[node]){
+            return node;
+        }
+        int u_p = findPar(parent[node]);
+        parent[node] = u_p;
+        return u_p;
+    }
+    void unionBySize(int node1,int node2){
+        int p1 = findPar(node1);
+        int p2 = findPar(node2);
+        if(p1==p2)return;
+        if(size[p1] > size[p2]){
+            size[p1]+=size[p2];
+            parent[p2] = p1;
+        }else{
+            size[p2]+=size[p1];
+            parent[p1] = p2;
+        }
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

@@ -1,0 +1,106 @@
+---
+sidebar_position: Number of Closed Island
+title: 4
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> Given a 2D grid consists of `0s (land)` and `1s (water)`.  An island is a maximal `4-directionally` connected group of 0s and a closed island is an island totally (all left, top, right, bottom) surrounded by 1s.
+
+Return the number of `closed islands`.
+
+
+### Example 1
+
+![eg1](https://assets.leetcode.com/uploads/2019/10/31/sample_3_1610.png)
+
+```
+Input: grid = [[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]
+Output: 2
+Explanation: 
+Islands in gray are closed because they are completely surrounded by water (group of 1s).
+```
+
+### Example 2
+
+![eg2](https://assets.leetcode.com/uploads/2019/10/31/sample_4_1610.png)
+
+```
+Input: grid = [[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]
+Output: 1
+
+```
+### You can try it at
+
+- https://leetcode.com/problems/number-of-closed-islands/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+public boolean dfs(int x,int y,int[][] grid,int n,int m){
+        // base case: out of bound means no water boundary: return false 
+        if(x<0 || y<0 || x>=n || y>=m)return false;
+        // if got water
+        if(grid[x][y]==1)return true;
+        
+        int[] dx = {-1,1,0,0};
+        int[] dy = {0,0,-1,1};
+        
+        grid[x][y] = 1;// to not visit again
+        boolean ans = true;
+        
+        for(int i=0;i<4;i++){
+            int new_x = x+dx[i];
+            int new_y = y+dy[i];
+            ans = ans & dfs(new_x,new_y,grid,n,m);
+        }
+        return ans;
+    }
+    
+    public int closedIsland(int[][] grid) {
+        int n = grid.length,m = grid[0].length;
+        int res = 0;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                // if land(0) then start traversing and check of surrounded by water or not
+                if(grid[i][j]==0){
+                    if(dfs(i,j,grid,n,m))res++;// after iteration increment res
+                }
+            }
+        }
+        return res;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
