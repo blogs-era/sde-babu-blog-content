@@ -1,0 +1,135 @@
+---
+sidebar_position: 5
+title:  Making a Large Island
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#cc0000">Hard</Highlight>
+
+### Statement
+
+> You are given an `n x n` binary matrix grid. You are allowed to change at most one `0` to be `1`.
+
+Return the size of the `largest island in grid` after applying this operation.
+
+An island is a 4-directionally connected group of 1s.
+
+### You can try it at
+
+- https://leetcode.com/problems/making-a-large-island/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+class Solution {
+    public void dfsChangeGrid(int x,int y,int n,int m,int[][] grid,int unique_id,int[] number_of_land_part){
+        if(x<0 || y<0 || x>=n || y>=m)return;// base case
+        if(grid[x][y]!=1)return;
+        
+        grid[x][y] = unique_id;// assign unique id to land part
+        number_of_land_part[0]++;
+        
+        int[] dx = {-1,1,0,0};
+        int[] dy = {0,0,-1,1};
+        
+        for(int i=0;i<4;i++){
+            dfsChangeGrid(x+dx[i],y+dy[i],n,m,grid,unique_id,number_of_land_part);// move in all 4 directions
+        }
+    }
+    
+    public int flip(int x,int y,int n,int m,int[][] grid,HashMap<Integer,Integer> island_land_part,HashSet<Integer> island_id){
+        if(island_id.contains(grid[x][y]))return 0;// preventing duplicacy
+        
+        if(grid[x][y]!=0){
+            island_id.add(grid[x][y]);
+            return island_land_part.get(grid[x][y]);   
+        }
+        
+        int[] dx = {-1,1,0,0};
+        int[] dy = {0,0,-1,1};
+        
+        int res = 1;
+        
+        for(int i=0;i<4;i++){
+            int new_x = dx[i]+x,new_y = dy[i]+y;
+            if(new_x>=0 && new_y>=0 && new_x<n && new_y<m && grid[new_x][new_y]!=0)
+            res+=flip(new_x,new_y,n,m,grid,island_land_part,island_id);
+        }
+        
+        return res;
+    }
+    
+    public int largestIsland(int[][] grid) {
+        int n = grid.length,m = grid[0].length;
+        int unique_id = 2;// because 0 is water and 1 is land that's why we start from unique_id 2
+        int maximum_size = Integer.MIN_VALUE;
+        HashMap<Integer,Integer> island_land_part = new HashMap<>();// key -> island_id, val -> number_of_land_part
+        
+        // mark each island with unique id
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                // if 1 that start traversing and mark the unique id 1 -> unique_id
+                if(grid[i][j]==1){
+                    int[] number_of_land_part = new int[1];// contains single element 
+                    dfsChangeGrid(i,j,n,m,grid,unique_id,number_of_land_part);
+                    maximum_size = Math.max(number_of_land_part[0],maximum_size);
+                    island_land_part.put(unique_id,number_of_land_part[0]);
+                    // System.out.println(unique_id+" "+number_of_land_part[0]);
+                    unique_id++;// change the unique_id
+                }
+                // System.out.print(grid[i][j]+" ");
+            }
+            // System.out.println();
+        }
+        
+        // if(island_land_part.keySet().size()==0)return 1;
+        
+        // compare the size
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                // if 1 that start traversing and mark the unique id 1 -> unique_id
+                if(grid[i][j]==0){
+                    HashSet<Integer> island_id = new HashSet<>();
+                    int new_size = flip(i,j,n,m,grid,island_land_part,island_id); 
+                    maximum_size = Math.max(new_size,maximum_size);
+                }
+            }
+        }
+        
+        
+        
+        return maximum_size;
+        
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
