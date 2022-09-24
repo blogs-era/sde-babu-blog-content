@@ -1,0 +1,73 @@
+---
+sidebar_position: 1
+title: Permutation Sequence 
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#cc0000">Hard</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://leetcode.com/problems/permutation-sequence/
+
+### Example
+
+### Code 
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+  public String getPermutation(int n, int k) {
+      int fact = 1;
+      ArrayList<Integer> numbers = new ArrayList<>();// if n = 4 then 1,2,3,4
+      // calculate the fact from 1 - n-1 because 1 + {2,3,4} means n = 4 then fact = 3! = 6 
+      for(int i=1;i<n;i++){
+          fact = fact*i;
+          numbers.add(i);
+      }
+      numbers.add(n);
+      k = k-1;// for zero based indexing
+      String result = "";
+      // repeat until we place all numbers
+      while(true){
+          result+=numbers.get(k/fact);// add the first number 
+          numbers.remove(k/fact);// remove the number
+          k = k%fact;// reduce the k to block size
+          if(numbers.size()==0)break;// no number left
+          fact = fact/numbers.size();// update fact as num is reduced
+      }
+      return result;
+  }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
