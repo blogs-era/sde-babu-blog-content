@@ -1,0 +1,105 @@
+---
+sidebar_position: 9 
+title: Nodes at K Distance
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- 
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+ public void markParents(TreeNode root,HashMap<TreeNode,TreeNode> parents){
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
+        while(!q.isEmpty()){
+            TreeNode poll = q.poll();
+            if(poll.left!=null){
+                q.add(poll.left);
+                parents.put(poll.left,poll);
+            }
+            if(poll.right!=null){
+                q.add(poll.right);
+                parents.put(poll.right,poll);
+            }            
+        }
+    } 
+    public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
+        List<Integer> res = new ArrayList<>();// result
+        HashMap<TreeNode,TreeNode> parents = new HashMap<>();// store parents
+        markParents(root,parents);// store parent for each node
+        HashSet<TreeNode> visited = new HashSet<>();// add the visited node
+        // init the queue from target
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(target);
+        visited.add(target);
+        // track the dis
+        int dis = 0;
+        while(true){
+            if(dis==k)break;// if dis==k means means we have reached destination
+            dis++;
+            int size = q.size();
+            for(int i=0;i<size;i++){
+                TreeNode poll = q.poll();
+                // check for the left child node
+                if(poll.left!=null && !visited.contains(poll.left)){
+                    q.add(poll.left);
+                    visited.add(poll.left);
+                }
+                // check for right child node
+                if(poll.right!=null && !visited.contains(poll.right)){
+                    q.add(poll.right);
+                    visited.add(poll.right);
+                }
+                // check for parent node
+                if(parents.get(poll)!=null && !visited.contains(parents.get(poll))){
+                    q.add(parents.get(poll));
+                    visited.add(parents.get(poll));
+                }
+            }
+        }
+        // nodes left in the queue is result
+        while(!q.isEmpty()){
+          res.add(q.poll().val);
+        }
+        return res;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
