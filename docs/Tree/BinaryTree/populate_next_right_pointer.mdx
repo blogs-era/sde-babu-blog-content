@@ -1,0 +1,72 @@
+---
+sidebar_position: 11
+title:  Populating Next Right Pointers in Each Node
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> 
+
+### You can try it at
+
+- https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+
+### Example
+
+### Code
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+public Node connect(Node root) {
+    if(root==null)return null;
+    Queue<Node> q = new LinkedList<>();// init the queue
+    q.add(root);// add the root node in the queue
+    
+    while(!q.isEmpty()){
+        int size = q.size();// get the size of the level 
+        Node prev = null;// track prev for next right ptr 
+        for(int i=0;i<size;i++){
+            Node top = q.poll();
+            if(prev!=null)prev.next = top;//connect ptr
+            prev = top;// store the prev
+            // if left is not null put in the queue
+            if(top.left!=null)q.add(top.left);
+            // if right is not null put in the queue
+            if(top.right!=null)q.add(top.right);
+        }
+    }
+    return root;
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

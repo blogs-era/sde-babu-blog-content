@@ -1,0 +1,93 @@
+---
+sidebar_position: 12
+title:  Path Sum II
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> Given the root of a binary tree and an integer `targetSum`, return all `root-to-leaf` paths where the sum of the node values in the path equals targetSum. Each path should be returned as a list of the node values, not node references.
+
+A `root-to-leaf` path is a path starting from the root and ending at any leaf node. A leaf is a node with no children.
+
+### You can try it at
+
+- https://leetcode.com/problems/path-sum-ii/
+
+### Example 1
+
+![eg1](https://assets.leetcode.com/uploads/2021/01/18/pathsumii1.jpg)
+
+```
+Input: root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22
+Output: [[5,4,11,2],[5,8,4,5]]
+Explanation: There are two paths whose sum equals targetSum:
+5 + 4 + 11 + 2 = 22
+5 + 8 + 4 + 5 = 22
+
+```
+
+### Code
+
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+public void recursiveFun(List<List<Integer>> result,TreeNode root,int targetSum,List<Integer> way){
+        if(root==null)return;
+        targetSum-=root.val;// resuce the targetSum
+        way.add(root.val);// add the root val in list to track the path
+        // if leaf node and targetSum becomes 0 then append the list
+        if(root.left==null && root.right==null && targetSum==0){
+            List<Integer> path = new ArrayList<>();
+            for(Integer w: way)path.add(w);
+            result.add(path);
+            return;
+        }
+        // move to left and right
+        
+        if(root.left!=null){
+            recursiveFun(result,root.left,targetSum,way);
+            way.remove(way.size()-1);// remove the last element in the way
+        }
+        if(root.right!=null){
+            recursiveFun(result,root.right,targetSum,way);
+            way.remove(way.size()-1);// remove the last element in the way   
+        }
+    }
+    public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
+        List<List<Integer>> result = new ArrayList<>();
+        recursiveFun(result,root,targetSum,new ArrayList<>());
+        return result;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
