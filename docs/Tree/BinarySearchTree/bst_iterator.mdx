@@ -1,0 +1,79 @@
+---
+sidebar_position: 5
+title:  Binary Search Tree Iterator
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> 
+ 
+### You can try it at
+
+- https://leetcode.com/problems/binary-search-tree-iterator/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+class BSTIterator {
+    Stack<TreeNode> stack;// stack to store the node 
+    public BSTIterator(TreeNode root) {
+        stack = new Stack<>();
+        // store and move to left node until we end up with next node
+        while(root!=null){
+            stack.push(root);
+            root = root.left;
+        }
+    }
+    
+    public int next() {
+        // it is mentioned that next function only called when there exist a next element  
+        TreeNode top = stack.peek();// store the top element because this is the next element 
+        TreeNode root = top.right;// go to right node 
+        stack.pop();
+        // store and move to left node until we end up with next node
+        while(root!=null){
+            stack.push(root);
+            root = root.left;
+        }
+        return top.val;
+    }
+    
+    public boolean hasNext() {
+        // if there is element in stack then true
+        return !stack.isEmpty();
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
