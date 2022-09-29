@@ -1,0 +1,86 @@
+---
+sidebar_position: 1
+title:  Find K Closest Elements
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://leetcode.com/problems/find-k-closest-elements/
+
+### Example 1
+
+```
+Input: arr = [1,2,3,4,5], k = 3, x = 3
+Output: [2,3,4]
+
+```
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+class Solution {
+    // O(NLOG(K))
+    public List<Integer> findClosestElements(int[] arr, int k, int x) {
+        List<Integer> result = new ArrayList<>();// result
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> b[1]-a[1]);// int[] -> {original_elem,difference}
+        // loop through array and get k smallest elem
+        for(int i=0;i<arr.length;i++){
+            int diff = Math.abs(arr[i]-x);// difference so that we get distance from origin
+            if(pq.size() < k){
+                pq.add(new int[]{arr[i],diff});
+            }else{
+                int[] node = pq.peek();
+                if(node[1] > diff){
+                    pq.poll();
+                    pq.add(new int[]{arr[i],diff});
+                }
+            }
+        }
+        // extract elem from the pq and store in arraylist
+        while(!pq.isEmpty()){
+            result.add(pq.poll()[0]);
+        }
+        Collections.sort(result);// result should be in sorted fashion
+        return result;
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+
+### Time Complexity
+`O(NLOG(K)) + O(NLOG(N))`
