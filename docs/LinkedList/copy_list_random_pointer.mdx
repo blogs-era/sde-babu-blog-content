@@ -1,0 +1,85 @@
+---
+sidebar_position: 8
+title:  Copy List with Random Pointer
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://leetcode.com/problems/copy-list-with-random-pointer/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+/*
+// Definition for a Node.
+class Node {
+    int val;
+    Node next;
+    Node random;
+
+    public Node(int val) {
+        this.val = val;
+        this.next = null;
+        this.random = null;
+    }
+}
+*/
+
+class Solution {
+    public Node copyRandomList(Node head) {
+        HashMap<Node,Node> clone = new HashMap<>();
+        Node curr = head;
+        // pass 1 we will copy all the nodes
+        while(curr!=null){
+            clone.put(curr,new Node(curr.val));
+            curr = curr.next;
+        }
+        // pass 2 we will connect the next and random pointers
+        curr = head; 
+        while(curr!=null){
+            Node copy = clone.get(curr);
+            copy.next = clone.get(curr.next)==null ? null: clone.get(curr.next);
+            copy.random = clone.get(curr.random)==null ? null: clone.get(curr.random); 
+            curr = curr.next;
+        }
+        return clone.get(head);
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
