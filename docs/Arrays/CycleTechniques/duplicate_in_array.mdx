@@ -1,6 +1,6 @@
 ---
-sidebar_position: 4
-title:  Maximum Subarray
+sidebar_position: 1
+title:  Duplicate in Array
 ---
 
 import Tabs from '@theme/Tabs';
@@ -22,13 +22,11 @@ Level - <Highlight color="#fece2f">Medium</Highlight>
 
 ### Statement
 
->  Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
-
-A `subarray is a contiguous` part of an array.
+>
 
 ### You can try it at
 
-- https://leetcode.com/problems/maximum-subarray/
+- https://leetcode.com/problems/find-the-duplicate-number/
 
 ### Example 1
 
@@ -45,17 +43,23 @@ Output: 2
 
 ```js
 
-// edge case: [-1]
-    public int maxSubArray(int[] nums) {
-        int max_sum = Integer.MIN_VALUE;
-        int curr_sum = 0;
-        for(int i=0;i<nums.length;i++){
-            curr_sum+=nums[i];
-            max_sum = Math.max(max_sum,curr_sum);
-            if(curr_sum < 0)curr_sum = 0;
-        }
-        return max_sum;
+public int findDuplicate(int[] nums) {
+    int slow = nums[0];
+    int fast = slow;
+    
+    do{
+        slow = nums[slow];
+        fast = nums[nums[fast]];
+    }while(fast!=slow);
+    
+    fast = nums[0];
+    
+    while(slow!=fast){
+        slow = nums[slow];
+        fast = nums[fast];
     }
+    return slow;
+}
 ```
 
 </TabItem>
