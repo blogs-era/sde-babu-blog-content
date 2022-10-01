@@ -1,0 +1,14 @@
+```js
+public int rangeSumBST(TreeNode root, int low, int high) {
+    if(root==null)return 0;// not add in sum 
+    if(root.val < low){
+        // means left of this node is useless
+        return rangeSumBST(root.right,low,high);
+    }
+    if(root.val > high){
+        // means right of this node is useless
+        return rangeSumBST(root.left,low,high);
+    }
+    return root.val+rangeSumBST(root.left,low,high)+rangeSumBST(root.right,low,high);   
+}
+```

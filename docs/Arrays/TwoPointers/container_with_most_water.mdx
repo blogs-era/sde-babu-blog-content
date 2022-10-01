@@ -1,0 +1,22 @@
+### Optimal Approach using Two Pointer Technique
+
+```js
+public int maxArea(int[] height) {
+        int res = 0;
+        int left = 0,right = height.length-1;// 2 pointers
+        
+        while(left < right){
+            int min_height = Math.min(height[left],height[right]);
+            int area = min_height * (right-left);// area = len * width
+            res = Math.max(res,area);
+            // if left is less then move from left
+            if(height[left] < height[right]){
+                left++;
+            }else{
+                right--;
+            }
+        }
+        return res;
+    }
+
+```
