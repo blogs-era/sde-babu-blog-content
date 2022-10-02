@@ -1,0 +1,51 @@
+```js
+public class Codec {
+    public int convertStringToInt(String s){
+        return Integer.parseInt(s);
+    }
+    public String serialize(TreeNode root) {
+        List<String> serializedTree = new ArrayList<>();
+        // just do simple level order traversal
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
+        while(!q.isEmpty()){
+            TreeNode node = q.poll();
+            if(node!=null)serializedTree.add(Integer.toString(node.val));
+            else serializedTree.add("#");// if null then add #
+            if(node!=null){
+                q.add(node.left);
+                q.add(node.right);
+            }
+        }
+        return String.join(",",serializedTree);
+    }
+
+    public TreeNode deserialize(String data) {
+        String[] serializedTree = data.split(",");
+        if(serializedTree[0].equals("#"))return null;
+        Queue<TreeNode> q = new LinkedList<>();
+        // init the queue and create the root node
+        TreeNode root =  new TreeNode(convertStringToInt(serializedTree[0]));
+        q.add(root);
+        int index = 1;// index will track the String[] array for current node
+        while(!q.isEmpty()){
+            TreeNode node = q.poll();
+            // add the left node 
+            node.left = serializedTree[index].equals("#") ? null: new TreeNode(convertStringToInt(serializedTree[index]));
+            index++;
+            // add the right node
+            node.right = serializedTree[index].equals("#") ? null: new TreeNode(convertStringToInt(serializedTree[index]));
+            index++;
+            // add the child nodes in the queue
+            if(node.left!=null)q.add(node.left);
+            if(node.right!=null)q.add(node.right);
+        }
+        return root;
+    }
+}
+// Your Codec object will be instantiated and called as such:
+// Codec ser = new Codec();
+// Codec deser = new Codec();
+// TreeNode ans = deser.deserialize(ser.serialize(root));
+
+```
