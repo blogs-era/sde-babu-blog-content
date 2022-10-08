@@ -1,0 +1,32 @@
+```js
+class Solution {
+    public HashMap<Character,Integer> freqMap(String s){
+        HashMap<Character,Integer> result = new HashMap<>();
+        for(Character c: s.toCharArray())result.put(c,result.getOrDefault(c,0)+1);
+        return result;
+    }
+    public List<List<String>> groupAnagrams(String[] strs) {
+        HashMap<HashMap<Character,Integer>,List<String>> anagram_map = new HashMap<>();
+        // basically above we have map in which key is the frequency map for word and val
+        // is the list of string like e:1, a:1, t:1 -> [eat,tea,ate]
+        for(int i=0;i<strs.length;i++){
+            String str = strs[i];
+            HashMap<Character,Integer> freq_map = freqMap(str);
+            if(!anagram_map.containsKey(freq_map)){
+                anagram_map.put(freq_map,new ArrayList<String>());
+            }
+            List<String> strig_list = anagram_map.get(freq_map);
+            strig_list.add(str);
+            anagram_map.put(freq_map,strig_list); 
+        } 
+        // add all the string list to the result
+        List<List<String>> result = new ArrayList<>();
+        for(HashMap<Character,Integer> key: anagram_map.keySet()){
+            result.add(anagram_map.get(key));
+        }
+        return result;
+
+    }
+}
+
+```

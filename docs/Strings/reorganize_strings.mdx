@@ -1,0 +1,88 @@
+---
+sidebar_position: 2
+title: Reorganize String
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> Given a string `s`, rearrange the characters of `s` so that any two adjacent characters are not the same.
+
+Return any possible rearrangement of `s` or return `""` if not possible.
+
+### You can try it at
+
+- https://leetcode.com/problems/reorganize-string/description/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+class Solution {
+    public String reorganizeString(String s) {
+        String output = "";
+        int[] freq = new int[26];// get the freq of each char
+        for(Character c: s.toCharArray())freq[c-'a']++;// store the freq
+        // now we use max heap to store the character and parameter of max heap is freq of char
+        PriorityQueue<Character> pq = new PriorityQueue<>((a,b) -> freq[b-'a'] - freq[a-'a']);
+        // store the char in pq
+        for(int i=0;i<26;i++){
+            if(freq[i] > 0){
+                char c = (char)(i+'a');
+                pq.add(c);
+            }
+        }
+        // loop uptil number of char more than 1
+        while(pq.size() > 1){
+            char mx_freq_char_1 = pq.poll();// char with max freq
+            char mx_freq_char_2 = pq.poll();// charcter with second max freq
+            // add them to the output
+            output+=mx_freq_char_1;
+            output+=mx_freq_char_2;
+            // reduce the freq of the char
+            freq[mx_freq_char_1-'a']--;
+            freq[mx_freq_char_2-'a']--;
+            // if still freq > 0 then add in the pq
+            if(freq[mx_freq_char_1-'a'] > 0)pq.add(mx_freq_char_1);
+            if(freq[mx_freq_char_2-'a'] > 0)pq.add(mx_freq_char_2);
+        } 
+        // now check is there any element in priority queue
+        if(!pq.isEmpty()){
+            char c = pq.poll();
+            if(freq[c-'a'] > 1)return "";// means this character make the adjacent char same hence ""
+            else output+=c;
+        } 
+        return output;
+    }
+}
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

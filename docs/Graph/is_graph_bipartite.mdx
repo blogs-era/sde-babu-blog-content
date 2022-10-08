@@ -1,0 +1,35 @@
+```js
+class Solution {
+    public boolean dfs(int[][] graph,int node,int[] color,int node_color,boolean[] vis){
+        vis[node] = true;// visit the node
+        color[node] = node_color;// set the color to the node
+        // loop through all the neighbours of node
+        for(int neighbour: graph[node]){
+            if(!vis[neighbour]){
+                if(!dfs(graph,neighbour,color,1-node_color,vis)){
+                    return false;
+                }
+            }else{
+                if(node_color==color[neighbour]){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }    
+    public boolean isBipartite(int[][] graph) {
+        int V = graph.length;
+        int[] color = new int[V];
+        boolean[] vis = new boolean[V];
+        for(int i=0;i<V;i++){
+            // loop through all the components in the graph
+            if(!vis[i]){
+                boolean is_bipartite = dfs(graph,i,color,0,vis);
+                if(!is_bipartite)return false;
+            }
+        }
+        // if every component is bipartite then return true
+        return true;
+    }
+}
+```

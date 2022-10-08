@@ -1,0 +1,41 @@
+```js
+
+class TimeMap {
+    HashMap<String,ArrayList<Pair>> store;
+    public TimeMap() {
+        store = new HashMap<>();
+    }
+    
+    public void set(String key, String value, int timestamp) {
+        if(!store.containsKey(key))store.put(key,new ArrayList<>());
+        ArrayList<Pair> values = store.get(key);
+        values.add(new Pair(value,timestamp));
+        store.put(key,values);
+    }
+    
+    public String get(String key, int timestamp) {
+        String res = "";
+        ArrayList<Pair> values = store.getOrDefault(key,new ArrayList<>());
+        int l = 0,h = values.size()-1;
+        while(l <= h){
+            int mid = (l+h)/2;
+            if(timestamp >= values.get(mid).timestamp){
+                res = values.get(mid).value;
+                l = mid+1;
+            }else{
+                h = mid-1;
+            }
+        }
+        return res; 
+    }
+}
+
+class Pair{
+    String value;
+    int timestamp;
+    Pair(String _value,int _timestamp){
+        this.value = _value;
+        this.timestamp = _timestamp;
+    }
+}
+```
