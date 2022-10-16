@@ -1,0 +1,175 @@
+---
+sidebar_position: 2
+title: Best Time to Buy and Sell Stock II 
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> You are given an integer array prices where prices[i] is the price of a given stock on the ith day.
+
+On each day, you may decide to buy and/or sell the stock. You can only `hold at most one` share of the stock at any time. However, you can buy it then immediately sell it on the same day.
+
+Find and return the **maximum profit** you can achieve.
+
+### You can try it at
+
+- https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+
+### Example
+
+```
+Input: prices = [7,1,5,3,6,4]
+Output: 7
+Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.
+Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3.
+Total profit is 4 + 3 = 7.
+
+```
+
+### Recursive Approach/ Top Down Approach
+
+
+### Code
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+class Solution {
+    public int dfs(int[] prices,int index,boolean can_we_buy){
+        if(index==prices.length)return 0;// base case when outof bound then no profit
+        int profits = 0;
+        if(can_we_buy){
+            // means either we can skip or buy the stock we have
+            int skip = 0 + dfs(prices,index+1,true);// we decide to skip hence we still can buy and no contribution to profits
+            int buy = -prices[index] + dfs(prices,index+1,false);// we decide to buy so till now profits reduce by prices[i]
+            profits = Math.max(skip,buy);
+        }else{
+            // means we can either sell or skip the stock
+            int skip = 0 + dfs(prices,index+1,false);// means we will not sell, we will hold 
+            int sell = prices[index] + dfs(prices,index+1,true);// we have sold the stock, profit increased by prices[i] so now free to buy
+            profits = Math.max(skip,sell);
+        }
+        return profits;
+    }
+    public int maxProfit(int[] prices) {
+       return dfs(prices,0,true); 
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+### Iterative Approach/Bottom Up Approach
+
+### Code
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+
+class Solution {
+    public int maxProfit(int[] prices) {
+       int n = prices.length;
+       int[][] dp = new int[n+1][2];// so columns determine the index and can_we_buy
+       dp[n][0] = 0;dp[n][1] = 0;// cover the base cases means when out of bound then no profits
+       for(int index=n-1;index>=0;index--){
+            // we can buy case - column 1
+            int skip = 0 + dp[index+1][1];
+            int buy = -prices[index] + dp[index+1][0];
+            dp[index][1] = Math.max(skip,buy);
+            // we cannot buy case - column 0
+            skip = 0 + dp[index+1][0];
+            int sell = prices[index] + dp[index+1][1];
+            dp[index][0] = Math.max(skip,sell);
+       }
+       return dp[0][1];// we take column 1 because in start point we_can_buy
+    }
+}
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+
+### Iterative Approach/Bottom Up Approach (Space Optimized)
+
+### Code
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+class Solution {
+    public int maxProfit(int[] prices) {
+       int n = prices.length;
+       int[] dp = new int[2];// so array determine the index and can_we_buy
+       dp[0] = 0;dp[1] = 0;// cover the base cases means when out of bound then no profits
+       for(int index=n-1;index>=0;index--){
+            // we can buy case - column 1
+            int skip = 0 + dp[1];
+            int buy = -prices[index] + dp[0];
+            int buy_case = Math.max(skip,buy);
+            // we cannot buy case - column 0
+            skip = 0 + dp[0];
+            int sell = prices[index] + dp[1];
+            int sell_case = Math.max(skip,sell);
+            // update the dp
+            dp[0] = sell_case;dp[1] = buy_case;
+            System.out.println(dp[0]+" "+dp[1]);
+       }
+       return dp[1];// we take column 1 because in start point we_can_buy
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

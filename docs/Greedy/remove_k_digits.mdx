@@ -1,0 +1,38 @@
+```js
+class Solution {
+    /*
+    lets see what's the thought process: 
+    eg1``````````````````
+    will take an eg: "54321", k = 2 
+    now we can remove 1,2,3,4,5 so clearly we can see if we remove 5: 4321, 4:5321, 3:5421, 2:5431, 1:5432
+    clearly have to remove 5 now become 4321 next we have to remove 4 which becomes 321
+    eg2``````````````````
+    will take an eg: "12345", k = 2
+    so clearly first we remove 5 -> 1234
+    ````````````````````conclusion
+    hence we need to make sure that that output should be nearly sorted in strictly increasing manner then only its possibly mini
+    */
+    public String removeKdigits(String num, int k) {
+        Stack<Integer> stack = new Stack<>();// stack to make the result in strictly increasing
+        for(int i=0;i<num.length();i++){
+            // maintain the increasing order in stack
+            while(!stack.isEmpty() && k > 0 && stack.peek() > num.charAt(i)-'0'){
+                stack.pop();
+                k--;
+            }
+            stack.add(num.charAt(i)-'0');
+        }
+        // removing extra element from the queue means if 12345 and k = 2 so remove 5,4
+        while(k > 0){
+            stack.pop();
+            k--;
+        }
+        String output = "";
+        while(!stack.isEmpty())output = Integer.toString(stack.pop())+output;
+        // remove the trainling zeroes
+        while(output.length() > 1 && output.charAt(0) == '0')output = output.substring(1);
+        return output.equals("") ? "0": output;
+    }
+}
+
+```

@@ -1,0 +1,83 @@
+```js
+class LRUCache {
+    HashMap<Integer,Node> cache; // hash map to get the value in O(1) time
+    Node left,right;//left and right node of the linked list to track the lru and mru      
+    int capacity = 0;
+    public LRUCache(int capacity) {
+        cache = new HashMap<>();
+        this.left = new Node(0,0);
+        this.right = new Node(0,0);
+        left.next = right;right.prev = left;// doubly linked list so that we can delete the nodes in O(1) time
+        this.capacity = capacity;
+    }
+    public void debug(){
+        Node ptr = left;
+        while(ptr!=right){
+            System.out.print(ptr.val+" ");
+            ptr = ptr.next;
+        }
+        System.out.println();
+    }
+    // remove the node in the doubly linked list
+    public void remove(Node node){
+        // System.out.println("before removing");
+        // debug();
+        node.prev.next = node.next;
+        node.next.prev = node.prev;
+        // System.out.println("after removing");
+        // debug();
+    }
+    // insert the node from right side the most recently used side
+    public void insert(Node node){
+        // System.out.println("before inserting");
+        // debug();
+        Node prev_right = this.right.prev;
+        this.right.prev.next = node;
+        node.next = this.right;
+        this.right.prev = node;
+        node.prev = prev_right;
+        // System.out.println("after inserting");
+        // debug();
+    }
+    public int get(int key) {
+        // debug();
+        if(cache.containsKey(key)){
+            // now the current node is present in the linked list and we have to remove and put it into right side
+            remove(cache.get(key));
+            insert(cache.get(key));    
+            return cache.get(key).val;
+        }
+        return -1;
+    }
+    
+    public void put(int key, int value) {
+        // debug();
+        // if already present in the cache then remove the node in linked list and hashmap
+        if(cache.containsKey(key)){
+            remove(cache.get(key));
+            cache.remove(key);
+        }
+        cache.put(key,new Node(key,value));// add the node in hashmap
+        insert(cache.get(key));// add the node in linked list
+        
+        // now last step is to check the capacity
+        if(cache.size() > this.capacity){
+            cache.remove(left.next.key);// remove from the hashmap
+            // thats why we store key so that from linked list node we can delete from hashmap
+            remove(left.next);// remove the lru node
+        }
+    }
+}
+
+class Node{
+    int key,val;
+    Node prev,next;
+    Node(int _key,int _val){
+        this.key = _key;
+        this.val = _val;
+        this.prev = null;
+        this.next = null;
+    }
+}
+
+```

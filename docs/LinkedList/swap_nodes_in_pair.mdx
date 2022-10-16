@@ -1,0 +1,33 @@
+```js
+/**
+0(dummy_node) -> 1 -> 2 -> 3 -> 4 -> null
+
+1) initiate the process by assigning pointers: prev = dummy -> 0, curr = head -> 1 
+2) loop until we have 2 nodes to process
+    1) mark the pointers nextPair,curr_next
+    2) reverse the first pair 
+    3) reset the curr and prev pointer
+
+
+*/
+class Solution {
+    public ListNode swapPairs(ListNode head) {
+        ListNode dummy = new ListNode(0);dummy.next = head;
+        ListNode prev = dummy,curr = head;
+        while(curr!=null && curr.next!=null){
+            // mark the pointers
+            ListNode nextPair = curr.next.next;
+            ListNode next = curr.next;
+            // reverse the nodes
+            next.next = curr;
+            curr.next = nextPair;
+            prev.next = next;
+            // reset the curr and prev
+            prev = curr;
+            curr = nextPair;
+        }
+        return dummy.next;
+    }
+}
+
+```
