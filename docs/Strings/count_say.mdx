@@ -1,0 +1,27 @@
+```js
+class Solution {
+    public String util(String s){
+        StringBuilder res = new StringBuilder("");
+        int i = 0;
+        while(i < s.length()){
+            int count = 0;
+            char prev_char = s.charAt(i);
+            while(i < s.length() && s.charAt(i)==prev_char){
+                i++;
+                count++;
+            }
+            res.append(count).append(prev_char);
+            // System.out.println(res);
+        }
+        return res.toString();
+    }
+    public String countAndSay(int n) {
+        String result = "1";
+        for(int i=1;i<n;i++){
+            result = util(result);
+        }
+        return result;
+    }
+}
+
+```

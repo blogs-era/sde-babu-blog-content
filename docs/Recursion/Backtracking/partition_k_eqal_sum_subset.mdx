@@ -1,0 +1,25 @@
+```js
+
+class Solution {
+    public boolean dfs(int[] nums,int index,boolean[] included,int k,int target_sum,int sum){
+        if(k==0)return true;
+
+        if(target_sum==sum)return dfs(nums,0,included,k-1,target_sum,0);
+
+        for(int j=index;j<nums.length;j++){
+            if(included[j] || sum+nums[j] > target_sum)continue;
+            included[j] = true;
+            if(dfs(nums,j+1,included,k,target_sum,sum+nums[j]))return true;
+            included[j] = false;
+        }
+        return false;
+    }
+    public boolean canPartitionKSubsets(int[] nums, int k) {
+        int sum = 0;
+        for(int num: nums)sum+=num;
+        if(sum%k!=0)return false;
+        return dfs(nums,0,new boolean[nums.length],k,sum/k,0);
+    }
+}
+
+``

@@ -1,0 +1,58 @@
+```js
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode middle(ListNode head){
+        ListNode f = head;
+        ListNode s = head;
+        ListNode prev = null;
+        while(f!=null && f.next!=null){
+            prev = s;
+            s = s.next;
+            f = f.next.next;
+        }
+        return prev;
+    }
+    
+    public ListNode reverse(ListNode head){
+        ListNode prev = null;
+        ListNode curr = head,nex = head;
+        
+        while(curr!=null){
+            nex = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = nex;
+        }
+        
+        return prev;
+    }
+    public void merge(ListNode h1,ListNode h2){
+        while(h2!=null){
+            ListNode h1_next = h1.next;
+            ListNode h2_next = h2.next;
+            h1.next = h2;
+            if(h1_next==null)return;
+            h2.next = h1_next;
+            h1 = h1_next;
+            h2 = h2_next;
+        }
+    }
+    public void reorderList(ListNode head) {
+        if(head==null || head.next==null)return;
+        ListNode m = middle(head);
+        System.out.println(m.val);
+        ListNode head2 = reverse(m.next);
+        m.next = null;
+        merge(head,head2);
+    }
+}
+```

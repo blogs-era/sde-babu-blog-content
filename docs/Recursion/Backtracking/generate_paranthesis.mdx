@@ -1,0 +1,23 @@
+```js
+class Solution {
+    public void dfs(List<String> res,int open,int close,String brackets){
+        if(open==0 && close==0){
+            String result = "";
+            for(Character c: brackets.toCharArray())result+=c;
+            res.add(result);
+        }
+        if(open > 0){
+            dfs(res,open-1,close,brackets+"(");
+        }
+        if(close > open){
+            dfs(res,open,close-1,brackets+")");
+        }
+    }
+    public List<String> generateParenthesis(int n) {
+        List<String> res = new ArrayList<>();
+        dfs(res,n,n,"");
+        return res;
+    }
+}
+
+```
