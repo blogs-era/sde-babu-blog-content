@@ -1,0 +1,30 @@
+```js
+class Solution {
+    public boolean dfs(int n,int m,int x,int y,char[][] board,String original_word,int index){
+        if(index==original_word.length())return true;
+        if(x<0 || x>=n || y<0 || y>=m)return false;
+        if(original_word.charAt(index)!=board[x][y])return false;
+
+        int[] dx = {-1,1,0,0};
+        int[] dy = {0,0,-1,1};
+        for(int i=0;i<4;i++){
+            board[x][y] = '*';
+            if(dfs(n,m,x+dx[i],y+dy[i],board,original_word,index+1))return true;
+            board[x][y] = original_word.charAt(index);
+        }
+        return false;
+    }
+    public boolean exist(char[][] board, String word) {
+        int n = board.length,m = board[0].length;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(board[i][j]==word.charAt(0) && dfs(n,m,i,j,board,word,0)){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
+
+```
