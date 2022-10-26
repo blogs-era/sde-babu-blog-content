@@ -13,15 +13,8 @@ const config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.svg',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'blogs-era', // Usually your GitHub org/user name.
-  projectName: 'sde-babu-blog-content', // Usually your repo name.
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  organizationName: 'blogs-era',
+  projectName: 'sde-babu-blog-content',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -29,23 +22,21 @@ const config = {
 
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      '@docusaurus/preset-classic',
+      {
         docs: {
+          routeBasePath: 'docs',
+          path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/blogs-era/sde-babu-blog-content/tree/main/',
+          lastVersion: 'current',
+          onlyIncludeVersions: ['current'],
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -57,11 +48,17 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            type: 'docSidebar',
             position: 'left',
+            sidebarId: 'dsa',
             label: 'Problem Solving',
-          }
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'lld',
+            label: 'Low Level Design',
+          },
         ],
       },
       footer: {
