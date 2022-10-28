@@ -1,0 +1,95 @@
+---
+sidebar_position: 1
+title: Object-Oriented Programming
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+### Definition
+
+> OOPs, or Object-Oriented Programming is a programming model which mainly consist of **Object**. now what is object so in simple words objects are the real world entities which have some `properties` and `behavior`. **Object** is a instance of a **Class** or template.
+
+### some major object oriented programming languages
+
+- Java
+- C++
+- Javascript
+- Python
+- and many more
+
+### need of OOPs
+
+- it helps us to maintain and write more complex code
+- most of it features help us reuse and modularize the code
+- enhance the readability 
+
+### Real world example where OOPS helps
+
+![eg](https://share.sketchpad.app/22/be0-bb7a-8ac61b.png)
+
+> hence **class** is a kind of template or a blueprint, which contains some values/member data/member variable and behaviors/functions. So when an object is created, it automatically takes the data and functions that are defined in that class.
+
+> an **object** refers to the instance of a class which is a real world entity derived from class
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+class Car {
+    String name;
+    String color;
+    Car(String _name,String _color){
+        this.color = _color;
+        this.name = _name;
+    }
+    void start(){
+        System.out.println("car: "+this.name+" started");
+    }
+
+    void stop(){
+        System.out.println("car: "+this.name+" stopped");
+    }
+}
+public class Main {
+    public static void main(String[] argv){
+        // object 1 / instance 1
+        Car car_object_1 = new Car("Alto","white");
+        car_object_1.start();car_object_1.stop();
+        // object 2 / instance 2
+        Car car_object_2 = new Car("Swift","blue");
+        car_object_2.start();car_object_2.stop();
+    }
+}
+
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+#### Output
+
+```
+car: Alto started
+car: Alto stopped
+car: Swift started
+car: Swift stopped
+```
+
+### Main Features of OOPs
+
+- Inheritance
+- Encapsulation
+- Polymorphism
+- Data Abstraction

@@ -1,0 +1,95 @@
+---
+sidebar_position: 2
+title: Exceptional Handling
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+### What is Exception ?
+
+> An exception is a special event, which is raised during the execution of a program at runtime, that brings the execution to a halt. The reason for the exception is the unexpected behaviour of a statement which stops the execution.
+
+### What is Exception Handling ?
+
+> so now we know that exceptions are very common in program no matter how good your code is but it can behave differently on different situation/input hance we need the handle the exception so that we can prevent our execution to be stopped.
+
+### Example for exception handling with try-catch
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+
+public class Main {
+    public static double divideWithoutExceptionHandling(int numerator,int denominator){
+        double result = (double) (numerator/denominator);
+        return result;
+    }
+    public static double divideWithExceptionHandling(int numerator,int denominator){
+        try{
+            // so here a programmer have a idea that input can be wrong so we have to handle
+            double result = (double) (numerator/denominator);
+        }catch (ArithmeticException e){
+            System.out.println("exception occur: "+e);
+        }
+        return -1;
+    }
+    public static void main(String[] argv){
+        double res1 = divideWithExceptionHandling(2,0);
+        double res2 = divideWithoutExceptionHandling(2,0);
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+### Concept of multiple catch block
+
+- the exception which occurs first in code block is raised.
+- All catch blocks must be ordered from most specific to most general, i.e. catch for `ArithmeticException` must come before catch for `Exception`.
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+public class Main {
+    public static void main(String[] argv){
+        try{
+            int[] arr = {1,2,3};
+            int val = arr[3];//try by commenting this 
+            int res = 4/0;
+        }catch (ArithmeticException e) {
+            System.out.println("run when arithmetic exception found");
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("run when index bigger then equal to size of array");
+        }catch (Exception e){
+            System.out.println("general exception: "+e);
+        }
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

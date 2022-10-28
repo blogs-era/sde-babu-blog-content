@@ -1,0 +1,131 @@
+---
+sidebar_position: 2
+title: PolyMorphism
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+### Definition
+
+Polymorphism refers to something that has many forms,shapes or behaviours. as we know no single form has an overall advantage and in softwares we need to cover wide variety of cases. so that we can modularize our software which can behave in many forms.
+
+### image to understand polymorphism
+
+> so in this image you can see a person in 3 forms. all the forms have different property 
+
+![multiple-personality](http://photos1.blogger.com/blogger/6565/1363/1600/aparichit.jpg)
+
+### Types of PolyMorphism
+
+- #### Runtime Polymorphism
+    - **Runtime polymorphism**, also known as Dynamic     
+    Polymorphism, is the type of Polymorphism that happens at 
+    the run time. What it means is it can't be decided by the 
+    compiler. Therefore what form or behaviour has to be taken 
+    depends upon the execution. Hence the name Runtime 
+    Polymorphism.
+    - it is same as method overriding.
+    - in this inheritence is used in which subclass and 
+    superclass has function with same name as with same number 
+    and types of parameters but differs in implementation.
+
+- #### Compile Time Polymorphism
+    -  **Compile time polymorphism**, also known as Static   
+    Polymorphism, refers to the type of Polymorphism that 
+    happens at compile time. What it means is that the compiler 
+    decides what shape or value has to be taken by the entity 
+    during compilation.
+    - it is same as method overloading.
+    - in this there are more than one function/behaviour whose 
+    names are same but differ from each other on the basis of 
+    input parameters.
+
+### Implementation of Compile Time PolyMorphism
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+class Area{
+    int area(int height,int width){
+        return height*width;
+    }
+    int area(int radius){
+        return (int)(3.14 * radius * radius);
+    }
+}
+public class Main {
+    public static void main(String[] argv){
+        // compile-time/static/early polymorphism also known as method overloading and operator overloading
+        Area area_object = new Area();
+        // when we want to calculate the area which has width and height
+        System.out.println(area_object.area(2,4));
+        // when we want to calculate the area of circle
+        System.out.println(area_object.area(10));
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+
+### Implementation of Run Time PolyMorphism
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+class SquareBoxDimension{
+    public double area(double side){
+        return side;
+    }
+}
+
+class TwoDimension extends SquareBoxDimension{
+    public double area(double side){
+        return side*side;
+    }
+}
+
+class ThreeDimension extends SquareBoxDimension{
+    public double area(double side){
+        return 6*side*side;
+    }
+}
+
+public class Main {
+    public static void main(String[] argv){
+        // runtime/late binding/dynamic polymorphism also known as overriding
+        SquareBoxDimension dimension_2d = new TwoDimension();
+        System.out.println("area in 2D: "+dimension_2d.area(2));
+        SquareBoxDimension dimension_3d = new ThreeDimension();
+        System.out.println("area in 3D: "+dimension_3d.area(2));
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
