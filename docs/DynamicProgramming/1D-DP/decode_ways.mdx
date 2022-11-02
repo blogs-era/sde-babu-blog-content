@@ -1,0 +1,42 @@
+### recursive method
+```js
+class Solution {
+    public int dfs(String s,int index){
+        if(index>=s.length())return 1;
+        if(s.charAt(index)=='0')return 0;
+
+        int result = dfs(s,index+1);
+        String options = "0123456";
+        if(index+1 < s.length()){
+            if(s.charAt(index)=='1' || (s.charAt(index)=='2' && options.indexOf(s.charAt(index+1))!=-1))
+            result+=dfs(s,index+2);
+        }
+        return result;
+    }
+    public int numDecodings(String s) {
+        return dfs(s,0);
+    }
+}
+
+```
+ ### Iterative Approach
+
+```js
+class Solution {
+    public int numDecodings(String s) {
+        int[] dp = new int[s.length()+1];
+        dp[s.length()] = 1;
+        for(int i=s.length()-1;i>=0;i--){
+            if(s.charAt(i)=='0')dp[i] = 0;
+            else dp[i] = dp[i+1];      
+            String options = "0123456";
+            if(i+1 < s.length()){
+                if(s.charAt(i)=='1' || (s.charAt(i)=='2' && options.indexOf(s.charAt(i+1))!=-1))
+                dp[i]+=dp[i+2];
+            } 
+        }
+        return dp[0];
+    }
+}
+
+```

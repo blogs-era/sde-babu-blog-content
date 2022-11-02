@@ -1,0 +1,52 @@
+### Brute Force Approach
+
+```js
+class Solution {
+    public int min_element(ArrayList<Integer> array){
+        int mini = Integer.MAX_VALUE;
+        for(Integer a: array)mini = Math.min(mini,a);
+        return mini;
+    }
+    public int mctFromLeafValues(int[] arr) {
+        int res = 0;
+        ArrayList<Integer> array = new ArrayList<Integer>();
+        for(int a: arr)array.add(a);
+        while(array.size() > 1){
+            int curr_min = min_element(array),index = array.indexOf(curr_min);
+            if(index > 0 && index < array.size()-1){
+                res+=array.get(index) * Math.min(array.get(index-1),array.get(index+1));
+            }else{
+                res+=array.get(index) * (index==0 ? array.get(index+1) : array.get(index-1));
+            }
+            array.remove(index);
+        }
+        return res;
+    }
+}
+```
+### Monotonic Stack Method
+
+```js
+
+class Solution {
+    public int mctFromLeafValues(int[] arr) {
+        Stack<Integer> stack = new Stack<>();
+        int res = 0;
+        for(int i=0;i<arr.length;i++){
+            while(!stack.isEmpty() && arr[i]>=stack.peek()){
+                int curr = stack.pop();
+                if(!stack.isEmpty())
+                res+=curr*Math.min(arr[i],stack.peek());
+                else 
+                res+=curr*arr[i];
+            }
+            stack.add(arr[i]);
+        }
+        while(stack.size() > 1){
+            res+=stack.pop()*stack.peek();
+        }
+        return res;
+    }
+}
+
+```

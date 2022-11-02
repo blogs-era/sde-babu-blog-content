@@ -1,0 +1,14 @@
+```js
+class Solution {
+    public int minMoves(int[] nums) {
+        int min_element = Integer.MAX_VALUE;
+        int moves = 0;
+        for(int num: nums)min_element = Math.min(min_element,num);
+        for(int num: nums){
+            moves+=Math.abs(min_element-num);
+        }
+        return moves;
+    }
+}
+
+```
