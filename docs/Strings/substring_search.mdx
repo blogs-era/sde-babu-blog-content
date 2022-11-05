@@ -1,0 +1,45 @@
+```js
+class Solution {
+    /*
+        O(m*n) -> brute force approach is to iterate through haystack
+        and compare all the substring with the needle string  
+        O(m+n) -> kmp algorithm is used which maily work on the concept of longest suffix prefix 
+    */
+    public void create_lps(int[] lps,String needle){
+        int j = 0,i = 1;
+        while(i < lps.length){
+            if(needle.charAt(i)==needle.charAt(j)){
+                lps[i] = j+1;
+                i++;j++;
+            }else if(j==0){
+                i++;
+            }else{
+                j = lps[j-1];
+            }
+        }
+    }
+    public int strStr(String haystack, String needle) {
+        int n = haystack.length(),m = needle.length();
+        if(m > n)return -1;
+        // evaluate lps for needle/small string
+        int[] needle_lps = new int[m];
+        // example of lps -> str: "abcabc" -> [0,0,0,1,2,3]  -> at each index: longest string which is prefix as well as suffix
+        // like abca -> max_len = 1 -> "a" also suffix and prefix hence at index 3 we mention: 1
+        create_lps(needle_lps,needle);
+        // check in the main string same as we do in brute force
+        int i = 0; // for haystack
+        int j = 0;// for needle
+        while(i < n){
+            if(haystack.charAt(i)==needle.charAt(j)){
+                i++;j++;
+            }else{
+                if(j==0)i++;
+                else j = needle_lps[j-1];
+            }
+            if(j==m)return i-m;
+        }
+        return -1;
+    }
+}
+
+```

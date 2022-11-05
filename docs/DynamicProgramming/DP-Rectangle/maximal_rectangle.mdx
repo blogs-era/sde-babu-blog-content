@@ -1,0 +1,54 @@
+```js
+class Solution {
+    public int[] leftSmaller(int[] heights){
+        int[] result = new int[heights.length];
+        Stack<Integer> stack = new Stack<>(); 
+        for(int i=0;i<heights.length;i++){
+            while(!stack.isEmpty() && heights[stack.peek()] >= heights[i]){
+                stack.pop();
+            }
+            if(stack.isEmpty())result[i] = -1;
+            else result[i] = stack.peek();
+            stack.push(i);
+        }
+        return result;
+    }
+    public int[] rightSmaller(int[] heights){
+        int[] result = new int[heights.length];
+        Stack<Integer> stack = new Stack<>(); 
+        for(int i=heights.length-1;i>=0;i--){
+            while(!stack.isEmpty() && heights[stack.peek()] >= heights[i]){
+                stack.pop();
+            }
+            if(stack.isEmpty())result[i] = heights.length;
+            else result[i] = stack.peek();
+            stack.push(i);
+        }
+        return result;
+    }
+    public int largestRectangleArea(int[] heights) {
+        int[] left_smaller = leftSmaller(heights);
+        int[] right_smaller = rightSmaller(heights);        
+        int max_rect = Integer.MIN_VALUE;
+        for(int i=0;i<heights.length;i++){
+            int width = Math.abs(left_smaller[i]-right_smaller[i])-1;
+            max_rect = Math.max(max_rect,width*heights[i]);
+        }
+        return max_rect;
+    }
+    public int maximalRectangle(char[][] matrix) {
+        int r = matrix.length, c = matrix[0].length; 
+        int[] dp = new int[c];
+        int maxi = 0;
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                if(matrix[i][j]=='0')dp[j] = 0; 
+                dp[j]=dp[j] + matrix[i][j]-'0';
+            }
+            maxi = Math.max(maxi,largestRectangleArea(dp));
+        }   
+        return maxi;    
+    }
+}
+
+```
