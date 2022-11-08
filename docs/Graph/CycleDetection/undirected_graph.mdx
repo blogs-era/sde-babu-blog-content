@@ -1,0 +1,77 @@
+---
+sidebar_position: 2
+title:  Detect cycle in a undirected graph
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> 
+
+### You can try it at
+
+- https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+
+class Solution {
+    public boolean isCycleUtil(ArrayList<ArrayList<Integer>> adj,int node,int par,boolean[] vis){
+        // visit the node
+        vis[node] = true;
+        ArrayList<Integer> neighbours = adj.get(node);
+        for(Integer neigh: neighbours){
+            if(!vis[neigh]){
+                if(isCycleUtil(adj,neigh,node,vis))return true;
+            }else{
+                // visited
+                if(par!=neigh)return true;
+            }
+        }
+        return false;
+    }
+    public boolean isCycle(int V, ArrayList<ArrayList<Integer>> adj) {
+        boolean[] vis = new boolean[V];
+        // loop through all the components
+        for(int i=0;i<V;i++){
+            if(!vis[i]){
+                // if cycle then return true 
+                if(isCycleUtil(adj,i,-1,vis))return true;
+            }
+        }
+        return false;
+    }
+}
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
