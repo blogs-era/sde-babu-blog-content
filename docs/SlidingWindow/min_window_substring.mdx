@@ -1,0 +1,40 @@
+```js
+class Solution {
+    public String minWindow(String s, String t) {
+        // base case 
+        if(s.length() < t.length())return "";
+        // declaration of pointers and result
+        int result_start = -1, start = 0,min_length = Integer.MAX_VALUE,count = 0; 
+        // freq map for s and t
+        int[] sfreq = new int[256];
+        int[] tfreq = new int[256];
+        // fill freq of t
+        for(char c: t.toCharArray())tfreq[c]++;
+        // start with iteration of s
+        for(int i=0;i<s.length();i++){
+            char c = s.charAt(i);
+            sfreq[c]++;
+            if(sfreq[c] <= tfreq[c])count++;// this will run until we got our first window
+            if(t.length()==count){
+                // always true if we got the first window
+                while(sfreq[s.charAt(start)] > tfreq[s.charAt(start)]){
+                    // this if condition exist because if at start the char not exist in t string then no need to reduce the sfreq
+                   // eg: s: ADOBECODEBANC , t: ABC so if start is E which is not in t, so we will skip reducing that frequency
+                    if(sfreq[s.charAt(start)] > tfreq[s.charAt(start)]){
+                       sfreq[s.charAt(start)]--; 
+                    }
+                    start++;
+                }
+                int length = i-start+1;
+                if(min_length > length){
+                    min_length = length;
+                    result_start = start;
+                } 
+            }
+        }
+        if(result_start==-1)return "";// means all the char in t not present in s
+        return s.substring(result_start,result_start+min_length);
+    }
+}
+
+```

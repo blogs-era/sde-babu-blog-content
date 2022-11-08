@@ -1,0 +1,94 @@
+---
+sidebar_position: 2
+title:  First Missing Positive
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#cc0000">Hard</Highlight>
+
+### Statement
+
+> Given an unsorted integer array nums, return the smallest missing positive integer.
+
+You must implement an algorithm that runs in `O(n)` time and uses constant extra space.
+
+### You can try it at
+
+- https://leetcode.com/problems/first-missing-positive/
+
+### Example 1
+```
+
+Input: nums = [3,4,-1,1]
+Output: 2
+Explanation: 1 is in the array but 2 is missing.
+```
+
+### Brute Force Approach
+
+- if length of the array is `5` then array should have [1,2,3,4,5]
+- hence to find the missing positive number loop from 1 to 5 to check who is missing and the first element which is `missing` is the missing element.
+
+### Optimal Appraoch
+
+### Code 
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+class Solution {
+    public void swap(int[] arr,int i,int j){
+        int t = arr[i];
+        arr[i] = arr[j];
+        arr[j] = t;
+    }
+    public int firstMissingPositive(int[] nums) {
+        int n = nums.length;
+        // just do some swapping to get the position by index
+        for(int i=0;i<n;i++){
+            // swap until we got i==nums[i]-1
+            while(nums[i]-1<n && nums[i]-1>=0 && i!=nums[i]-1){
+                if(nums[i]==nums[nums[i]-1])break;// to avoid the loop when both the position have same val like [1,1]
+                swap(nums,i,nums[i]-1);
+            }
+        }
+        int ans = n+1;
+        // search for the missing positive
+        for(int i=0;i<n;i++){
+            if(i!=nums[i]-1){
+                ans = i+1;
+                break;
+            }
+        }
+        return ans;
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

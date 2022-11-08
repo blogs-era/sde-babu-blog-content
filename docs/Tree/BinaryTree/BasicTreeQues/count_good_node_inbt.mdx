@@ -1,0 +1,61 @@
+---
+sidebar_position: 3
+title: Count Good Nodes in Binary Tree
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> 
+
+### You can try it at
+
+- https://leetcode.com/problems/count-good-nodes-in-binary-tree/
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+// recursive function
+    public int dfs(TreeNode root,int maxValue){
+        //base case
+        if(root==null)return 0;
+        // preorder
+        int result = maxValue<=root.val ? 1: 0;
+        maxValue = Math.max(root.val,maxValue);
+        return result+dfs(root.left,maxValue)+dfs(root.right,maxValue);
+    }
+    public int goodNodes(TreeNode root) {
+        // initially the max value is root.val
+        return dfs(root,root.val);
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

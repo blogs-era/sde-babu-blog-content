@@ -1,0 +1,26 @@
+```js
+class Solution {
+    public int maxProduct(int[] nums) {
+        int mini = 1,maxi = 1;
+        
+        int max_res = Integer.MIN_VALUE;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]==0){
+                mini = 1;
+                maxi = 1;
+                max_res = Math.max(max_res,0);
+                continue;
+            }
+            int t_min = mini;
+            mini = Math.min(Math.min(mini*nums[i],maxi*nums[i]),nums[i]);
+            maxi = Math.max(Math.max(t_min*nums[i],maxi*nums[i]),nums[i]);
+            
+            System.out.println(mini+" "+maxi);
+            
+            max_res = Math.max(Math.max(mini,maxi),max_res);
+        }
+        
+        return max_res;
+    }
+}
+```

@@ -1,0 +1,72 @@
+---
+sidebar_position: 3
+title:  Odd Even Linked List By Index
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://leetcode.com/problems/odd-even-linked-list/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+    public ListNode oddEvenList(ListNode head) {
+        // if only one and 2 node then no need
+        if(head==null || head.next==null)return head;
+        // odd_start and end will be the first node and even_start and end will be the second node
+        ListNode os = head,es=head.next;
+        ListNode oe = head,ee = head.next;
+        // ex> 1 -> 2 -> 3 -> 4 -> 5 -> null 
+        
+        while(oe!=null && oe.next!=null && ee!=null && ee.next!=null){
+            // connect odd index element to odd_list
+            oe.next = oe.next.next;
+            oe = oe.next;
+            // connect even index element to odd_list
+            ee.next = ee.next.next;
+            ee = ee.next;
+        }
+        // after the while loop
+        // 1 -> 3 -> 5 -> null and 2 -> 4 -> null
+            
+        oe.next = es;
+        return os;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

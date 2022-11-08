@@ -1,0 +1,15 @@
+```js
+class Solution {
+    public TreeNode invertTree(TreeNode root) {
+        if(root==null)return null;
+        // note to wap we first need to store them otherwise some values be missed
+        TreeNode l = invertTree(root.left);// first store the left node iteration in this left node is returned with their child inverted
+        TreeNode r = invertTree(root.right);// same for right node
+        // then after storing we can assign
+        root.left = r;
+        root.right = l;
+        return root;
+    }
+}
+
+```

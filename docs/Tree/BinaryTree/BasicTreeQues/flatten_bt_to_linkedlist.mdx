@@ -1,0 +1,77 @@
+---
+sidebar_position: 16
+title:  Flatten Binary Tree to Linked List
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> Given the root of a binary tree, flatten the tree into a "linked list":
+
+- The "linked list" should use the same TreeNode class where the right child pointer points to the next node in the list and the left child pointer is always null.
+- The "linked list" should be in the same order as a pre-order traversal of the binary tree. 
+
+### You can try it at
+
+- https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
+
+### Example 1
+
+```
+Input: root = [1,2,5,3,4,null,6]
+Output: [1,null,2,null,3,null,4,null,5,null,6]
+
+```
+
+### Code
+
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+class Solution {
+    TreeNode prev = null;// to track the last visiting node
+    public void flatten(TreeNode root) {
+        if(root==null)return;
+        // go to extreme right fisrst because we need preorder connection
+        flatten(root.right);
+        flatten(root.left);
+        //connect prev node to the right side of current node
+        root.right = prev;
+        // now remove the left part 
+        root.left = null;
+        // update the prev part to current node
+        prev = root;
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

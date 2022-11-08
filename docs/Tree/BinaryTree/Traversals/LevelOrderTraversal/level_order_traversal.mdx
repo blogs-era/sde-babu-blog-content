@@ -1,0 +1,60 @@
+---
+sidebar_position: 6
+title: Level Order Traversal
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+
+public List<List<Integer>> levelOrder(TreeNode root) {
+        if(root==null)return new ArrayList<>();
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        while(!q.isEmpty()){
+            List<Integer> lis = new ArrayList<>();
+            int size = q.size();
+            while(size-- > 0){
+                TreeNode poll = q.poll(); 
+                lis.add(poll.val);
+                if(poll.left!=null)q.add(poll.left);
+                if(poll.right!=null)q.add(poll.right);
+            }
+            res.add(lis);
+        }
+        return res;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

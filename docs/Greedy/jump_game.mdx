@@ -1,0 +1,15 @@
+```js
+class Solution {
+    /*
+    basic greedy approach:  so check from last that can reach to our goal or not and change your goal if you can reach  there
+    */
+    public boolean canJump(int[] nums) {
+        int goal = nums.length-1;
+        for(int i=nums.length-1;i>=0;i--){
+            if(i+nums[i]>=goal)goal = i;
+        }
+        return goal==0;       
+    }
+}
+
+```

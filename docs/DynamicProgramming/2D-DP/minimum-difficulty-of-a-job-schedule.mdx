@@ -1,0 +1,30 @@
+```js
+class Solution {
+    public int dfs(int[] jobDifficulty,int index,int d,int[][] dp){
+        if(d==1){
+            int max_element = Integer.MIN_VALUE;
+            for(int i=index;i<jobDifficulty.length;i++)max_element = Math.max(max_element,jobDifficulty[i]);
+            return max_element;
+        }
+        if(dp[d][index]!=-1)return dp[d][index];
+        // now let suppose d = 2 and arry is [1,2,3,4] so we have to run from 1 to 3 because after that d becomes 1 and we need atleast one element in partiton
+        // hence i=index to i<=jobDifficulty-d
+        int left_max = 0;
+        int res = Integer.MAX_VALUE;
+        for(int i=index;i<=jobDifficulty.length-d;i++){
+            left_max = Math.max(left_max,jobDifficulty[i]);
+            int right_max = dfs(jobDifficulty,i+1,d-1,dp);
+            res = Math.min(res,left_max + right_max);
+        }
+        dp[d][index] = res;
+        return res;
+    }
+    public int minDifficulty(int[] jobDifficulty, int d) {
+        int[][] dp = new int[d+1][jobDifficulty.length];
+        for(int i=0;i<=d;i++)Arrays.fill(dp[i],-1);
+        // simply we have the jobDifficulty array and we need to divide it into d partitions such that sum of max of all the partition should be minimu
+        if(jobDifficulty.length < d)return -1;// means not able to partition
+        return dfs(jobDifficulty,0,d,dp);   
+    }
+}
+```

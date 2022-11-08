@@ -1,0 +1,30 @@
+```js
+
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        if(s.equals(" "))return 1;// if empty string
+        int[] map = new int[256];
+        int left = 0;
+        int right = 0;
+        int max_len = 0; 
+        while(right < s.length()){
+            char c = s.charAt(right);
+            if(map[c]==0){
+                // add current char in window
+                map[c]++;right++;
+            }
+            else{
+                // compare the window size with max one
+                max_len = Math.max(max_len,right-left);
+                // remove the char from window 
+                while(map[c]==1){
+                    map[s.charAt(left)]--;
+                    left++;
+                }
+            }
+        }
+        return Math.max(max_len,right-left);
+    }
+}
+
+```

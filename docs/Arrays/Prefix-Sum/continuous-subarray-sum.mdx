@@ -1,0 +1,43 @@
+```js
+class Solution {
+    /*
+    concept same as prefix sum in this we need the reminders
+    intution: 23%6 is 5 and 23+6=29%6 is 5 means 29-23=6 which is multimple of 6
+    means in between there exist a subarray with sum which when mod by k gived 0 
+    but the subarray should atleast be size of 2 so we need to tract the index
+
+    [23,2,4,6,7]
+
+    Map:
+    remainder     index
+    23%6=5        : 0
+    25%6=1        : 1
+    29%6=5        : 2 here we again get the remainder as 5 hence check the size which is 2>=2 return true
+    
+    case 2:
+    [23,2,4,6,6] , k = 7
+    Map:
+    remainder     index
+    23%7=2          0
+    25%7=4          1
+    29%7=1          2
+    35%7=0          3 now in this case we find that 35 is the multiple of 7 so return true but 0 not in map
+
+    so we need to put 0 in map with index -1                 
+    */
+    public boolean checkSubarraySum(int[] nums, int k) {
+        HashMap<Integer,Integer> map = new HashMap<>();
+        map.put(0,-1);// to cover the case 2 when we got modulo 0
+        int prefix_sum = 0;
+        for(int i=0;i<nums.length;i++){
+            prefix_sum+=nums[i];
+            if(!map.containsKey(prefix_sum%k))map.put(prefix_sum%k,i);
+            else{
+                if(i-map.get(prefix_sum%k)>=2)return true;
+            }
+        }
+        return false;
+    }
+}
+
+```

@@ -1,0 +1,90 @@
+---
+sidebar_position: 2
+title: Capacity To Ship Packages Within D Days 
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+
+### You can try it at
+
+- https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/ 
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+// predicate function
+    public boolean predicateFun(int total_weight_for_a_day,int[] weights,int days){
+        int number_of_days_required = 1;
+        int weight_till_now = 0;
+        for(int i=0;i<weights.length;i++){
+            // main case to pay attention
+            if(weights[i] > total_weight_for_a_day)return false;
+            
+            if(weight_till_now+weights[i] <= total_weight_for_a_day){
+                weight_till_now+=weights[i];
+            }else{
+                // init the weight count again and increase the day
+                number_of_days_required++;
+                weight_till_now = weights[i];
+            }
+        }
+        return days>=number_of_days_required;
+    }
+    // sum function
+    public int sum(int[] weights){
+        int _sum = 0;
+        for(int w: weights)_sum+=w;
+        return _sum;
+    }
+    public int shipWithinDays(int[] weights, int days) {
+        // we will select the weight which is monitonically increasing
+        int l = weights[0],h = sum(weights);
+        int ans = -1;
+        while(l<=h){
+            int mid = (l+h)/2;
+            System.out.println(mid+" "+predicateFun(mid,weights,days));
+            // means we can place all the weights in given days so reduce the high part and store it
+            if(predicateFun(mid,weights,days)){
+                ans = mid; 
+                h = mid-1;
+            }
+            // can't able to place
+            else{
+                l = mid+1; 
+            }
+        }
+        return ans;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

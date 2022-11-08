@@ -1,0 +1,60 @@
+---
+sidebar_position: 1 
+title: Path Sum
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#25c2a0">Easy</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://leetcode.com/problems/path-sum/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+        if(root==null)return false;
+        targetSum-=root.val;
+        
+        // leaf node and targetSum=0 then return true
+        if(targetSum==0 && root.left==null && root.right==null)return true;
+        
+        return hasPathSum(root.left,targetSum) || hasPathSum(root.right,targetSum);
+    }
+
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

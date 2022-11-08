@@ -1,0 +1,134 @@
+---
+sidebar_position: 3
+title: Best Time to Buy and Sell Stock III
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#cc0000">Hard</Highlight>
+
+### Statement
+
+> You are given an array prices where prices[i] is the price of a given stock on the ith day.
+
+Find the maximum profit you can achieve. You may complete at most two transactions.
+
+Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
+
+### You can try it at
+
+- https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+
+### Example
+
+```
+Input: prices = [3,3,5,0,0,3,1,4]
+Output: 6
+Explanation: Buy on day 4 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
+Then buy on day 7 (price = 1) and sell on day 8 (price = 4), profit = 4-1 = 3.
+
+```
+### Recursive Approach / Top Down Approach
+
+### Code 
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+class Solution {
+    public int dfs(int[] prices,int index,boolean can_we_buy,int transactions_count){
+        if(index==prices.length || transactions_count==2)return 0;// base case when outof bound then no profit
+        int profits = 0;
+        if(can_we_buy){
+            // means either we can skip or buy the stock we have
+            int skip = 0 + dfs(prices,index+1,true,transactions_count);// we decide to skip hence we still can buy
+            int buy = -prices[index] + dfs(prices,index+1,false,transactions_count);// we decide to buy
+            profits = Math.max(skip,buy);
+        }else{
+            // means we can either sell or skip the stock
+            int skip = 0 + dfs(prices,index+1,false,transactions_count);// means we will not sell, we will hold 
+            int sell = prices[index] + dfs(prices,index+1,true,transactions_count+1);// we have sold the stock
+            profits = Math.max(skip,sell);
+        }
+        return profits;
+    }
+    public int maxProfit(int[] prices) {
+       return dfs(prices,0,true,0); 
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+
+### Iterative Approach / Bottom Up Approach
+
+### Code 
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+class Solution {
+    public int maxProfit(int[] prices) {
+       int n = prices.length;
+       int[][][] dp = new int[n+1][2][3];// in this we consider the 3D dp 3rd dimension cover the transaction count case
+       for(int index=n-1;index>=0;index--){
+           for(int buy=0;buy<=1;buy++){
+               for(int transaction_count=1;transaction_count<=2;transaction_count++){
+                   if(buy==1){
+                        // we can buy case - column 1
+                        int skip = 0 + dp[index+1][1][transaction_count];
+                        int _buy = -prices[index] + dp[index+1][0][transaction_count];
+                        dp[index][1][transaction_count]= Math.max(skip,_buy);
+                    }else{
+                        // we cannot buy case - column 0
+                        int skip = 0 + dp[index+1][0][transaction_count];
+                        int sell = prices[index] + dp[index+1][1][transaction_count-1];
+                        dp[index][0][transaction_count] = Math.max(skip,sell);
+                    }
+               }
+           }
+       }
+       return dp[0][1][2];// we take column 1 because in start point we_can_buy
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

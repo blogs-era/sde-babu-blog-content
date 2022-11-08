@@ -1,0 +1,107 @@
+---
+sidebar_position: 15
+title:  Burn Tree
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://www.interviewbit.com/problems/burn-a-tree/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+
+public class Solution {
+    public void makeParent(HashMap<Integer,Integer> parent,TreeNode root,int leaf_node){
+        Queue<Node> q = new LinkedList<>();
+        q.add(root);
+        TreeNode leaf = null;
+        while(!q.isEmpty()){
+            int size = q.size();
+            for(int i=0;i<size;i++){
+                TreeNode poll = q.poll();
+                if(poll.val==leaf_node)leaf = poll;
+                
+                if(poll.left!=null){
+                    q.add(poll.left);
+                    parent.put(poll.left,poll);
+                }
+                if(poll.right!=null){
+                    q.add(poll.right);
+                    parent.put(poll.right,poll);
+                }
+            }
+        }
+        return leaf;
+    }
+    public int solve(TreeNode root, int leaf_node) {
+        HashMap<Integer,Integer> parent = new HashMap<>();
+        TreeNode leaf = makeParent(parent);
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(leaf);
+        
+        HashSet<TreeNode> vis = new HashSet<>();
+        vis.add(leaf);
+        int min_time_to_burn = 0;
+        while(!q.isEmpty()){
+            int size = q.size();
+            for(int i=0;i<size;i++){
+                TreeNode poll = q.poll();
+                if(poll.left!=null && !vis.contains(poll.left)){
+                    vis.add(poll.left);
+                    q.add(poll.left);
+                }
+                
+                if(poll.right!=null && !vis.contains(poll.right)){
+                    vis.add(poll.right);
+                    q.add(poll.right);
+                }
+                
+                if(parent.containsKey(poll) && !vis.contains(parent.get(poll))){
+                    vis.add(parent.get(poll));
+                    q.add(parent.get(poll));
+                }
+            }
+            min_time_to_burn++;    
+        }
+        return min_time_to_burn;
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

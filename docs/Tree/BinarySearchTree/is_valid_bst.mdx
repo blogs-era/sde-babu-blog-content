@@ -1,0 +1,22 @@
+```js
+class Solution {
+    TreeNode prev = null;
+    public boolean isValidBST(TreeNode root) {
+        if(root==null){
+          return true;
+        }
+        boolean left = isValidBST(root.left);
+        if(prev!=null){
+           // compare the cuurent with prev node
+            if(root.val <= prev.val){
+              return false;
+            }
+        }
+        // mark the previos node 
+        prev = root;
+        boolean right = isValidBST(root.right);
+        return left && right; 
+    }
+}
+
+```

@@ -1,0 +1,74 @@
+---
+sidebar_position: 2
+title: Min distance between two given nodes of a Binary Tree
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://practice.geeksforgeeks.org/problems/min-distance-between-two-given-nodes-of-a-binary-tree/1
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+Node lca(Node root,int a,int b){
+        if(root==null)return null;
+        if(root.data==a || root.data==b)return root;
+        
+        Node left = lca(root.left,a,b);
+        Node right = lca(root.right,a,b);
+        
+        if(left!=null && right!=null)return root;
+        if(left!=null)return left;
+        if(right!=null)return right;
+        
+        return null;   
+    }
+    int distance(Node root,int node,int dis){
+        if(root==null)return 0;
+        if(root.data==node)return dis;
+        int left = distance(root.left,node,dis+1);
+        int right = distance(root.right,node,dis+1);
+        return left+right;
+    }
+    int findDist(Node root, int a, int b) {
+        Node lowest_common_ancestor = lca(root,a,b); 
+        return distance(lowest_common_ancestor,a,0)+distance(lowest_common_ancestor,b,0);
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

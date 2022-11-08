@@ -1,0 +1,31 @@
+```js
+
+class Solution {
+    /*
+    basic approach is to recursively construct between a given range after selecting the max element O(N^2)
+    optimal approach is monotonic increasing/decreasing stack
+    1) simpy maintain the monotonic decreasing stack
+    2) after that if you found the element bigger than stack top so remove from top and make this left node
+    2) after this step the element at stack top is bigger hence current node become the right node of stack top 
+    */
+    public TreeNode constructMaximumBinaryTree(int[] nums) {
+        Stack<TreeNode> stack = new Stack<>();
+        for(int i=0;i<nums.length;i++){
+            TreeNode node = new TreeNode(nums[i]);
+            while(!stack.isEmpty() && node.val > stack.peek().val){
+               node.left = stack.pop();
+            }
+            // now node is not biiger then top hence 
+            if(!stack.isEmpty())stack.peek().right = node;
+            stack.add(node); 
+        }
+        // remove the element from the stack and get the last element which is bigger
+        TreeNode result = null;
+        while(!stack.isEmpty()){
+            result = stack.pop();
+        }
+        return result;
+    }
+}
+
+```

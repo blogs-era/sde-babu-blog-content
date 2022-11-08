@@ -1,0 +1,24 @@
+```js
+class Solution {
+    public int longestSubstring(String s, int k) {
+        // base case 
+        if(s.length() < k || s.length() < 0)return 0;
+        if(k<=1)return s.length();
+        // calculate frequency
+        int[] freq = new int[26];
+        for(char c: s.toCharArray()){
+            freq[c-'a']++;
+        }
+        // include all the char in window whose frequency is >=k
+        int start = 0;
+        while(start < s.length() && freq[s.charAt(start)-'a']>=k)start++;// increase the window size
+        if(start>=s.length()-1)return start;// if start reach at the end return start(length of string)
+        int part1 = longestSubstring(s.substring(0,start),k);
+        // exclude the characters whose frequency is less than k
+        while(start < s.length() && freq[s.charAt(start)-'a']<k)start++;
+        int part2 = longestSubstring(s.substring(start),k); 
+        return Math.max(part1,part2);
+    }
+}
+
+```

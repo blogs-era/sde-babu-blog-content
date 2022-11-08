@@ -1,0 +1,49 @@
+```
+class Solution {
+    public static ArrayList<ArrayList<ArrayList<Integer>>> createGraph(int V,int E,int[][] edges){
+        ArrayList<ArrayList<ArrayList<Integer>>> adj = new ArrayList<>();
+        // there are V nodes
+        for(int i=0;i<V;i++){
+            adj.add(new ArrayList<>());
+        }
+        // iterate through all the edges
+        for(int i=0;i<E;i++){
+            int[] edge = edges[i];
+            int u = edge[0],v = edge[1],w = edge[2];
+            adj.get(u).add(new ArrayList<>(Arrays.asList(v,w)));// connect u to v with weight w
+        }
+        return adj;
+    }
+    // main thing which is tricky in this question is we need to consider the shortes distance as well as the stops taken to reach
+    // to the destination so note that whenever you consider any min steps then only update the stops
+    // so key here is compare the min paths distance and there stops should be less than k 
+    // last testcase will teach you a alot
+    public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
+        ArrayList<ArrayList<ArrayList<Integer>>> graph = createGraph(n,flights.length,flights);
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> a[1]-b[1]);// consists of int[] -> node,distance 
+        pq.add(new int[]{src,0,0});// init the queue
+        int[] distance = new int[n];Arrays.fill(distance,Integer.MAX_VALUE);distance[src] = 0;
+        int[] stops = new int[n];Arrays.fill(stops,Integer.MAX_VALUE);stops[src] = 0;
+        while(!pq.isEmpty()){
+            int[] pair = pq.poll();// poll the pair from the queue
+            int node = pair[0],dis = pair[1],stop = pair[2];
+            if(node==dst)break;
+            if(stop > k)continue;
+            for(ArrayList<Integer> neighbour: graph.get(node)){
+                int neigh_node = neighbour.get(0);
+                int dis_from_node_to_neighbour = neighbour.get(1);
+                if(distance[neigh_node] > dis+dis_from_node_to_neighbour){
+                    distance[neigh_node] = dis+dis_from_node_to_neighbour;
+                    pq.add(new int[]{neigh_node,distance[neigh_node],stop+1});
+                    stops[neigh_node] = stop;// stop is the number of stops we take to reach from node to neigh node
+                }else if(stop < stops[neigh_node]){
+                    pq.add(new int[]{neigh_node,dis+dis_from_node_to_neighbour,stop+1});
+                }
+                
+            }
+        }
+        return distance[dst]==Integer.MAX_VALUE ? -1: distance[dst];
+    }
+}
+
+```

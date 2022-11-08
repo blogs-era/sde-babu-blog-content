@@ -1,0 +1,40 @@
+```js
+class Solution {
+    public int max(int[][] events){
+        int maxi = 0;
+        for(int[] event: events)maxi = Math.max(maxi,event[1]);
+        return maxi;
+    }
+    public int maxEvents(int[][] events) {
+        int day = 1,min_days = 0,index = 0;
+        int total_days = max(events);
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> a[1] - b[1]);
+        
+        Arrays.sort(events,(a,b) -> a[0]-b[0]);
+
+        while(day<=total_days){
+            // now first we need to choose all the events that can be attended on this day
+            // and to choose the best event first put it into the pq
+            while(index < events.length && events[index][0] <= day){
+                pq.add(events[index++]);
+            }
+            // now check if the event in pq ends before today
+            while(!pq.isEmpty() && day > pq.peek()[1]){
+                pq.poll();
+            } 
+            // simply attend the event
+            if(!pq.isEmpty()){
+                int[] attended = pq.poll();
+                System.out.println(attended[0] + " "+ attended[1]);
+                min_days++;
+            }
+            // no event left just break
+            else if(index>=events.length)break;
+            // increase the day count
+            day+=1;
+        }
+        return min_days;
+    }
+}
+
+```

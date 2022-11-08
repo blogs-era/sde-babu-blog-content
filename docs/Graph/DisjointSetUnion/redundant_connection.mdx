@@ -1,0 +1,104 @@
+---
+sidebar_position: 1
+title: Redundant Connection 
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> You are given a graph that started as a tree with n nodes labeled from 1 to n, with one additional edge added.The graph is represented as an array edges of length n where edges[i] = [ai, bi] indicates that there is an edge between nodes ai and bi in the graph.Return an edge that can be removed so that the resulting graph is a tree of n nodes. If there are multiple answers, return the answer that occurs last in the input.
+
+### You can try it at
+
+- https://leetcode.com/problems/redundant-connection/
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+// find the additional added edge
+    public int[] findRedundantConnection(int[][] edges) {
+        int n = edges.length;
+        int[] res = new int[2];
+        DSU dsu = new DSU(n);
+        for(int[] edge: edges){
+            int u = edge[0],v = edge[1];
+            // join them
+            if(dsu.ultimate_parent(u)!=dsu.ultimate_parent(v)){
+                dsu.union(u,v);
+            }
+            // found the redundant conn.
+            else{
+                res[0] = u;
+                res[1] = v;
+                break;
+            }
+        }
+        return res;
+    }
+// DSU class
+class DSU{
+    int[] parents,size;
+    DSU(int _n){
+        // n+1 because we need 1 based indexing
+        parents = new int[_n+1];
+        size = new int[_n+1];
+        
+        for(int i=1;i<=_n;i++){
+            parents[i] = i;
+            size[i] = 1;
+        }
+    }
+    // find the ultimate parent
+    int ultimate_parent(int node){
+        if(parents[node]==node){
+            return node;
+        }
+        parents[node] = ultimate_parent(parents[node]);
+        return parents[node];
+    }
+    void union(int u,int v){
+        int pu = ultimate_parent(u);
+        int pv = ultimate_parent(v);
+        
+        if(size[pu] > size[pv]){
+            parents[pv] = pu;
+            size[pu]+=size[pv];
+        }else{
+            parents[pu] = pv;
+            size[pv]+=size[pu];
+        }
+        
+        return;
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

@@ -1,0 +1,88 @@
+---
+sidebar_position: 5
+title: Sum of Distances in Tree
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#cc0000">Hard</Highlight>
+
+### Statement
+
+> 
+
+### You can try it at
+
+- https://leetcode.com/problems/sum-of-distances-in-tree/
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+    public void preProcess(int[] dis,int[] count,List<HashSet<Integer>> tree,int root,int par){
+        for(Integer node: tree.get(root)){
+            if(par==node)continue;
+            preProcess(dis,count,tree,node,root);
+            count[root]+=count[node];
+            dis[root]+=count[node]+dis[node];
+        }
+        count[root]++;
+    }
+    public List<HashSet<Integer>> createTree(int n,int[][] edges){
+        List<HashSet<Integer>> tree = new ArrayList<>();
+        for(int i=0;i<n;i++){
+            tree.add(new HashSet<>());
+        }
+        for(int[] edge: edges){
+            int u = edge[0],v = edge[1];
+            tree.get(u).add(v);
+            tree.get(v).add(u);
+        }
+        return tree;
+    }
+    public void calDistance(int[] dis,int[] count,List<HashSet<Integer>> tree,int root,int par){
+        for(Integer node: tree.get(root)){
+            if(par==node)continue;
+            dis[node] = dis[root] - count[node] + (count.length-count[node]);
+            calDistance(dis,count,tree,node,root);
+        }
+    }
+    public int[] sumOfDistancesInTree(int n, int[][] edges) {
+        // preprocess and find the count and distance of each node with there sub nodes
+        int[] dis = new int[n];
+        int[] count = new int[n];
+        // create the tree
+        List<HashSet<Integer>> tree = createTree(n,edges);
+        // preprocess the nodes
+        preProcess(dis,count,tree,0,-1);
+        //calculate distance
+        calDistance(dis,count,tree,0,-1);
+        return dis;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

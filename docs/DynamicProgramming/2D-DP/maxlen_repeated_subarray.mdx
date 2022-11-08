@@ -1,0 +1,113 @@
+---
+sidebar_position: 5
+title:  Maximum Length of Repeated Subarray
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> Given two integer arrays nums1 and nums2, return the maximum length of a subarray that appears in both arrays.
+
+
+### You can try it at
+
+- https://leetcode.com/problems/maximum-length-of-repeated-subarray/
+
+### Example 1
+
+```
+Input: nums1 = [1,2,3,2,1], nums2 = [3,2,1,4,7]
+Output: 3
+Explanation: The repeated subarray with maximum length is [3,2,1].
+
+```
+
+### Recursive Approach
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+public int recursiveFunction(int i,int j,int[] nums1,int[] nums2,int n,int m,int match_count){
+        if(i>=n || j>=m)return match_count;
+        if(nums1[i]==nums2[j]){
+            match_count = recursiveFunction(i+1,j+1,nums1,nums2,n,m,match_count+1);
+        }
+        return Math.max(Math.max(recursiveFunction(i+1,j,nums1,nums2,n,m,0),recursiveFunction(i,j+1,nums1,nums2,n,m,0)),match_count);
+    }
+    public int findLength(int[] nums1, int[] nums2) {
+        int n = nums1.length,m = nums2.length;
+        return recursiveFunction(0,0,nums1,nums2,n,m,0);
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+### Tabulation Approach
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+
+ public int findLength(int[] nums1, int[] nums2) {
+    int n= nums1.length;
+    int m= nums2.length;
+    int ans=0;
+    int dp[][]= new int[n+1][m+1];
+    
+    for(int i=1;i<=n;i++)
+        for(int j=1;j<=m;j++){
+            
+            if(nums1[i-1]==nums2[j-1] ){
+                dp[i][j]= 1+ dp[i-1][j-1];
+                ans=Math.max (ans,dp[i][j] );
+            } 
+            else dp[i][j]=0;
+        }
+    return ans;
+ }
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+
+
+

@@ -1,0 +1,27 @@
+```js
+class Solution {
+    public void dfs(String s,List<String> result,int index,int count,ArrayList<String> ip){
+        if(count > 4 || index > s.length())return;
+        // base case when we found 4 parts and reach at the end
+        if(count==4 && index==s.length()){
+            result.add(String.join(".",ip));
+            return;
+        }
+        // take substring of size less than 4
+        for(int i=1;i<4;i++){
+            if(i+index > s.length())break;
+            String part = s.substring(index,i+index);
+            if(Integer.parseInt(part)>=256 || (part.length() > 1 && part.charAt(0)=='0'))continue;
+            ip.add(part);
+            dfs(s,result,index+i,count+1,ip);
+            ip.remove(ip.size()-1);
+        }
+    }
+    public List<String> restoreIpAddresses(String s) {
+        List<String> result = new ArrayList<>(); 
+        dfs(s,result,0,0,new ArrayList<String>());       
+        return result;
+    }
+}
+
+```

@@ -1,0 +1,88 @@
+---
+sidebar_position: 4
+title: Search in Rotated Sorted Array
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://leetcode.com/problems/search-in-rotated-sorted-array/
+
+### Example 1
+
+```
+Input: nums = [4,5,6,7,0,1,2], target = 0
+Output: 4
+```
+### Optimal Approach
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+    public int search(int[] nums, int target) {
+        int l = 0,r = nums.length-1;// init left and right 
+        int mid = (l+r)/2;// init the mid
+        while(l<=r){
+            if(nums[mid]==target)return mid;// we found the element
+            // first check whether the left sorted portion
+            if(nums[l]<=nums[mid]){
+                // can we move right
+                if(target > nums[mid] || target < nums[l]){
+                    l = mid+1;
+                }
+                // we have to move to left
+                else{
+                    r = mid-1;
+                }
+            }
+            // right sorted portion
+            else{
+                // can we move to left
+                if(target > nums[r] || target < nums[mid]){
+                    r = mid-1;
+                }
+                // we have to move to right
+                else{
+                    l = mid+1;
+                }
+            }
+            mid = (l+r)/2;// update the mid
+            
+        }
+        return -1;// means no result found in arr
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

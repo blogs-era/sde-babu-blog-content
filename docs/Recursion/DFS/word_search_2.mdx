@@ -1,0 +1,73 @@
+```js
+class Solution {
+    public void dfs(int n,int m,int x,int y,char[][] board,TrieNode node,boolean[][] vis,HashSet<String> result,String word){
+        // base case
+        if(x<0 || x>=n || y<0 || y>=m)return;
+        if(vis[x][y] || node.children[board[x][y]-'a']==null)return;
+        // visit and add the word
+        vis[x][y] = true;
+        word+=board[x][y];
+        // check for the result
+        if(node.children[board[x][y]-'a'].isEnd){
+            String s = new String(word);
+            result.add(s);
+        }
+        //recursion
+        int[] dx = {-1,1,0,0};
+        int[] dy = {0,0,-1,1};
+        for(int i=0;i<4;i++){
+            dfs(n,m,x+dx[i],y+dy[i],board,node.children[board[x][y]-'a'],vis,result,word);
+        }
+        vis[x][y] = false;
+    }
+    public List<String> findWords(char[][] board, String[] words) {
+        HashSet<String> result = new HashSet<>(); 
+        // save all the words in the trie
+        Trie trie = new Trie();
+        for(String word: words){
+            trie.insert(word);
+        }
+        // traverse through board
+        int n = board.length,m = board[0].length;
+        boolean[][] vis = new boolean[n][m]; 
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(trie.startsWith(board[i][j])){
+                    dfs(n,m,i,j,board,trie.root,vis,result,"");
+                }
+            }
+        }
+        return new ArrayList<>(result);
+    }
+}
+
+class Trie{
+    TrieNode root = new TrieNode();
+    public void insert(String s){
+        TrieNode start = root;
+        for(Character c: s.toCharArray()){
+            if(start.children[c-'a']==null){
+                start.children[c-'a'] = new TrieNode();
+            }
+            start = start.children[c-'a'];
+        }
+        start.isEnd = true;
+    }
+    public boolean startsWith(char c){
+        return this.root.children[c-'a']!=null;
+    }  
+}
+
+class TrieNode{
+    TrieNode[] children;
+    boolean isEnd;
+    TrieNode(){
+        this.isEnd = false;
+        this.children = new TrieNode[26];
+        for(int i=0;i<26;i++){
+            this.children[i] = null;
+        }
+    }
+}
+
+```

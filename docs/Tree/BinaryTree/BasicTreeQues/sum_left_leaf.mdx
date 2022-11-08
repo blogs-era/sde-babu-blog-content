@@ -1,0 +1,14 @@
+```js
+
+public int dfs(TreeNode root,boolean is_left){
+    if(root==null)return 0;
+    int sum = 0;
+    // check is current node is left node and leaf node
+    if(is_left && root.left==null && root.right==null)sum+=root.val;
+    return sum+dfs(root.left,true)+dfs(root.right,false);
+    
+}
+public int sumOfLeftLeaves(TreeNode root) {
+  return dfs(root,false);
+}
+```

@@ -1,0 +1,73 @@
+---
+sidebar_position: 2
+title:  Missing Number
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#25c2a0">Easy</Highlight>
+
+### Statement
+
+> Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+
+### You can try it at
+
+- https://leetcode.com/problems/missing-number/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+/*
+    example: 
+    [3,0,1]
+    xor = 0
+    3 not in range [0,2] so xor = xor ^ 0 ^ index -> xor = 0
+    0 in range so xor = xor^nums[i]^index = xor = 1
+    2 in range so xor = xor^nums[i]^index = 1^1^2 = 2 as [num^num = 0]
+    */
+    public int missingNumber(int[] nums) {
+        int n = nums.length; 
+        int xor = 0; // xor is used mostly when we want to find the missing number in range
+        boolean is_zero_missing = true;// this will cover the test case when 0 is missing eg. [1,2,3]
+        for(int i=0;i<n;i++){
+            if(nums[i]==0)is_zero_missing = false;// if we got 0 means not 0 is not missing
+            if(nums[i]>=0 && nums[i]<n){
+                xor ^= nums[i]^i;// if number is in range then xor with index
+            }else{
+                xor ^= 0^i;// take 0 if number is not in the range
+            }   
+        }
+        if(is_zero_missing)return 0;// if 0 missing then return 0
+        return xor==0 ? n: xor;// if no one missing then xor is 0, take n as ans
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

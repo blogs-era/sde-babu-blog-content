@@ -1,0 +1,26 @@
+```js
+class Solution {
+    public int maxProfit(int k,int[] prices) {
+       int n = prices.length;
+       int[][][] dp = new int[n+1][2][k+1];// in this we consider the 3D dp 3rd dimension cover the transaction count case
+       for(int index=n-1;index>=0;index--){
+           for(int buy=0;buy<=1;buy++){
+               for(int transaction_count=1;transaction_count<=k;transaction_count++){
+                   if(buy==1){
+                        // we can buy case - column 1
+                        int skip = 0 + dp[index+1][1][transaction_count];
+                        int _buy = -prices[index] + dp[index+1][0][transaction_count];
+                        dp[index][1][transaction_count]= Math.max(skip,_buy);
+                    }else{
+                        // we cannot buy case - column 0
+                        int skip = 0 + dp[index+1][0][transaction_count];
+                        int sell = prices[index] + dp[index+1][1][transaction_count-1];
+                        dp[index][0][transaction_count] = Math.max(skip,sell);
+                    }
+               }
+           }
+       }
+       return dp[0][1][k];// we take column 1 because in start point we_can_buy
+    }
+}
+```

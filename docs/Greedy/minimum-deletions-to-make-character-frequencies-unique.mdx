@@ -1,0 +1,27 @@
+```js
+class Solution {
+    public int minDeletions(String s) {
+        int[] freq = new int[26];
+        for(Character c: s.toCharArray())freq[c-'a']++;
+        HashMap<Integer,Integer> freq_count = new HashMap<>();
+        for(int i=0;i<26;i++){
+            if(freq[i] > 0)freq_count.put(freq[i],freq_count.getOrDefault(freq[i],0)+1);
+        }
+        int deletions = 0;
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a,b) -> b-a);// to get the highest frequency first
+        for (int key: freq_count.keySet()) pq.add(key);
+        // eg: aaabbbcc -> 3:2[3 freq occurs twice] , 2:1[2 freq occur once]
+        while(!pq.isEmpty()){
+            int frequency = pq.poll();
+            int frequency_count = freq_count.get(frequency);
+            deletions+=frequency_count-1;
+            if(frequency > 1 &&  frequency_count > 1){
+                if(!freq_count.containsKey(frequency-1))pq.add(frequency-1);
+                freq_count.put(frequency-1, freq_count.getOrDefault(frequency-1,0) + frequency_count-1);
+            }
+        }
+        return deletions;
+    }
+}
+
+```

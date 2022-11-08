@@ -1,0 +1,85 @@
+---
+sidebar_position: 1 
+title: Best Time to Buy and Sell Stock
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#25c2a0">Easy</Highlight>
+
+### Statement
+
+> You are given an array `prices where prices[i]` is the price of a given stock on the `ith` day.
+
+You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+
+Return the `maximum profit` you can achieve from this transaction. If you cannot achieve any profit, return `0`.
+
+### You can try it at
+
+- https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+
+### Example 1
+
+```
+Input: prices = [7,1,5,3,6,4]
+Output: 5
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
+
+```
+
+### Approach
+
+- simply we traverse the prices and at `ith` iteration we assume `prices[i] as the end point`
+- ans simultaneously we track the minimum price
+- so `minimum price` will act as the start point
+- hence on each iteration we compare the `prices[i]-minimum_price` with `max_profit`
+
+### Code
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+class Solution {
+    public int maxProfit(int[] prices) {
+        int maxProfit = 0;
+        // approach is simply we need to track the the min element from left to right
+        int mini = prices[0];
+        for(int price: prices){
+            // we assume current price at price[i] to be the end point 
+            maxProfit = Math.max(maxProfit,price-mini);
+            // track the minimum which will be our start point
+            mini = Math.min(mini,price);
+        }
+        return maxProfit;
+    }
+}
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

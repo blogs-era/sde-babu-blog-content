@@ -1,0 +1,52 @@
+---
+sidebar_position: 1
+title: Introduction to Flood Fill Algorithm 
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+### Where we use flood fill algorithm ?
+ 
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+// recursive function
+    public void flood_fill_util(int[][] image,int x,int y,int color,int old_color){
+        // base cases
+        if(x<0 || x>=image.length || y<0 || y>=image[0].length)return;
+        if(image[x][y]!=old_color)return;
+        // color the neighbour if this is same as old_color
+        image[x][y] = color; 
+        // move in all the 4 directions and update
+        int[] dx = {-1,1,0,0};
+        int[] dy = {0,0,-1,1};
+        for(int i=0;i<4;i++){
+            flood_fill_util(image,x+dx[i],y+dy[i],color,old_color);
+        }
+        return;
+    }
+    
+    public int[][] floodFill(int[][] image, int sr, int sc, int color) {
+        // old_color is the init color of source 
+        int old_color = image[sr][sc];
+        if(color!=old_color)
+            flood_fill_util(image,sr,sc,color,old_color);
+        return image;
+    }
+    
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

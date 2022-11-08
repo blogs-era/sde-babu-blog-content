@@ -1,0 +1,27 @@
+```js
+class Solution:
+    def minCost(self, colors: str, neededTime: List[int]) -> int:
+        n = len(colors) 
+        pairs = []
+        for i  in range(n):
+            pairs.append((colors[i],neededTime[i]))
+        stack = []
+        cost = 0
+        for pair in pairs:
+            if len(stack)==0:
+                stack.append(pair)
+                continue
+            top = stack[len(stack)-1]
+            if top[0]!=pair[0]:
+                stack.append(pair)
+            else:
+                pop = stack.pop()
+                # print(pop)
+                mini = min(pop[1],pair[1])
+                maxi = max(pop[1],pair[1])
+                stack.append((pop[0],maxi))
+                cost = cost+mini
+        return cost
+
+
+```

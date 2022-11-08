@@ -1,0 +1,77 @@
+---
+sidebar_position: 1
+title:  Construct Binary Tree from Preorder and Inorder Traversal  
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> Given two integer arrays `preorder` and `inorder` where preorder is the preorder traversal of a binary tree and inorder is the inorder traversal of the same tree, construct and return the binary tree.
+
+### You can try it at
+
+- https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+
+### Example 1
+
+![eg1](https://assets.leetcode.com/uploads/2021/02/19/tree.jpg)
+
+```
+Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
+Output: [3,9,20,null,null,15,7]
+```
+
+### Code 
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+public TreeNode build(int[] preorder, int[] inorder,HashMap<Integer,Integer> inorder_map,int pre_start,int pre_end,int in_start,int in_end){
+        if(pre_start > pre_end || in_start > in_end)return null;// base case to check whether we end with element or not 
+        TreeNode root = new TreeNode(preorder[pre_start]);// first element in preorder is our root
+        int index_inorder = inorder_map.get(preorder[pre_start]);// get index of root element in inorder
+        int number_of_elemnts_in_left = index_inorder-in_start;// number of elements to the left in inorder
+        root.left = build(preorder,inorder,inorder_map,pre_start+1,pre_start+number_of_elemnts_in_left,in_start,index_inorder-1);
+        root.right = build(preorder,inorder,inorder_map,pre_start+number_of_elemnts_in_left+1,pre_end,index_inorder+1,in_end);
+        return root;
+    }
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+        int n = inorder.length;// number of nodes
+        HashMap<Integer,Integer> inorder_map = new HashMap<>();// element,index
+        // build the hashmap to store the inorder 
+        for(int i=0;i<inorder.length;i++){
+            inorder_map.put(inorder[i],i);
+        }
+        return build(preorder,inorder,inorder_map,0,n-1,0,n-1);
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

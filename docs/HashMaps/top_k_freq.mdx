@@ -1,0 +1,42 @@
+```js
+class Solution {
+
+    // Class used for sorting
+    class Words{
+        String wo;
+        int freq;
+        public Words(String w, int k){
+            wo = w;
+            freq = k;
+        }
+    }
+
+    public List<String> topKFrequent(String[] w, int k) {
+        HashMap<String, Integer> h = new HashMap<>();
+        for(String s: w){
+            if(!h.containsKey(s))
+                h.put(s, 1);
+            else
+                h.put(s, h.get(s)+1);
+        }
+        // Making the list from Hashmap for applying Lambdas
+        ArrayList<Words> word_count = new ArrayList<>();
+        for(Map.Entry<String, Integer> e : h.entrySet())
+            word_count.add(new Words(e.getKey(), e.getValue()));
+        
+       // Sorting alphabetically using Lambdas
+        Collections.sort(word_count,(a,b)->a.wo.compareTo(b.wo));
+
+       // Now sorting on the basis of frequency using Lambdas
+        Collections.sort(word_count,(a,b)->b.freq-a.freq);
+       // Now reversing the sort
+        // Collections.reverse(word_count);
+
+        List<String> ans = new ArrayList<>();
+        for(int i=0;i<k;i++)
+            ans.add(word_count.get(i).wo);
+        return ans;
+    }
+}
+
+```

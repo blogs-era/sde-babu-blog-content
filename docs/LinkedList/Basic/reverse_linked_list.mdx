@@ -1,0 +1,74 @@
+---
+sidebar_position: 6
+title:  Reverse Linked List 2
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://leetcode.com/problems/reverse-linked-list-ii/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+ public ListNode reverseBetween(ListNode head, int left, int right) {
+        // part 1 we mark the leftPrev node , dummy node and curr node and prev node to null
+        ListNode dummy = new ListNode(0);
+        ListNode prev = null;
+        dummy.next = head;
+        ListNode curr = head;
+        ListNode leftPrev = dummy;
+        for(int i=0;i<left-1;i++){
+            curr = curr.next;
+            leftPrev = leftPrev.next;
+        }
+        // part 2 we need to reverse the section
+        for(int i=0;i<right-left+1;i++){
+            ListNode next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        // after part2 we can just link the linkedlist
+        leftPrev.next.next = curr;
+        leftPrev.next = prev;
+        
+        return dummy.next;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

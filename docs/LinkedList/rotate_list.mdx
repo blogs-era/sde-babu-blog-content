@@ -1,0 +1,73 @@
+---
+sidebar_position: 5
+title: Rotate the Linked List 
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://leetcode.com/problems/rotate-list/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+public ListNode rotateRight(ListNode head, int k) {
+        if(head==null)return head;
+        ListNode last = head;
+        int count = 1; 
+        
+        // count and reach to last node
+        while(last.next!=null){
+            count++;
+            last = last.next;
+        }
+        // last will point at the last node
+        k = k%count;// handles the case of k > count 
+        // reach to count-k node
+        ListNode ptr = head;
+        for(int i=0;i<count-k-1;i++){
+            ptr = ptr.next;
+        }
+        
+        last.next = head;
+        head = ptr.next;// now starting point is this 
+        ptr.next = null;// ptr is the last node now
+        return head;
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

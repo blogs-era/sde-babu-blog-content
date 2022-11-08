@@ -1,0 +1,41 @@
+```js
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
+public class Solution {
+    public ListNode firstPoint(ListNode head,ListNode slow,ListNode fast){
+        if(slow==fast)return head;// check if both the nodes are at start
+        while(slow.next!=fast.next){
+            slow = slow.next;
+            fast = fast.next;
+        }
+        return slow.next;
+    }
+    public ListNode detectCycle(ListNode head) { 
+        ListNode slow = head;
+        ListNode fast = head;
+        // check for the cycle
+        while(fast!=null && fast.next!=null){
+            slow = slow.next;
+            fast = fast.next.next;
+            if(slow==fast){
+                // means there is the cycle
+                // now find for the start position
+                slow = head;// move slow to first position
+                return firstPoint(head,slow,fast);
+            }
+        }
+        // we reach here means no loop
+        return null;
+    }
+}
+
+```

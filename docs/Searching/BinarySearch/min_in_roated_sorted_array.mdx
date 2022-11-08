@@ -1,0 +1,26 @@
+```js
+class Solution {
+    public int findMin(int[] nums) {
+        int left = 0,right = nums.length-1;
+        while(left<=right){
+            int mid = (left+right)/2;
+            // first check if nums[mid]==nums[right] then nums[mid] is our answer
+            // because number in array is unique(given)
+            if(nums[mid]==nums[right]){
+                return nums[mid];
+            }
+            // check if right sorted portion means nums[mid] is less than nums[right]
+            if(nums[mid] < nums[right]){
+                // now element from mid+1 to right are useless
+                right = mid;
+            }
+            // left sorted portion means nums[mid] is bigger than nums[right] 
+            else{
+                // now element from left to mid are useless 
+                left = mid+1;
+            }
+        } 
+        return -1;
+    }
+}
+```

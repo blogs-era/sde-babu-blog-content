@@ -1,0 +1,82 @@
+---
+sidebar_position: 5
+title:  Median of Two Sorted Arrays
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#cc0000">Hard</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://leetcode.com/problems/median-of-two-sorted-arrays/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        // nums1 should always be the array of lesser length
+        if(nums1.length > nums2.length){
+            return findMedianSortedArrays(nums2,nums1);
+        }
+        
+        int n = nums1.length,m = nums2.length;
+        int half = (n+m)/2;
+        int l = 0,r = n-1;// mark the boundaries using the short length array
+        while(true){
+            int partNums1 = l > r ? -1 : (l + r) / 2;// the index till which nums1 left boundary exists
+            // now we require the mid for combined array means (n+m)/2
+            //half = partNums1 + partsNUms2;
+            int partNums2 = half-partNums1-2;// -2 for 0 based indexing of partX and partY
+            // get the leftNums1,rightNums1,leftNUms2,rightNums2 
+            int leftNums1 = partNums1>=0 ? nums1[partNums1]: Integer.MIN_VALUE;
+            int rightNums1 = partNums1+1<n ? nums1[partNums1+1]: Integer.MAX_VALUE;
+            int leftNums2 = partNums2>=0 ? nums2[partNums2]: Integer.MIN_VALUE;
+            int rightNums2 = partNums2+1<m ? nums2[partNums2+1]: Integer.MAX_VALUE;
+            // we got the result
+            if(leftNums1<=rightNums2 && leftNums2<=rightNums1){
+                if((n+m)%2==1)return (double)Math.min(rightNums1,rightNums2);// odd number of element case 
+                return (double)(Math.max(leftNums1,leftNums2) + Math.min(rightNums1,rightNums2))/2;
+            }
+            // not got the result
+            else{
+                if(leftNums1 > rightNums2)r = partNums1-1;// try to reduce the leftNums1 then automatically rightNums2 increase
+                else l = partNums1+1;
+            }
+            
+        }
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

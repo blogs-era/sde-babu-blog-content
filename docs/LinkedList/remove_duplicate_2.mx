@@ -1,0 +1,68 @@
+---
+sidebar_position: 7
+title:  Remove Duplicates from Sorted List II
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+>
+
+### You can try it at
+
+- https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+
+### Example
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+
+ public ListNode deleteDuplicates(ListNode head) {
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode prev = dummy;
+        
+        while(head!=null){
+            if(head.next!=null && head.next.val==head.val){
+                while(head.next!=null && head.next.val==head.val){
+                    head = head.next;
+                }
+                prev.next = head.next;
+            }else{
+                prev = prev.next;
+            }
+            head = head.next;   
+        }
+        return dummy.next;
+    }
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

@@ -1,0 +1,134 @@
+---
+sidebar_position: 1
+title:  Set Matrix Zero
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Highlight = ({children, color,txt}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+Level - <Highlight color="#fece2f">Medium</Highlight>
+
+### Statement
+
+> Given an m x n integer matrix, if an element is `0`, set its entire row and column to 0's.
+
+You must do it `in place` means without using any extra space.
+
+
+
+### You can try it at
+
+- https://leetcode.com/problems/set-matrix-zeroes/
+
+### Example 1
+
+![eg1](https://assets.leetcode.com/uploads/2020/08/17/mat1.jpg)
+```
+
+Input: matrix = [[1,1,1],[1,0,1],[1,1,1]]
+Output: [[1,0,1],[0,0,0],[1,0,1]]
+```
+
+### Brute Approach / 0(M*N) space
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+### Better Approach / 0(M+N) space
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+### Optimal Approach Code / Constant Space
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+public void setZeroes(int[][] matrix) {
+        int n = matrix.length;
+        int m = matrix[0].length;
+        int first_row_entry = 1;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(matrix[i][j]==0){
+                    if(i==0)first_row_entry = 0;
+                    else{
+                        matrix[i][0] = 0;
+                        matrix[0][j] = 0;
+                    }
+                }
+            }
+        }
+    
+        for(int i=n-1;i>=1;i--){
+            for(int j=m-1;j>=0;j--){
+               if(matrix[i][0]==0 || matrix[0][j]==0)matrix[i][j] = 0;   
+            }
+        }
+        
+        for(int i=0;i<m;i++){
+            if(first_row_entry==0)matrix[0][i] = 0;
+        }
+        
+    }
+
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>

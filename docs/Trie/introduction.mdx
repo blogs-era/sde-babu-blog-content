@@ -1,0 +1,130 @@
+---
+sidebar_position: 1
+title: Introduction to Trie
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+### What is Trie ?
+
+> `Trie` is a data structure which is very similar to tree.we use `Trie` data structure when we want to store the list of string. so we can find any pattern of string using trie data structure efficiently.
+
+### Example Representation of Trie
+
+> so we have a `dictionary` which consists of list of string
+
+```
+dictionary: ["hello","help","sde","babu","baby"]
+```
+
+![representation](https://share.sketchpad.app/22/3e1-7f9c-94a739.png)
+
+### Basic Structure of Trie
+
+```js
+// trie class 
+class Trie{
+  TrieNode root;// root node of trie
+  // function to insert the string in trie
+  void insert(String str){}
+  // function to check is string present or not
+  boolean search(String str){}
+}
+
+// trienode class 
+class TrieNode{
+  TrieNode[] children = new TrieNode[26];// assuming all characters are small otherwise replace 26 with 256
+  boolean isEnd;// to check wheteher there is any string which ends at this node 
+}
+    
+```
+
+### Implementation
+
+<Tabs>
+<TabItem value="java" label="Java">
+
+```js
+class Main{
+    public static void main(String args[]){
+        Trie trie = new Trie();
+        // insert the dictionary
+        String[] dictionary = {"hello","help","sde","babu","baby"};
+        for(String word: dictionary)trie.insert(word);// insert all the word in trie
+        // search for the word: help
+        System.out.println("is help exist: "+trie.search("help"));
+        // search for the word: bab
+        System.out.println("is bab exist: "+trie.search("bab"));
+    } 
+}
+
+
+
+// trie class 
+class Trie{
+  TrieNode root;// root node of trie
+  // constructor
+  Trie(){
+    root = new TrieNode();
+  }
+  // function to insert the string in trie
+  void insert(String str){
+    TrieNode start = root;
+    // loop through string
+    for(int i=0;i<str.length();i++){
+        char c = str.charAt(i);// character
+        if(start.letters[c-'a']==null){
+            // means character is missing so include it
+            start.letters[c-'a'] = new TrieNode();
+        }
+        start = start.letters[c-'a'];// move to next node
+    }
+    start.isEnd = true;// we reach to the last node so mark it true
+  }
+  // function to check is string present or not
+  boolean search(String str){
+    TrieNode start = root;
+    // loop through string
+    for(int i=0;i<str.length();i++){
+        char c = str.charAt(i);// character
+        if(start.letters[c-'a']==null)return false;
+        start = start.letters[c-'a'];// move to next node
+    }
+    return start.isEnd;
+  }
+}
+
+// trienode class 
+class TrieNode{
+  TrieNode[] letters = new TrieNode[26];// assuming all characters are small otherwise replace 26 with 256
+  boolean isEnd;// to check wheteher there is any string which ends at this node 
+  // constructor
+  TrieNode(){
+    for(int i=0;i<26;i++)letters[i] = null;
+    isEnd = false;
+  }
+}
+    
+```
+
+</TabItem>
+
+<TabItem value="other" label="Other">
+
+```
+currently no other languages supported
+```
+
+</TabItem>
+
+</Tabs>
+
+
+### Time complexity for inserting all words
+
+> `O(N*L)` where `N` is length of the dictionary and `L` is average length of words
+
+### Time complexity for searching a word
+
+> `O(L)` where `L` is average length of words
