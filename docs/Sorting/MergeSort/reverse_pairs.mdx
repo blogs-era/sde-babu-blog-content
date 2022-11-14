@@ -1,0 +1,51 @@
+```js
+class Solution {
+    public int merge(int[] nums,int start,int mid,int end){
+        int[] temp = new int[end-start+1];
+        // calculate the reverse pairs
+        int count = 0;
+        int p1 = start;
+        for(int p2=mid+1;p2<=end;p2++){
+            while(p1<=mid && nums[p1]<=(long)2*nums[p2])p1++;
+            count+=mid-p1+1;
+        }
+        int index = 0;
+        int i = start,j = mid+1;
+        while(i<=mid && j<=end){
+            if(nums[i]<=nums[j]){
+                temp[index++] = nums[i++];
+            }else{
+                temp[index++] = nums[j++];
+            }
+        }
+        while(i<=mid){
+            temp[index++] = nums[i++];
+        }
+        while(j<=end){
+            temp[index++] = nums[j++];
+        }   
+        index = 0;
+        for(int k=start;k<=end;k++){
+            nums[k] = temp[index++];
+        }
+        return count;
+    }
+    public int mergeSort(int[] nums,int start,int end){
+        if(start < end){
+            int count = 0;
+            int mid = (start+end)/2;
+            count+=mergeSort(nums,start,mid);
+            count+=mergeSort(nums,mid+1,end);
+            count+=merge(nums,start,mid,end);
+            return count;
+        }
+        return 0;
+    }
+    public int reversePairs(int[] nums) {
+        int start = 0,end = nums.length-1;
+        // for(int num: nums)System.out.print(num+" ");
+        return mergeSort(nums,start,end);
+    }
+}
+
+```

@@ -1,0 +1,29 @@
+```js
+class Solution {
+    public void printi(int[] a){
+        for(int i: a)System.out.print(i+" ");
+        System.out.println();
+    }
+    public List<Integer> findAnagrams(String s, String p) {
+        if(p.length() > s.length())return new ArrayList<>();
+        List<Integer> result = new ArrayList<>();
+        int[] s_count = new int[26];
+        int[] p_count = new int[26];
+        for(int i=0;i<p.length();i++)p_count[p.charAt(i)-'a']++;
+        for(int i=0;i<p.length();i++)s_count[s.charAt(i)-'a']++;
+        if(Arrays.equals(p_count,s_count)){
+            result.add(0);
+        }
+        int l = 0;
+        for(int r=p.length();r<s.length();r++){
+            s_count[s.charAt(r)-'a']++;
+            s_count[s.charAt(l)-'a']--;
+            l++;
+            if(Arrays.equals(s_count,p_count))result.add(l);
+        }
+
+        return result;
+    }
+}
+
+```
