@@ -1,0 +1,21 @@
+```js
+class Solution {
+    public int getHeight(TreeNode root){
+        if(root==null)return 0;
+        // complete thats why we only take left side
+        return 1+getHeight(root.left);
+    }
+    // 1 << x => 2^x
+    public int countNodes(TreeNode root) {
+        if(root==null)return 0;
+        // get the height of both the sides
+        int left_height = getHeight(root.left);
+        int right_height = getHeight(root.right);
+        if(left_height==right_height)// means left part complete so count left and move right
+            return (1 << left_height) + countNodes(root.right);
+        else
+            return (1 << right_height) + countNodes(root.left);
+    }
+}
+
+```

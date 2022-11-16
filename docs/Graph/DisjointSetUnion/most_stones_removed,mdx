@@ -1,0 +1,74 @@
+```js
+class Solution {
+    /*
+    n=2 * m=3 matrix so
+        0 1 2     
+    0
+    1
+    so groups are (row0-col0) | row1 | col1 | col2
+    hence number of groups are: n+m(take extra space for index out bound case)
+    DSU: 0 | 1 | 2 | 3
+    how we get the group number of col ?
+    let col => 2 then group is col + n => 2+2 => 3
+    */
+    public int removeStones(int[][] stones) {
+        // first we find the row and col
+        int row = 0,col = 0; 
+        for(int[] point: stones){
+            row = Math.max(row,point[0]);
+            col = Math.max(col,point[1]);
+        }
+        // row and col are in 0 based indexing
+        int n = row+1,m = col+1;
+        DSU dsu = new DSU(n+m);
+        // traverse all the points
+        HashSet<Integer> groups = new HashSet<>(); 
+        for(int i=0;i<stones.length;i++){
+            int x = stones[i][0], y = stones[i][1];
+            int groupX = x,groupY = y+n;
+            dsu.union(groupX,groupY);
+            groups.add(groupX);
+            groups.add(groupY);
+        }
+        int number_of_components = 0;
+        for(Integer group_number: groups){
+            System.out.println(group_number+" "+dsu.findPar(group_number));
+            if(dsu.findPar(group_number)==group_number)number_of_components++;
+        }
+        return stones.length - number_of_components;
+    }
+}
+
+class DSU{
+    int[] parents;
+    int[] size;
+    int n;
+    DSU(int n){
+        this.n = n;
+        parents = new int[n];
+        size = new int[n];
+        for(int i=0;i<n;i++){
+            parents[i] = i;
+            size[i] = 1;
+        }   
+    }
+    void union(int u,int v){
+        int pu = findPar(u);
+        int pv = findPar(v);
+        if(pu==pv)return;
+        if(size[pu] > size[pv]){
+            parents[pv] = pu;
+            size[pu]+=size[pv];
+        }else{
+            parents[pu] = pv;
+            size[pv]+=size[pu];
+        }
+        return;
+    }
+    int findPar(int node){
+        if(parents[node]==node)return node;
+        int ultimate_parent = findPar(parents[node]);
+        return ultimate_parent; 
+    }
+}
+```

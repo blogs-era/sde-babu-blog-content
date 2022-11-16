@@ -1,0 +1,63 @@
+### 2 pointer method
+
+```js
+class Solution {
+    public int[] sortedSquares(int[] A) {
+        int n = A.length;
+        int[] result = new int[n];
+        int i = 0, j = n - 1;
+        for (int p = n - 1; p >= 0; p--) {
+            if (Math.abs(A[i]) > Math.abs(A[j])) {
+                result[p] = A[i] * A[i];
+                i++;
+            } else {
+                result[p] = A[j] * A[j];
+                j--;
+            }
+        }
+        return result;
+    }
+}
+
+```
+
+### Stack Method 
+
+```js
+class Solution {
+    public int[] sortedSquares(int[] nums) {
+        int[] res = new int[nums.length]; 
+        Stack<Integer> stack = new Stack<>();
+        int index = 0;
+        int k = 0;
+        while(index < nums.length){
+            if(nums[index] < 0){
+                stack.add(nums[index]);
+                index++;
+            }
+            else{
+                if(stack.isEmpty()){
+                    break;
+                }
+                if(Math.abs(stack.peek()) > nums[index]){
+                    res[k++] = nums[index]*nums[index];
+                    index++;
+                }else{
+                    res[k++] = stack.peek()*stack.peek();
+                    stack.pop();
+                }
+            }
+        }
+        while(index < nums.length){
+            res[k++] = nums[index]*nums[index];
+            index++; 
+        } 
+        while(!stack.isEmpty()){
+            res[k++] = stack.peek()*stack.peek();
+            stack.pop();
+        }
+        return res;
+    }
+}
+
+```

@@ -6,3 +6,38 @@ title: Introduction to Disjoin Set Union
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+```js
+class DSU{
+    int[] parents;
+    int[] size;
+    int n;
+    DSU(int n){
+        this.n = n;
+        parents = new int[n];
+        size = new int[n];
+        for(int i=0;i<n;i++){
+            parents[i] = i;
+            size[i] = 1;
+        }   
+    }
+    void union(int u,int v){
+        int pu = findPar(u);
+        int pv = findPar(v);
+        if(pu==pv)return;
+        if(size[pu] > size[pv]){
+            parents[pv] = pu;
+            size[pu]+=size[pv];
+        }else{
+            parents[pu] = pv;
+            size[pv]+=size[pu];
+        }
+        return;
+    }
+    int findPar(int node){
+        if(parents[node]==node)return node;
+        int ultimate_parent = findPar(parents[node]);
+        return ultimate_parent; 
+    }
+}
+
+```
