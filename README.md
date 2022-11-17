@@ -46,3 +46,7 @@
 - simply sync the `upstream` changes in your local 
 - git pull upstream master
 - git push origin master
+
+# CI / CD
+
+![diagram](https://i.ibb.co/DWjX5vS/ci.png)
