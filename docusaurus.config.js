@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Sde Babu',
   tagline: 'Enhance Your Software Developer Skills',
-  url: 'https://github.com',
+  url: 'https://sdebabu.ml',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
