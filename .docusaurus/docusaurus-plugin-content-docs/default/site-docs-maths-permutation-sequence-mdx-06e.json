@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Maths/permutation_sequence",
+  "id": "Maths/permutation_sequence",
+  "title": "Permutation Sequence",
+  "description": "Level - Hard",
+  "source": "@site/docs/Maths/permutation_sequence.mdx",
+  "sourceDirName": "Maths",
+  "slug": "/Maths/permutation_sequence",
+  "permalink": "/docs/Maths/permutation_sequence",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Maths/permutation_sequence.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Permutation Sequence"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Find K Closest Elements",
+    "permalink": "/docs/Heap/PriorityQueue/k-closest-points"
+  },
+  "next": {
+    "title": "Missing Number",
+    "permalink": "/docs/Maths/missing_num"
+  }
+}

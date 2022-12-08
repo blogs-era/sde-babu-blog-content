@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Searching/BinarySearch/first_last_pos",
+  "id": "Searching/BinarySearch/first_last_pos",
+  "title": "first_last_pos",
+  "description": "",
+  "source": "@site/docs/Searching/BinarySearch/first_last_pos.mdx",
+  "sourceDirName": "Searching/BinarySearch",
+  "slug": "/Searching/BinarySearch/first_last_pos",
+  "permalink": "/docs/Searching/BinarySearch/first_last_pos",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Searching/BinarySearch/first_last_pos.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "find_peak",
+    "permalink": "/docs/Searching/BinarySearch/find_peak"
+  },
+  "next": {
+    "title": "min_in_roated_sorted_array",
+    "permalink": "/docs/Searching/BinarySearch/min_in_roated_sorted_array"
+  }
+}

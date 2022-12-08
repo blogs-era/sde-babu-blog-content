@@ -1,0 +1,28 @@
+{
+  "unversionedId": "DynamicProgramming/2D-DP/maxlen_repeated_subarray",
+  "id": "DynamicProgramming/2D-DP/maxlen_repeated_subarray",
+  "title": "Maximum Length of Repeated Subarray",
+  "description": "Level - Medium",
+  "source": "@site/docs/DynamicProgramming/2D-DP/maxlen_repeated_subarray.mdx",
+  "sourceDirName": "DynamicProgramming/2D-DP",
+  "slug": "/DynamicProgramming/2D-DP/maxlen_repeated_subarray",
+  "permalink": "/docs/DynamicProgramming/2D-DP/maxlen_repeated_subarray",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/DynamicProgramming/2D-DP/maxlen_repeated_subarray.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "title": "Maximum Length of Repeated Subarray"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "decode_ways",
+    "permalink": "/docs/DynamicProgramming/1D-DP/decode_ways"
+  },
+  "next": {
+    "title": "minimum-difficulty-of-a-job-schedule",
+    "permalink": "/docs/DynamicProgramming/2D-DP/minimum-difficulty-of-a-job-schedule"
+  }
+}

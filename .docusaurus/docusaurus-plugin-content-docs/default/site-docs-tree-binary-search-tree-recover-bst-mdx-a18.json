@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinarySearchTree/recover_bst",
+  "id": "Tree/BinarySearchTree/recover_bst",
+  "title": "Recover Binary Search Tree",
+  "description": "Level - Medium",
+  "source": "@site/docs/Tree/BinarySearchTree/recover_bst.mdx",
+  "sourceDirName": "Tree/BinarySearchTree",
+  "slug": "/Tree/BinarySearchTree/recover_bst",
+  "permalink": "/docs/Tree/BinarySearchTree/recover_bst",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinarySearchTree/recover_bst.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Recover Binary Search Tree"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Kth Smallest Element in a BST",
+    "permalink": "/docs/Tree/BinarySearchTree/kth_smallest_elemnt_bst"
+  },
+  "next": {
+    "title": "Binary Search Tree Iterator",
+    "permalink": "/docs/Tree/BinarySearchTree/bst_iterator"
+  }
+}

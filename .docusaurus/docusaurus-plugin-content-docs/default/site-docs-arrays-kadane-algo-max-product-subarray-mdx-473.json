@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Arrays/KadaneAlgo/max_product_subarray",
+  "id": "Arrays/KadaneAlgo/max_product_subarray",
+  "title": "max_product_subarray",
+  "description": "",
+  "source": "@site/docs/Arrays/KadaneAlgo/max_product_subarray.mdx",
+  "sourceDirName": "Arrays/KadaneAlgo",
+  "slug": "/Arrays/KadaneAlgo/max_product_subarray",
+  "permalink": "/docs/Arrays/KadaneAlgo/max_product_subarray",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/KadaneAlgo/max_product_subarray.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Maximum Subarray",
+    "permalink": "/docs/Arrays/KadaneAlgo/max_subarray"
+  },
+  "next": {
+    "title": "Set Matrix Zero",
+    "permalink": "/docs/Arrays/Matrix/set_matrix_0"
+  }
+}

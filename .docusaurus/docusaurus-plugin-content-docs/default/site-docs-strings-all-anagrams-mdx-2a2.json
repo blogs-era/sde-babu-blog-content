@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Strings/all_anagrams",
+  "id": "Strings/all_anagrams",
+  "title": "all_anagrams",
+  "description": "",
+  "source": "@site/docs/Strings/all_anagrams.mdx",
+  "sourceDirName": "Strings",
+  "slug": "/Strings/all_anagrams",
+  "permalink": "/docs/Strings/all_anagrams",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Strings/all_anagrams.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "restore_ip",
+    "permalink": "/docs/Strings/Recursive/restore_ip"
+  },
+  "next": {
+    "title": "count_say",
+    "permalink": "/docs/Strings/count_say"
+  }
+}

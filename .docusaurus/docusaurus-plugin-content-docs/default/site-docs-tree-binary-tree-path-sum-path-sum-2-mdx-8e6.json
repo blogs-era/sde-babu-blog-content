@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinaryTree/PathSum/path_sum_2",
+  "id": "Tree/BinaryTree/PathSum/path_sum_2",
+  "title": "Path Sum II",
+  "description": "Level - Medium",
+  "source": "@site/docs/Tree/BinaryTree/PathSum/path_sum_2.mdx",
+  "sourceDirName": "Tree/BinaryTree/PathSum",
+  "slug": "/Tree/BinaryTree/PathSum/path_sum_2",
+  "permalink": "/docs/Tree/BinaryTree/PathSum/path_sum_2",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/PathSum/path_sum_2.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "sidebar_position": 12,
+    "title": "Path Sum II"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Binary Tree Maximum Path Sum",
+    "permalink": "/docs/Tree/BinaryTree/PathSum/max_path_sum"
+  },
+  "next": {
+    "title": "Level Order Traversal",
+    "permalink": "/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/level_order_traversal"
+  }
+}

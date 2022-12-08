@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Strings/reorganize_strings",
+  "id": "Strings/reorganize_strings",
+  "title": "Reorganize String",
+  "description": "Level - Medium",
+  "source": "@site/docs/Strings/reorganize_strings.mdx",
+  "sourceDirName": "Strings",
+  "slug": "/Strings/reorganize_strings",
+  "permalink": "/docs/Strings/reorganize_strings",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Strings/reorganize_strings.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Reorganize String"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Number of Palindromic Substrings",
+    "permalink": "/docs/Strings/number_of_palindromic_substrings"
+  },
+  "next": {
+    "title": "palindrome_partitioning",
+    "permalink": "/docs/Strings/Recursive/palindrome_partitioning"
+  }
+}

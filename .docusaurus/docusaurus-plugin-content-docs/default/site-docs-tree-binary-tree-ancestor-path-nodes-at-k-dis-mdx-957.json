@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinaryTree/AncestorPath/nodes_at_k_dis",
+  "id": "Tree/BinaryTree/AncestorPath/nodes_at_k_dis",
+  "title": "Nodes at K Distance",
+  "description": "Level - Medium",
+  "source": "@site/docs/Tree/BinaryTree/AncestorPath/nodes_at_k_dis.mdx",
+  "sourceDirName": "Tree/BinaryTree/AncestorPath",
+  "slug": "/Tree/BinaryTree/AncestorPath/nodes_at_k_dis",
+  "permalink": "/docs/Tree/BinaryTree/AncestorPath/nodes_at_k_dis",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/AncestorPath/nodes_at_k_dis.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9,
+    "title": "Nodes at K Distance"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "unique_bst_2",
+    "permalink": "/docs/Tree/BinarySearchTree/unique_bst_2"
+  },
+  "next": {
+    "title": "Burn Tree",
+    "permalink": "/docs/Tree/BinaryTree/AncestorPath/burn_tree"
+  }
+}

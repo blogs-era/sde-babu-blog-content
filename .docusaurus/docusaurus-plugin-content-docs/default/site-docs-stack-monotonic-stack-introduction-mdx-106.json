@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Stack/MonotonicStack/introduction",
+  "id": "Stack/MonotonicStack/introduction",
+  "title": "introduction",
+  "description": "whenever we need the max/min element and side by side have to maintain the order then monotonic stack is the best way to achive the goal.",
+  "source": "@site/docs/Stack/MonotonicStack/introduction.mdx",
+  "sourceDirName": "Stack/MonotonicStack",
+  "slug": "/Stack/MonotonicStack/introduction",
+  "permalink": "/docs/Stack/MonotonicStack/introduction",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Stack/MonotonicStack/introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Next Greater Element",
+    "permalink": "/docs/Stack/MonotonicStack/next_greater_element"
+  },
+  "next": {
+    "title": "largest_rectange_histogram",
+    "permalink": "/docs/Stack/MonotonicStack/largest_rectange_histogram"
+  }
+}

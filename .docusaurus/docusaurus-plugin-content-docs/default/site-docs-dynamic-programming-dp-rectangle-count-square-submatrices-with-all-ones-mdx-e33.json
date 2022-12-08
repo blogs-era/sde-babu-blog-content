@@ -1,0 +1,28 @@
+{
+  "unversionedId": "DynamicProgramming/DP-Rectangle/count-square-submatrices-with-all-ones",
+  "id": "DynamicProgramming/DP-Rectangle/count-square-submatrices-with-all-ones",
+  "title": "Count Square Submatrices with All Ones",
+  "description": "Level - Medium",
+  "source": "@site/docs/DynamicProgramming/DP-Rectangle/count-square-submatrices-with-all-ones.mdx",
+  "sourceDirName": "DynamicProgramming/DP-Rectangle",
+  "slug": "/DynamicProgramming/DP-Rectangle/count-square-submatrices-with-all-ones",
+  "permalink": "/docs/DynamicProgramming/DP-Rectangle/count-square-submatrices-with-all-ones",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/DynamicProgramming/DP-Rectangle/count-square-submatrices-with-all-ones.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Count Square Submatrices with All Ones"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "buy_sell_stocks_4",
+    "permalink": "/docs/DynamicProgramming/BuySellStocks/buy_sell_stocks_4"
+  },
+  "next": {
+    "title": "Maximal Squares",
+    "permalink": "/docs/DynamicProgramming/DP-Rectangle/maximal_square"
+  }
+}

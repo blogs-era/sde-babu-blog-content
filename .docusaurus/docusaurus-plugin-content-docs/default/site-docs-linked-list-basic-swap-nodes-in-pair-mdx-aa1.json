@@ -1,0 +1,24 @@
+{
+  "unversionedId": "LinkedList/Basic/swap_nodes_in_pair",
+  "id": "LinkedList/Basic/swap_nodes_in_pair",
+  "title": "swap_nodes_in_pair",
+  "description": "",
+  "source": "@site/docs/LinkedList/Basic/swap_nodes_in_pair.mdx",
+  "sourceDirName": "LinkedList/Basic",
+  "slug": "/LinkedList/Basic/swap_nodes_in_pair",
+  "permalink": "/docs/LinkedList/Basic/swap_nodes_in_pair",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/LinkedList/Basic/swap_nodes_in_pair.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "reorder_list",
+    "permalink": "/docs/LinkedList/Basic/reorder_list"
+  },
+  "next": {
+    "title": "first_node_in_cycle",
+    "permalink": "/docs/LinkedList/ListCycle/first_node_in_cycle"
+  }
+}

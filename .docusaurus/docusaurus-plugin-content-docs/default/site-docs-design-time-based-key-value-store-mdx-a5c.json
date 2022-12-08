@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Design/time-based-key-value-store",
+  "id": "Design/time-based-key-value-store",
+  "title": "time-based-key-value-store",
+  "description": "",
+  "source": "@site/docs/Design/time-based-key-value-store.mdx",
+  "sourceDirName": "Design",
+  "slug": "/Design/time-based-key-value-store",
+  "permalink": "/docs/Design/time-based-key-value-store",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Design/time-based-key-value-store.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "min_stack",
+    "permalink": "/docs/Design/min_stack"
+  },
+  "next": {
+    "title": "Detect cycle in a directed graph",
+    "permalink": "/docs/Graph/CycleDetection/directed_graph"
+  }
+}

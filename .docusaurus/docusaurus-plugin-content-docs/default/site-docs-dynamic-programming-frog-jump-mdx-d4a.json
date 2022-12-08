@@ -1,0 +1,28 @@
+{
+  "unversionedId": "DynamicProgramming/frog_jump",
+  "id": "DynamicProgramming/frog_jump",
+  "title": "Frog Jump",
+  "description": "Level - Hard",
+  "source": "@site/docs/DynamicProgramming/frog_jump.mdx",
+  "sourceDirName": "DynamicProgramming",
+  "slug": "/DynamicProgramming/frog_jump",
+  "permalink": "/docs/DynamicProgramming/frog_jump",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/DynamicProgramming/frog_jump.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Frog Jump"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "DynamicProgramming",
+    "permalink": "/docs/category/dynamicprogramming"
+  },
+  "next": {
+    "title": "Unique Binary Search Trees / Catalan Numbers",
+    "permalink": "/docs/DynamicProgramming/1D-DP/unique_binary_search_trees"
+  }
+}

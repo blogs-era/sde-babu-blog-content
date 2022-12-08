@@ -1,0 +1,28 @@
+{
+  "unversionedId": "DynamicProgramming/BuySellStocks/buy_sell_stocks_3",
+  "id": "DynamicProgramming/BuySellStocks/buy_sell_stocks_3",
+  "title": "Best Time to Buy and Sell Stock III",
+  "description": "Level - Hard",
+  "source": "@site/docs/DynamicProgramming/BuySellStocks/buy_sell_stocks_3.mdx",
+  "sourceDirName": "DynamicProgramming/BuySellStocks",
+  "slug": "/DynamicProgramming/BuySellStocks/buy_sell_stocks_3",
+  "permalink": "/docs/DynamicProgramming/BuySellStocks/buy_sell_stocks_3",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/DynamicProgramming/BuySellStocks/buy_sell_stocks_3.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Best Time to Buy and Sell Stock III"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Best Time to Buy and Sell Stock II",
+    "permalink": "/docs/DynamicProgramming/BuySellStocks/buy_sell_stocks_2"
+  },
+  "next": {
+    "title": "buy_sell_stocks_4",
+    "permalink": "/docs/DynamicProgramming/BuySellStocks/buy_sell_stocks_4"
+  }
+}

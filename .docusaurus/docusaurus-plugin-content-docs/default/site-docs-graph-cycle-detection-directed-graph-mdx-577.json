@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Graph/CycleDetection/directed_graph",
+  "id": "Graph/CycleDetection/directed_graph",
+  "title": "Detect cycle in a directed graph",
+  "description": "Level - Medium",
+  "source": "@site/docs/Graph/CycleDetection/directed_graph.mdx",
+  "sourceDirName": "Graph/CycleDetection",
+  "slug": "/Graph/CycleDetection/directed_graph",
+  "permalink": "/docs/Graph/CycleDetection/directed_graph",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Graph/CycleDetection/directed_graph.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Detect cycle in a directed graph"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "time-based-key-value-store",
+    "permalink": "/docs/Design/time-based-key-value-store"
+  },
+  "next": {
+    "title": "Detect cycle in a undirected graph",
+    "permalink": "/docs/Graph/CycleDetection/undirected_graph"
+  }
+}

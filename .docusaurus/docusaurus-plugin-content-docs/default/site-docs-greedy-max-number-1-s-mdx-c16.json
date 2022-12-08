@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Greedy/max_number_1s",
+  "id": "Greedy/max_number_1s",
+  "title": "Maximum no of 1's row",
+  "description": "Level - Medium",
+  "source": "@site/docs/Greedy/max_number_1s.mdx",
+  "sourceDirName": "Greedy",
+  "slug": "/Greedy/max_number_1s",
+  "permalink": "/docs/Greedy/max_number_1s",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Greedy/max_number_1s.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Maximum no of 1's row"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gas Station",
+    "permalink": "/docs/Greedy/gas_station"
+  },
+  "next": {
+    "title": "jump_game",
+    "permalink": "/docs/Greedy/jump_game"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "DynamicProgramming/1D-DP/decode_ways",
+  "id": "DynamicProgramming/1D-DP/decode_ways",
+  "title": "decode_ways",
+  "description": "recursive method",
+  "source": "@site/docs/DynamicProgramming/1D-DP/decode_ways.mdx",
+  "sourceDirName": "DynamicProgramming/1D-DP",
+  "slug": "/DynamicProgramming/1D-DP/decode_ways",
+  "permalink": "/docs/DynamicProgramming/1D-DP/decode_ways",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/DynamicProgramming/1D-DP/decode_ways.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "coin_change",
+    "permalink": "/docs/DynamicProgramming/1D-DP/coin_change"
+  },
+  "next": {
+    "title": "Maximum Length of Repeated Subarray",
+    "permalink": "/docs/DynamicProgramming/2D-DP/maxlen_repeated_subarray"
+  }
+}

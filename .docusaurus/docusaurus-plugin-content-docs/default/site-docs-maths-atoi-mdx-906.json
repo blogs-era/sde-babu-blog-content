@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Maths/atoi",
+  "id": "Maths/atoi",
+  "title": "atoi",
+  "description": "",
+  "source": "@site/docs/Maths/atoi.mdx",
+  "sourceDirName": "Maths",
+  "slug": "/Maths/atoi",
+  "permalink": "/docs/Maths/atoi",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Maths/atoi.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Missing Number",
+    "permalink": "/docs/Maths/missing_num"
+  },
+  "next": {
+    "title": "min_moves_for_equal_array",
+    "permalink": "/docs/Maths/min_moves_for_equal_array"
+  }
+}

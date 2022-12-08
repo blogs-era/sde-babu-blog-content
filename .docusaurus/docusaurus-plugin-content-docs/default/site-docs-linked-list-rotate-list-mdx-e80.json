@@ -1,0 +1,28 @@
+{
+  "unversionedId": "LinkedList/rotate_list",
+  "id": "LinkedList/rotate_list",
+  "title": "Rotate the Linked List",
+  "description": "Level - Medium",
+  "source": "@site/docs/LinkedList/rotate_list.mdx",
+  "sourceDirName": "LinkedList",
+  "slug": "/LinkedList/rotate_list",
+  "permalink": "/docs/LinkedList/rotate_list",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/LinkedList/rotate_list.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "title": "Rotate the Linked List"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Segregate even and odd nodes in a Link List",
+    "permalink": "/docs/LinkedList/segregate_even_odd"
+  },
+  "next": {
+    "title": "Remove Duplicates from Sorted List II",
+    "permalink": "/docs/LinkedList/remove_duplicate_2"
+  }
+}

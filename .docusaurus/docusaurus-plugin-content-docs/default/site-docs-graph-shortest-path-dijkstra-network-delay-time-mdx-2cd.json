@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Graph/ShortestPath/Dijkstra/network_delay_time",
+  "id": "Graph/ShortestPath/Dijkstra/network_delay_time",
+  "title": "Network Delay Time",
+  "description": "Level - Medium",
+  "source": "@site/docs/Graph/ShortestPath/Dijkstra/network_delay_time.mdx",
+  "sourceDirName": "Graph/ShortestPath/Dijkstra",
+  "slug": "/Graph/ShortestPath/Dijkstra/network_delay_time",
+  "permalink": "/docs/Graph/ShortestPath/Dijkstra/network_delay_time",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Graph/ShortestPath/Dijkstra/network_delay_time.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Network Delay Time"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction of Dijkstra's algorithm",
+    "permalink": "/docs/Graph/ShortestPath/Dijkstra/introduction"
+  },
+  "next": {
+    "title": "cheapest-flights-within-k-stops",
+    "permalink": "/docs/Graph/ShortestPath/Dijkstra/cheapest-flights-within-k-stops"
+  }
+}

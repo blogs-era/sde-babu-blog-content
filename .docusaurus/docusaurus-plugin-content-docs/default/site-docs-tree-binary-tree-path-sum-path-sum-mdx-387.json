@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinaryTree/PathSum/path_sum",
+  "id": "Tree/BinaryTree/PathSum/path_sum",
+  "title": "Path Sum",
+  "description": "Level - Easy",
+  "source": "@site/docs/Tree/BinaryTree/PathSum/path_sum.mdx",
+  "sourceDirName": "Tree/BinaryTree/PathSum",
+  "slug": "/Tree/BinaryTree/PathSum/path_sum",
+  "permalink": "/docs/Tree/BinaryTree/PathSum/path_sum",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/PathSum/path_sum.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Path Sum"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Construct Binary Tree from Preorder and Postorder Traversal",
+    "permalink": "/docs/Tree/BinaryTree/ConstructBinaryTreeFromTraversal/construct_from_preorder_postorder"
+  },
+  "next": {
+    "title": "Sum of Distances in Tree",
+    "permalink": "/docs/Tree/BinaryTree/PathSum/sum_of_distances_intree"
+  }
+}

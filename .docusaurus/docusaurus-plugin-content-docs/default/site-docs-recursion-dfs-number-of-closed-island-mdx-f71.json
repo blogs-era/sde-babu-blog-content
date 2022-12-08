@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Recursion/DFS/number_of_closed_island",
+  "id": "Recursion/DFS/number_of_closed_island",
+  "title": "Number of Closed Island",
+  "description": "Level - Medium",
+  "source": "@site/docs/Recursion/DFS/number_of_closed_island.mdx",
+  "sourceDirName": "Recursion/DFS",
+  "slug": "/Recursion/DFS/number_of_closed_island",
+  "permalink": "/docs/Recursion/DFS/number_of_closed_island",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Recursion/DFS/number_of_closed_island.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Number of Closed Island"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Shortest Bridge",
+    "permalink": "/docs/Recursion/DFS/shortest_bridge"
+  },
+  "next": {
+    "title": "Making a Large Island",
+    "permalink": "/docs/Recursion/DFS/making_large_island"
+  }
+}

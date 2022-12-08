@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Heap/PriorityQueue/k-closest-points",
+  "id": "Heap/PriorityQueue/k-closest-points",
+  "title": "Find K Closest Elements",
+  "description": "Level - Medium",
+  "source": "@site/docs/Heap/PriorityQueue/k-closest-points.mdx",
+  "sourceDirName": "Heap/PriorityQueue",
+  "slug": "/Heap/PriorityQueue/k-closest-points",
+  "permalink": "/docs/Heap/PriorityQueue/k-closest-points",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Heap/PriorityQueue/k-closest-points.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Find K Closest Elements"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "median_stream",
+    "permalink": "/docs/Heap/Heap/median_stream"
+  },
+  "next": {
+    "title": "Permutation Sequence",
+    "permalink": "/docs/Maths/permutation_sequence"
+  }
+}

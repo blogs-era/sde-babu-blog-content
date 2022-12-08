@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Arrays/BasicQues/majority_element",
+  "id": "Arrays/BasicQues/majority_element",
+  "title": "majority_element",
+  "description": "",
+  "source": "@site/docs/Arrays/BasicQues/majority_element.mdx",
+  "sourceDirName": "Arrays/BasicQues",
+  "slug": "/Arrays/BasicQues/majority_element",
+  "permalink": "/docs/Arrays/BasicQues/majority_element",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/BasicQues/majority_element.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Arrays",
+    "permalink": "/docs/category/arrays"
+  },
+  "next": {
+    "title": "Duplicate in Array",
+    "permalink": "/docs/Arrays/CycleTechniques/duplicate_in_array"
+  }
+}

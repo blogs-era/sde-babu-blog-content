@@ -1,0 +1,24 @@
+{
+  "unversionedId": "DynamicProgramming/1D-DP/coin_change",
+  "id": "DynamicProgramming/1D-DP/coin_change",
+  "title": "coin_change",
+  "description": "Recursive Code",
+  "source": "@site/docs/DynamicProgramming/1D-DP/coin_change.mdx",
+  "sourceDirName": "DynamicProgramming/1D-DP",
+  "slug": "/DynamicProgramming/1D-DP/coin_change",
+  "permalink": "/docs/DynamicProgramming/1D-DP/coin_change",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/DynamicProgramming/1D-DP/coin_change.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Jump Game",
+    "permalink": "/docs/DynamicProgramming/1D-DP/jump_game"
+  },
+  "next": {
+    "title": "decode_ways",
+    "permalink": "/docs/DynamicProgramming/1D-DP/decode_ways"
+  }
+}

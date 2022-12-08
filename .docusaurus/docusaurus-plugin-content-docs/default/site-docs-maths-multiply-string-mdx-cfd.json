@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Maths/multiply_string",
+  "id": "Maths/multiply_string",
+  "title": "multiply_string",
+  "description": "",
+  "source": "@site/docs/Maths/multiply_string.mdx",
+  "sourceDirName": "Maths",
+  "slug": "/Maths/multiply_string",
+  "permalink": "/docs/Maths/multiply_string",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Maths/multiply_string.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "min_moves_for_equal_array",
+    "permalink": "/docs/Maths/min_moves_for_equal_array"
+  },
+  "next": {
+    "title": "plus_one",
+    "permalink": "/docs/Maths/plus_one"
+  }
+}

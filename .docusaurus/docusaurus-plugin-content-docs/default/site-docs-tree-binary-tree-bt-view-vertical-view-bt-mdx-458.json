@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinaryTree/BTView/vertical_view_bt",
+  "id": "Tree/BinaryTree/BTView/vertical_view_bt",
+  "title": "Vertical Order Traversal of a Binary Tree",
+  "description": "Level - Hard",
+  "source": "@site/docs/Tree/BinaryTree/BTView/vertical_view_bt.mdx",
+  "sourceDirName": "Tree/BinaryTree/BTView",
+  "slug": "/Tree/BinaryTree/BTView/vertical_view_bt",
+  "permalink": "/docs/Tree/BinaryTree/BTView/vertical_view_bt",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/BTView/vertical_view_bt.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Vertical Order Traversal of a Binary Tree"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Burn Tree",
+    "permalink": "/docs/Tree/BinaryTree/AncestorPath/burn_tree"
+  },
+  "next": {
+    "title": "Height of Binary Tree",
+    "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/height_of_binary_tree"
+  }
+}

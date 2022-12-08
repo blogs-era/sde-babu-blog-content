@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Tree/BinarySearchTree/delete_node_bst",
+  "id": "Tree/BinarySearchTree/delete_node_bst",
+  "title": "delete_node_bst",
+  "description": "",
+  "source": "@site/docs/Tree/BinarySearchTree/delete_node_bst.mdx",
+  "sourceDirName": "Tree/BinarySearchTree",
+  "slug": "/Tree/BinarySearchTree/delete_node_bst",
+  "permalink": "/docs/Tree/BinarySearchTree/delete_node_bst",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinarySearchTree/delete_node_bst.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Binary Search Tree Iterator",
+    "permalink": "/docs/Tree/BinarySearchTree/bst_iterator"
+  },
+  "next": {
+    "title": "is_valid_bst",
+    "permalink": "/docs/Tree/BinarySearchTree/is_valid_bst"
+  }
+}

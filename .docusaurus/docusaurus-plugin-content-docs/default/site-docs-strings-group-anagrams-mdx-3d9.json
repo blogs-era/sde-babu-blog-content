@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Strings/group_anagrams",
+  "id": "Strings/group_anagrams",
+  "title": "group_anagrams",
+  "description": "",
+  "source": "@site/docs/Strings/group_anagrams.mdx",
+  "sourceDirName": "Strings",
+  "slug": "/Strings/group_anagrams",
+  "permalink": "/docs/Strings/group_anagrams",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Strings/group_anagrams.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "count_say",
+    "permalink": "/docs/Strings/count_say"
+  },
+  "next": {
+    "title": "substring_search",
+    "permalink": "/docs/Strings/substring_search"
+  }
+}

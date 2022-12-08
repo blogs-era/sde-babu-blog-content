@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Arrays/N-Sum/sum-closest",
+  "id": "Arrays/N-Sum/sum-closest",
+  "title": "sum-closest",
+  "description": "",
+  "source": "@site/docs/Arrays/N-Sum/3-sum-closest.mdx",
+  "sourceDirName": "Arrays/N-Sum",
+  "slug": "/Arrays/N-Sum/sum-closest",
+  "permalink": "/docs/Arrays/N-Sum/sum-closest",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/N-Sum/3-sum-closest.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "spiral_matrix",
+    "permalink": "/docs/Arrays/Matrix/spiral_matrix"
+  },
+  "next": {
+    "title": "sum",
+    "permalink": "/docs/Arrays/N-Sum/sum"
+  }
+}

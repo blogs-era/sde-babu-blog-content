@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Recursion/DFS/word_search_2",
+  "id": "Recursion/DFS/word_search_2",
+  "title": "word_search_2",
+  "description": "",
+  "source": "@site/docs/Recursion/DFS/word_search_2.mdx",
+  "sourceDirName": "Recursion/DFS",
+  "slug": "/Recursion/DFS/word_search_2",
+  "permalink": "/docs/Recursion/DFS/word_search_2",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Recursion/DFS/word_search_2.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "word_search",
+    "permalink": "/docs/Recursion/DFS/word_search"
+  },
+  "next": {
+    "title": "Introduction of Binary Search",
+    "permalink": "/docs/Searching/BinarySearch/introduction"
+  }
+}

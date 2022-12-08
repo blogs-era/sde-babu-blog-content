@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Graph/FloodFill/replace_o_x_surrounded_x",
+  "id": "Graph/FloodFill/replace_o_x_surrounded_x",
+  "title": "Given a matrix of ‘O’ and ‘X’, replace ‘O’ with ‘X’ if surrounded by ‘X’",
+  "description": "Statement",
+  "source": "@site/docs/Graph/FloodFill/replace_o_x_surrounded_x.mdx",
+  "sourceDirName": "Graph/FloodFill",
+  "slug": "/Graph/FloodFill/replace_o_x_surrounded_x",
+  "permalink": "/docs/Graph/FloodFill/replace_o_x_surrounded_x",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Graph/FloodFill/replace_o_x_surrounded_x.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Given a matrix of ‘O’ and ‘X’, replace ‘O’ with ‘X’ if surrounded by ‘X’"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Pacific Atlantic Water Flow",
+    "permalink": "/docs/Graph/FloodFill/pacific_atlantic_water_flow"
+  },
+  "next": {
+    "title": "Introduction of Dijkstra's algorithm",
+    "permalink": "/docs/Graph/ShortestPath/Dijkstra/introduction"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Searching/BinarySearch/search_in_rotated",
+  "id": "Searching/BinarySearch/search_in_rotated",
+  "title": "Search in Rotated Sorted Array",
+  "description": "Level - Medium",
+  "source": "@site/docs/Searching/BinarySearch/search_in_rotated.mdx",
+  "sourceDirName": "Searching/BinarySearch",
+  "slug": "/Searching/BinarySearch/search_in_rotated",
+  "permalink": "/docs/Searching/BinarySearch/search_in_rotated",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Searching/BinarySearch/search_in_rotated.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Search in Rotated Sorted Array"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Minimum Limit of Balls In Bag",
+    "permalink": "/docs/Searching/BinarySearch/minimum_limit_of_balls_in_bag"
+  },
+  "next": {
+    "title": "Median of Two Sorted Arrays",
+    "permalink": "/docs/Searching/BinarySearch/median_2_sorted_arrays"
+  }
+}

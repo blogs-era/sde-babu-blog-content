@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinaryTree/ConstructBinaryTreeFromTraversal/construct_from_preorder_postorder",
+  "id": "Tree/BinaryTree/ConstructBinaryTreeFromTraversal/construct_from_preorder_postorder",
+  "title": "Construct Binary Tree from Preorder and Postorder Traversal",
+  "description": "Level - Medium",
+  "source": "@site/docs/Tree/BinaryTree/ConstructBinaryTreeFromTraversal/construct_from_preorder_postorder.mdx",
+  "sourceDirName": "Tree/BinaryTree/ConstructBinaryTreeFromTraversal",
+  "slug": "/Tree/BinaryTree/ConstructBinaryTreeFromTraversal/construct_from_preorder_postorder",
+  "permalink": "/docs/Tree/BinaryTree/ConstructBinaryTreeFromTraversal/construct_from_preorder_postorder",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/ConstructBinaryTreeFromTraversal/construct_from_preorder_postorder.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Construct Binary Tree from Preorder and Postorder Traversal"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+    "permalink": "/docs/Tree/BinaryTree/ConstructBinaryTreeFromTraversal/construct_from_inorder_preorder"
+  },
+  "next": {
+    "title": "Path Sum",
+    "permalink": "/docs/Tree/BinaryTree/PathSum/path_sum"
+  }
+}

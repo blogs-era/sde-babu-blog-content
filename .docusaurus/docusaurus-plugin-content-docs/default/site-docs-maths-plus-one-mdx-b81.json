@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Maths/plus_one",
+  "id": "Maths/plus_one",
+  "title": "plus_one",
+  "description": "",
+  "source": "@site/docs/Maths/plus_one.mdx",
+  "sourceDirName": "Maths",
+  "slug": "/Maths/plus_one",
+  "permalink": "/docs/Maths/plus_one",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Maths/plus_one.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "multiply_string",
+    "permalink": "/docs/Maths/multiply_string"
+  },
+  "next": {
+    "title": "pow_x_n",
+    "permalink": "/docs/Maths/pow_x_n"
+  }
+}

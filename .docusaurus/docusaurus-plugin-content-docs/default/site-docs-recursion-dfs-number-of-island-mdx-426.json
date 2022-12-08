@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Recursion/DFS/number_of_island",
+  "id": "Recursion/DFS/number_of_island",
+  "title": "number_of_island",
+  "description": "",
+  "source": "@site/docs/Recursion/DFS/number_of_island.mdx",
+  "sourceDirName": "Recursion/DFS",
+  "slug": "/Recursion/DFS/number_of_island",
+  "permalink": "/docs/Recursion/DFS/number_of_island",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Recursion/DFS/number_of_island.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "introduction",
+    "permalink": "/docs/Recursion/DFS/introduction"
+  },
+  "next": {
+    "title": "word_search",
+    "permalink": "/docs/Recursion/DFS/word_search"
+  }
+}

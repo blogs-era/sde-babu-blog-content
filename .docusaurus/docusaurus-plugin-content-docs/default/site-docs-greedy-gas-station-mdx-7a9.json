@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Greedy/gas_station",
+  "id": "Greedy/gas_station",
+  "title": "Gas Station",
+  "description": "Level - Medium",
+  "source": "@site/docs/Greedy/gas_station.mdx",
+  "sourceDirName": "Greedy",
+  "slug": "/Greedy/gas_station",
+  "permalink": "/docs/Greedy/gas_station",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Greedy/gas_station.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Gas Station"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "is_graph_bipartite",
+    "permalink": "/docs/Graph/is_graph_bipartite"
+  },
+  "next": {
+    "title": "Maximum no of 1's row",
+    "permalink": "/docs/Greedy/max_number_1s"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Stack/MonotonicStack/largest_rectange_histogram",
+  "id": "Stack/MonotonicStack/largest_rectange_histogram",
+  "title": "largest_rectange_histogram",
+  "description": "",
+  "source": "@site/docs/Stack/MonotonicStack/largest_rectange_histogram.mdx",
+  "sourceDirName": "Stack/MonotonicStack",
+  "slug": "/Stack/MonotonicStack/largest_rectange_histogram",
+  "permalink": "/docs/Stack/MonotonicStack/largest_rectange_histogram",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Stack/MonotonicStack/largest_rectange_histogram.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "introduction",
+    "permalink": "/docs/Stack/MonotonicStack/introduction"
+  },
+  "next": {
+    "title": "maximum_binary_tree",
+    "permalink": "/docs/Stack/MonotonicStack/maximum_binary_tree"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Arrays/TwoPointers/merge_sorted_arrays",
+  "id": "Arrays/TwoPointers/merge_sorted_arrays",
+  "title": "merge_sorted_arrays",
+  "description": "",
+  "source": "@site/docs/Arrays/TwoPointers/merge_sorted_arrays.mdx",
+  "sourceDirName": "Arrays/TwoPointers",
+  "slug": "/Arrays/TwoPointers/merge_sorted_arrays",
+  "permalink": "/docs/Arrays/TwoPointers/merge_sorted_arrays",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/TwoPointers/merge_sorted_arrays.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "container_with_most_water",
+    "permalink": "/docs/Arrays/TwoPointers/container_with_most_water"
+  },
+  "next": {
+    "title": "move_zeroes",
+    "permalink": "/docs/Arrays/TwoPointers/move_zeroes"
+  }
+}

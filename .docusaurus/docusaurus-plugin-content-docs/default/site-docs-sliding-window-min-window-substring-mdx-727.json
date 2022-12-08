@@ -1,0 +1,24 @@
+{
+  "unversionedId": "SlidingWindow/min_window_substring",
+  "id": "SlidingWindow/min_window_substring",
+  "title": "min_window_substring",
+  "description": "",
+  "source": "@site/docs/SlidingWindow/min_window_substring.mdx",
+  "sourceDirName": "SlidingWindow",
+  "slug": "/SlidingWindow/min_window_substring",
+  "permalink": "/docs/SlidingWindow/min_window_substring",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/SlidingWindow/min_window_substring.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "longest_substring_without_repeat",
+    "permalink": "/docs/SlidingWindow/longest_substring_without_repeat"
+  },
+  "next": {
+    "title": "Introduction of Merge Sort",
+    "permalink": "/docs/Sorting/MergeSort/introduction"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Stack/MonotonicStack/most_competitive_subsequence",
+  "id": "Stack/MonotonicStack/most_competitive_subsequence",
+  "title": "most_competitive_subsequence",
+  "description": "",
+  "source": "@site/docs/Stack/MonotonicStack/most_competitive_subsequence.mdx",
+  "sourceDirName": "Stack/MonotonicStack",
+  "slug": "/Stack/MonotonicStack/most_competitive_subsequence",
+  "permalink": "/docs/Stack/MonotonicStack/most_competitive_subsequence",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Stack/MonotonicStack/most_competitive_subsequence.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "maximum_binary_tree",
+    "permalink": "/docs/Stack/MonotonicStack/maximum_binary_tree"
+  },
+  "next": {
+    "title": "remove_k_digits",
+    "permalink": "/docs/Stack/MonotonicStack/remove_k_digits"
+  }
+}

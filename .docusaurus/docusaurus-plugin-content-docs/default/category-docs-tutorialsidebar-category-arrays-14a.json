@@ -5,12 +5,12 @@
   "permalink": "/docs/category/arrays",
   "navigation": {
     "previous": {
-      "title": "Sliding Window Maximum",
-      "permalink": "/docs/Queue/sliding_window_maximum"
+      "title": "reverse_polish_notation",
+      "permalink": "/docs/Stack/reverse_polish_notation"
     },
     "next": {
-      "title": "Running Sum Array",
-      "permalink": "/docs/Arrays/Prefix-Sum/running_sum"
+      "title": "majority_element",
+      "permalink": "/docs/Arrays/BasicQues/majority_element"
     }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Searching/BinarySearch/median_2_sorted_arrays",
+  "id": "Searching/BinarySearch/median_2_sorted_arrays",
+  "title": "Median of Two Sorted Arrays",
+  "description": "Level - Hard",
+  "source": "@site/docs/Searching/BinarySearch/median_2_sorted_arrays.mdx",
+  "sourceDirName": "Searching/BinarySearch",
+  "slug": "/Searching/BinarySearch/median_2_sorted_arrays",
+  "permalink": "/docs/Searching/BinarySearch/median_2_sorted_arrays",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Searching/BinarySearch/median_2_sorted_arrays.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "title": "Median of Two Sorted Arrays"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Search in Rotated Sorted Array",
+    "permalink": "/docs/Searching/BinarySearch/search_in_rotated"
+  },
+  "next": {
+    "title": "find_peak",
+    "permalink": "/docs/Searching/BinarySearch/find_peak"
+  }
+}

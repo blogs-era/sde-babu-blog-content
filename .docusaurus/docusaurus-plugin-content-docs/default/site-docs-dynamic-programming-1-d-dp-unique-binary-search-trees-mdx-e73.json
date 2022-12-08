@@ -1,0 +1,28 @@
+{
+  "unversionedId": "DynamicProgramming/1D-DP/unique_binary_search_trees",
+  "id": "DynamicProgramming/1D-DP/unique_binary_search_trees",
+  "title": "Unique Binary Search Trees / Catalan Numbers",
+  "description": "Level - Medium",
+  "source": "@site/docs/DynamicProgramming/1D-DP/unique_binary_search_trees.mdx",
+  "sourceDirName": "DynamicProgramming/1D-DP",
+  "slug": "/DynamicProgramming/1D-DP/unique_binary_search_trees",
+  "permalink": "/docs/DynamicProgramming/1D-DP/unique_binary_search_trees",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/DynamicProgramming/1D-DP/unique_binary_search_trees.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Unique Binary Search Trees / Catalan Numbers"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Frog Jump",
+    "permalink": "/docs/DynamicProgramming/frog_jump"
+  },
+  "next": {
+    "title": "Longest Increasing Subsequence",
+    "permalink": "/docs/DynamicProgramming/1D-DP/longest_increasing_subsequence"
+  }
+}

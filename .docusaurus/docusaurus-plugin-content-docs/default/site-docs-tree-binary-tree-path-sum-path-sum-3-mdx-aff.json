@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinaryTree/PathSum/path_sum_3",
+  "id": "Tree/BinaryTree/PathSum/path_sum_3",
+  "title": "Path Sum 3",
+  "description": "Level - Medium",
+  "source": "@site/docs/Tree/BinaryTree/PathSum/path_sum_3.mdx",
+  "sourceDirName": "Tree/BinaryTree/PathSum",
+  "slug": "/Tree/BinaryTree/PathSum/path_sum_3",
+  "permalink": "/docs/Tree/BinaryTree/PathSum/path_sum_3",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/PathSum/path_sum_3.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6,
+    "title": "Path Sum 3"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sum of Distances in Tree",
+    "permalink": "/docs/Tree/BinaryTree/PathSum/sum_of_distances_intree"
+  },
+  "next": {
+    "title": "Binary Tree Maximum Path Sum",
+    "permalink": "/docs/Tree/BinaryTree/PathSum/max_path_sum"
+  }
+}

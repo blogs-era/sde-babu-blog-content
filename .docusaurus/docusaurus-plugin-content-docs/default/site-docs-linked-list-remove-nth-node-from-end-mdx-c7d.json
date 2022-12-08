@@ -1,0 +1,28 @@
+{
+  "unversionedId": "LinkedList/remove_nth_node_from_end",
+  "id": "LinkedList/remove_nth_node_from_end",
+  "title": "Remove Nth Node From End of List",
+  "description": "Level - Medium",
+  "source": "@site/docs/LinkedList/remove_nth_node_from_end.mdx",
+  "sourceDirName": "LinkedList",
+  "slug": "/LinkedList/remove_nth_node_from_end",
+  "permalink": "/docs/LinkedList/remove_nth_node_from_end",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/LinkedList/remove_nth_node_from_end.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8,
+    "title": "Remove Nth Node From End of List"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Copy List with Random Pointer",
+    "permalink": "/docs/LinkedList/copy_list_random_pointer"
+  },
+  "next": {
+    "title": "Reverse Linked List 2",
+    "permalink": "/docs/LinkedList/Basic/reverse_linked_list"
+  }
+}

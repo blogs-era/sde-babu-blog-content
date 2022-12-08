@@ -1,0 +1,28 @@
+{
+  "unversionedId": "LinkedList/Maths/add_two_numers",
+  "id": "LinkedList/Maths/add_two_numers",
+  "title": "Add Two Numbers",
+  "description": "Level - Medium",
+  "source": "@site/docs/LinkedList/Maths/add_two_numers.mdx",
+  "sourceDirName": "LinkedList/Maths",
+  "slug": "/LinkedList/Maths/add_two_numers",
+  "permalink": "/docs/LinkedList/Maths/add_two_numers",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/LinkedList/Maths/add_two_numers.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Add Two Numbers"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "first_node_in_cycle",
+    "permalink": "/docs/LinkedList/ListCycle/first_node_in_cycle"
+  },
+  "next": {
+    "title": "add_number_2",
+    "permalink": "/docs/LinkedList/Maths/add_number_2"
+  }
+}

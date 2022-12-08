@@ -1,0 +1,16 @@
+{
+  "title": "DynamicProgramming",
+  "description": "Dynamic Programming which mostly help us to solve the recursive problem in optimized way",
+  "slug": "/category/dynamicprogramming",
+  "permalink": "/docs/category/dynamicprogramming",
+  "navigation": {
+    "previous": {
+      "title": "Number of Islands",
+      "permalink": "/docs/Queue/BFS/number_of_island"
+    },
+    "next": {
+      "title": "Frog Jump",
+      "permalink": "/docs/DynamicProgramming/frog_jump"
+    }
+  }
+}

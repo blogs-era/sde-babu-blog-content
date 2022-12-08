@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Tree/BinarySearchTree/range_sum_bst",
+  "id": "Tree/BinarySearchTree/range_sum_bst",
+  "title": "range_sum_bst",
+  "description": "",
+  "source": "@site/docs/Tree/BinarySearchTree/range_sum_bst.mdx",
+  "sourceDirName": "Tree/BinarySearchTree",
+  "slug": "/Tree/BinarySearchTree/range_sum_bst",
+  "permalink": "/docs/Tree/BinarySearchTree/range_sum_bst",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinarySearchTree/range_sum_bst.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "is_valid_bst",
+    "permalink": "/docs/Tree/BinarySearchTree/is_valid_bst"
+  },
+  "next": {
+    "title": "unique_bst_2",
+    "permalink": "/docs/Tree/BinarySearchTree/unique_bst_2"
+  }
+}

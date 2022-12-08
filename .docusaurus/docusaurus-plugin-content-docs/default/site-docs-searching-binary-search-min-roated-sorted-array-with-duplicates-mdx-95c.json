@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Searching/BinarySearch/min_roated_sorted_array_with_duplicates",
+  "id": "Searching/BinarySearch/min_roated_sorted_array_with_duplicates",
+  "title": "min_roated_sorted_array_with_duplicates",
+  "description": "",
+  "source": "@site/docs/Searching/BinarySearch/min_roated_sorted_array_with_duplicates.mdx",
+  "sourceDirName": "Searching/BinarySearch",
+  "slug": "/Searching/BinarySearch/min_roated_sorted_array_with_duplicates",
+  "permalink": "/docs/Searching/BinarySearch/min_roated_sorted_array_with_duplicates",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Searching/BinarySearch/min_roated_sorted_array_with_duplicates.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "min_in_roated_sorted_array",
+    "permalink": "/docs/Searching/BinarySearch/min_in_roated_sorted_array"
+  },
+  "next": {
+    "title": "longest-repeating-character-replacement",
+    "permalink": "/docs/SlidingWindow/longest-repeating-character-replacement"
+  }
+}

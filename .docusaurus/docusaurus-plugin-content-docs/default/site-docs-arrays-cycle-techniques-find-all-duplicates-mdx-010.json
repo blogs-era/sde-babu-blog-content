@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Arrays/CycleTechniques/find_all_duplicates",
+  "id": "Arrays/CycleTechniques/find_all_duplicates",
+  "title": "find_all_duplicates",
+  "description": "",
+  "source": "@site/docs/Arrays/CycleTechniques/find_all_duplicates.mdx",
+  "sourceDirName": "Arrays/CycleTechniques",
+  "slug": "/Arrays/CycleTechniques/find_all_duplicates",
+  "permalink": "/docs/Arrays/CycleTechniques/find_all_duplicates",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/CycleTechniques/find_all_duplicates.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "First Missing Positive",
+    "permalink": "/docs/Arrays/CycleTechniques/first_missing_pos"
+  },
+  "next": {
+    "title": "Merge Intervals",
+    "permalink": "/docs/Arrays/Interval/merge_intervals"
+  }
+}

@@ -1,0 +1,43 @@
+```js
+class Solution {
+    public int neighbourNumber(int[][] board,int r,int c){
+        int n = board.length,m = board[0].length;
+        int[] dx = {-1,1,0,0,-1,1,1,-1};
+        int[] dy = {0,0,-1,1,-1,1,-1,1};
+        int neigh = 0;
+        for(int i=0;i<8;i++){
+            int x = r+dx[i], y = c+dy[i];
+            if(x>=0 && y>=0 && x<n && y<m && (board[x][y]==1 || board[x][y]==3))neigh++;
+        }
+        return neigh;
+    }
+    public void gameOfLife(int[][] board) {
+        int n = board.length,m = board[0].length; 
+        // calculate the neighbours ignore neighbour with 0,2
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                int neigh = neighbourNumber(board,i,j);
+                if(board[i][j]==1){
+                    if(neigh==2 || neigh==3){
+                        board[i][j] = 3;
+                    }
+                }else{
+                    if(neigh==3)board[i][j] = 2;
+                }
+            }
+        }
+        // replace all 1 with 0 and 
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(board[i][j]==1){
+                    board[i][j] = 0;
+                }else if(board[i][j]==2 || board[i][j]==3){
+                    board[i][j] = 1;
+                }
+            }
+        }
+    }
+}
+
+
+```

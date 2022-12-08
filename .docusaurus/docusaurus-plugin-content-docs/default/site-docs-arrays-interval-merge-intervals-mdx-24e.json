@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Arrays/Interval/merge_intervals",
+  "id": "Arrays/Interval/merge_intervals",
+  "title": "Merge Intervals",
+  "description": "Level - Medium",
+  "source": "@site/docs/Arrays/Interval/merge_intervals.mdx",
+  "sourceDirName": "Arrays/Interval",
+  "slug": "/Arrays/Interval/merge_intervals",
+  "permalink": "/docs/Arrays/Interval/merge_intervals",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/Interval/merge_intervals.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Merge Intervals"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "find_all_duplicates",
+    "permalink": "/docs/Arrays/CycleTechniques/find_all_duplicates"
+  },
+  "next": {
+    "title": "Maximum Subarray",
+    "permalink": "/docs/Arrays/KadaneAlgo/max_subarray"
+  }
+}

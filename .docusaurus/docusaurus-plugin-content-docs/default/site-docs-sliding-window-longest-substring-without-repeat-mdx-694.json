@@ -1,0 +1,24 @@
+{
+  "unversionedId": "SlidingWindow/longest_substring_without_repeat",
+  "id": "SlidingWindow/longest_substring_without_repeat",
+  "title": "longest_substring_without_repeat",
+  "description": "",
+  "source": "@site/docs/SlidingWindow/longest_substring_without_repeat.mdx",
+  "sourceDirName": "SlidingWindow",
+  "slug": "/SlidingWindow/longest_substring_without_repeat",
+  "permalink": "/docs/SlidingWindow/longest_substring_without_repeat",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/SlidingWindow/longest_substring_without_repeat.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "longest-substring-with-at-least-k-repeating-characters",
+    "permalink": "/docs/SlidingWindow/longest-substring-with-at-least-k-repeating-characters"
+  },
+  "next": {
+    "title": "min_window_substring",
+    "permalink": "/docs/SlidingWindow/min_window_substring"
+  }
+}

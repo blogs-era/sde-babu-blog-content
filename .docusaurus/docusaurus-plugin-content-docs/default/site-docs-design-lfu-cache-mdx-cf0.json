@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Design/lfu_cache",
+  "id": "Design/lfu_cache",
+  "title": "lfu_cache",
+  "description": "",
+  "source": "@site/docs/Design/lfu_cache.mdx",
+  "sourceDirName": "Design",
+  "slug": "/Design/lfu_cache",
+  "permalink": "/docs/Design/lfu_cache",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Design/lfu_cache.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "power_of_2",
+    "permalink": "/docs/BitManipulation/power_of_2"
+  },
+  "next": {
+    "title": "lru_cache",
+    "permalink": "/docs/Design/lru_cache"
+  }
+}

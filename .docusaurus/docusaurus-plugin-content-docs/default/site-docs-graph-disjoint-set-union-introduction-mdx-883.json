@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Graph/DisjointSetUnion/introduction",
+  "id": "Graph/DisjointSetUnion/introduction",
+  "title": "Introduction to Disjoin Set Union",
+  "description": "",
+  "source": "@site/docs/Graph/DisjointSetUnion/introduction.mdx",
+  "sourceDirName": "Graph/DisjointSetUnion",
+  "slug": "/Graph/DisjointSetUnion/introduction",
+  "permalink": "/docs/Graph/DisjointSetUnion/introduction",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Graph/DisjointSetUnion/introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Introduction to Disjoin Set Union"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Detect cycle in a undirected graph",
+    "permalink": "/docs/Graph/CycleDetection/undirected_graph"
+  },
+  "next": {
+    "title": "Redundant Connection",
+    "permalink": "/docs/Graph/DisjointSetUnion/redundant_connection"
+  }
+}

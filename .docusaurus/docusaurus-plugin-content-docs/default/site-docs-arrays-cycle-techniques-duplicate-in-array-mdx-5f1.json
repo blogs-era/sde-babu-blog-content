@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Arrays/CycleTechniques/duplicate_in_array",
+  "id": "Arrays/CycleTechniques/duplicate_in_array",
+  "title": "Duplicate in Array",
+  "description": "Level - Medium",
+  "source": "@site/docs/Arrays/CycleTechniques/duplicate_in_array.mdx",
+  "sourceDirName": "Arrays/CycleTechniques",
+  "slug": "/Arrays/CycleTechniques/duplicate_in_array",
+  "permalink": "/docs/Arrays/CycleTechniques/duplicate_in_array",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/CycleTechniques/duplicate_in_array.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Duplicate in Array"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "majority_element",
+    "permalink": "/docs/Arrays/BasicQues/majority_element"
+  },
+  "next": {
+    "title": "First Missing Positive",
+    "permalink": "/docs/Arrays/CycleTechniques/first_missing_pos"
+  }
+}

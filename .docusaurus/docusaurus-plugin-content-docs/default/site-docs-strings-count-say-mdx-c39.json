@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Strings/count_say",
+  "id": "Strings/count_say",
+  "title": "count_say",
+  "description": "",
+  "source": "@site/docs/Strings/count_say.mdx",
+  "sourceDirName": "Strings",
+  "slug": "/Strings/count_say",
+  "permalink": "/docs/Strings/count_say",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Strings/count_say.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "all_anagrams",
+    "permalink": "/docs/Strings/all_anagrams"
+  },
+  "next": {
+    "title": "group_anagrams",
+    "permalink": "/docs/Strings/group_anagrams"
+  }
+}

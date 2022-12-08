@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinaryTree/AncestorPath/burn_tree",
+  "id": "Tree/BinaryTree/AncestorPath/burn_tree",
+  "title": "Burn Tree",
+  "description": "Level - Medium",
+  "source": "@site/docs/Tree/BinaryTree/AncestorPath/burn_tree.mdx",
+  "sourceDirName": "Tree/BinaryTree/AncestorPath",
+  "slug": "/Tree/BinaryTree/AncestorPath/burn_tree",
+  "permalink": "/docs/Tree/BinaryTree/AncestorPath/burn_tree",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/AncestorPath/burn_tree.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "sidebar_position": 15,
+    "title": "Burn Tree"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Nodes at K Distance",
+    "permalink": "/docs/Tree/BinaryTree/AncestorPath/nodes_at_k_dis"
+  },
+  "next": {
+    "title": "Vertical Order Traversal of a Binary Tree",
+    "permalink": "/docs/Tree/BinaryTree/BTView/vertical_view_bt"
+  }
+}

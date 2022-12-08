@@ -1,0 +1,24 @@
+{
+  "unversionedId": "DynamicProgramming/BuySellStocks/buy_sell_stocks_4",
+  "id": "DynamicProgramming/BuySellStocks/buy_sell_stocks_4",
+  "title": "buy_sell_stocks_4",
+  "description": "",
+  "source": "@site/docs/DynamicProgramming/BuySellStocks/buy_sell_stocks_4.mdx",
+  "sourceDirName": "DynamicProgramming/BuySellStocks",
+  "slug": "/DynamicProgramming/BuySellStocks/buy_sell_stocks_4",
+  "permalink": "/docs/DynamicProgramming/BuySellStocks/buy_sell_stocks_4",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/DynamicProgramming/BuySellStocks/buy_sell_stocks_4.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Best Time to Buy and Sell Stock III",
+    "permalink": "/docs/DynamicProgramming/BuySellStocks/buy_sell_stocks_3"
+  },
+  "next": {
+    "title": "Count Square Submatrices with All Ones",
+    "permalink": "/docs/DynamicProgramming/DP-Rectangle/count-square-submatrices-with-all-ones"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Graph/FloodFill/introduction",
+  "id": "Graph/FloodFill/introduction",
+  "title": "Introduction to Flood Fill Algorithm",
+  "description": "Where we use flood fill algorithm ?",
+  "source": "@site/docs/Graph/FloodFill/introduction.mdx",
+  "sourceDirName": "Graph/FloodFill",
+  "slug": "/Graph/FloodFill/introduction",
+  "permalink": "/docs/Graph/FloodFill/introduction",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Graph/FloodFill/introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Introduction to Flood Fill Algorithm"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Number of Operations to Make Network Connected",
+    "permalink": "/docs/Graph/DisjointSetUnion/number_of_operation"
+  },
+  "next": {
+    "title": "Pacific Atlantic Water Flow",
+    "permalink": "/docs/Graph/FloodFill/pacific_atlantic_water_flow"
+  }
+}

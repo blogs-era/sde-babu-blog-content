@@ -1,0 +1,16 @@
+{
+  "title": "LinkedList",
+  "description": "Linked List a linear data structure which contains multiple nodes and each node is mainly a collection of data and addresses.all the nodes are connected",
+  "slug": "/category/linkedlist",
+  "permalink": "/docs/category/linkedlist",
+  "navigation": {
+    "previous": {
+      "title": "top_k_freq",
+      "permalink": "/docs/HashMaps/top_k_freq"
+    },
+    "next": {
+      "title": "Partition List",
+      "permalink": "/docs/LinkedList/partition_list"
+    }
+  }
+}

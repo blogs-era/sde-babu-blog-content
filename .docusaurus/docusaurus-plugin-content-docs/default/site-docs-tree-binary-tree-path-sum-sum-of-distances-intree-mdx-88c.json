@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinaryTree/PathSum/sum_of_distances_intree",
+  "id": "Tree/BinaryTree/PathSum/sum_of_distances_intree",
+  "title": "Sum of Distances in Tree",
+  "description": "Level - Hard",
+  "source": "@site/docs/Tree/BinaryTree/PathSum/sum_of_distances_intree.mdx",
+  "sourceDirName": "Tree/BinaryTree/PathSum",
+  "slug": "/Tree/BinaryTree/PathSum/sum_of_distances_intree",
+  "permalink": "/docs/Tree/BinaryTree/PathSum/sum_of_distances_intree",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/PathSum/sum_of_distances_intree.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "title": "Sum of Distances in Tree"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Path Sum",
+    "permalink": "/docs/Tree/BinaryTree/PathSum/path_sum"
+  },
+  "next": {
+    "title": "Path Sum 3",
+    "permalink": "/docs/Tree/BinaryTree/PathSum/path_sum_3"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Design/min_stack",
+  "id": "Design/min_stack",
+  "title": "min_stack",
+  "description": "",
+  "source": "@site/docs/Design/min_stack.mdx",
+  "sourceDirName": "Design",
+  "slug": "/Design/min_stack",
+  "permalink": "/docs/Design/min_stack",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Design/min_stack.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "lru_cache",
+    "permalink": "/docs/Design/lru_cache"
+  },
+  "next": {
+    "title": "time-based-key-value-store",
+    "permalink": "/docs/Design/time-based-key-value-store"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Recursion/Backtracking/generate_paranthesis",
+  "id": "Recursion/Backtracking/generate_paranthesis",
+  "title": "generate_paranthesis",
+  "description": "",
+  "source": "@site/docs/Recursion/Backtracking/generate_paranthesis.mdx",
+  "sourceDirName": "Recursion/Backtracking",
+  "slug": "/Recursion/Backtracking/generate_paranthesis",
+  "permalink": "/docs/Recursion/Backtracking/generate_paranthesis",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Recursion/Backtracking/generate_paranthesis.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "combination_sum_1",
+    "permalink": "/docs/Recursion/Backtracking/combination_sum_1"
+  },
+  "next": {
+    "title": "partition_k_eqal_sum_subset",
+    "permalink": "/docs/Recursion/Backtracking/partition_k_eqal_sum_subset"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Arrays/Prefix-Sum/continuous-subarray-sum",
+  "id": "Arrays/Prefix-Sum/continuous-subarray-sum",
+  "title": "continuous-subarray-sum",
+  "description": "",
+  "source": "@site/docs/Arrays/Prefix-Sum/continuous-subarray-sum.mdx",
+  "sourceDirName": "Arrays/Prefix-Sum",
+  "slug": "/Arrays/Prefix-Sum/continuous-subarray-sum",
+  "permalink": "/docs/Arrays/Prefix-Sum/continuous-subarray-sum",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/Prefix-Sum/continuous-subarray-sum.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Running Sum Array",
+    "permalink": "/docs/Arrays/Prefix-Sum/running_sum"
+  },
+  "next": {
+    "title": "pivot_index",
+    "permalink": "/docs/Arrays/Prefix-Sum/pivot_index"
+  }
+}

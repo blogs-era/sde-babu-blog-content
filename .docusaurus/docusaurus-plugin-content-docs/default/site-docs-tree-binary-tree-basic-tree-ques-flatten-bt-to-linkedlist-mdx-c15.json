@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinaryTree/BasicTreeQues/flatten_bt_to_linkedlist",
+  "id": "Tree/BinaryTree/BasicTreeQues/flatten_bt_to_linkedlist",
+  "title": "Flatten Binary Tree to Linked List",
+  "description": "Level - Medium",
+  "source": "@site/docs/Tree/BinaryTree/BasicTreeQues/flatten_bt_to_linkedlist.mdx",
+  "sourceDirName": "Tree/BinaryTree/BasicTreeQues",
+  "slug": "/Tree/BinaryTree/BasicTreeQues/flatten_bt_to_linkedlist",
+  "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/flatten_bt_to_linkedlist",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/BasicTreeQues/flatten_bt_to_linkedlist.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 16,
+  "frontMatter": {
+    "sidebar_position": 16,
+    "title": "Flatten Binary Tree to Linked List"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Count Good Nodes in Binary Tree",
+    "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/count_good_node_inbt"
+  },
+  "next": {
+    "title": "invert_binary_tree",
+    "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/invert_binary_tree"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Recursion/DFS/word_search",
+  "id": "Recursion/DFS/word_search",
+  "title": "word_search",
+  "description": "",
+  "source": "@site/docs/Recursion/DFS/word_search.mdx",
+  "sourceDirName": "Recursion/DFS",
+  "slug": "/Recursion/DFS/word_search",
+  "permalink": "/docs/Recursion/DFS/word_search",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Recursion/DFS/word_search.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "number_of_island",
+    "permalink": "/docs/Recursion/DFS/number_of_island"
+  },
+  "next": {
+    "title": "word_search_2",
+    "permalink": "/docs/Recursion/DFS/word_search_2"
+  }
+}

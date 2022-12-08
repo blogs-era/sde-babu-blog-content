@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Stack/sum-of-subarray-minimums",
+  "id": "Stack/sum-of-subarray-minimums",
+  "title": "Sum of Subarray Minimums",
+  "description": "Level - Medium",
+  "source": "@site/docs/Stack/sum-of-subarray-minimums.mdx",
+  "sourceDirName": "Stack",
+  "slug": "/Stack/sum-of-subarray-minimums",
+  "permalink": "/docs/Stack/sum-of-subarray-minimums",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Stack/sum-of-subarray-minimums.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Sum of Subarray Minimums"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Stack",
+    "permalink": "/docs/category/stack"
+  },
+  "next": {
+    "title": "Next Greater Element",
+    "permalink": "/docs/Stack/MonotonicStack/next_greater_element"
+  }
+}

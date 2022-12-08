@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Maths/missing_num",
+  "id": "Maths/missing_num",
+  "title": "Missing Number",
+  "description": "Level - Easy",
+  "source": "@site/docs/Maths/missing_num.mdx",
+  "sourceDirName": "Maths",
+  "slug": "/Maths/missing_num",
+  "permalink": "/docs/Maths/missing_num",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Maths/missing_num.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Missing Number"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Permutation Sequence",
+    "permalink": "/docs/Maths/permutation_sequence"
+  },
+  "next": {
+    "title": "atoi",
+    "permalink": "/docs/Maths/atoi"
+  }
+}

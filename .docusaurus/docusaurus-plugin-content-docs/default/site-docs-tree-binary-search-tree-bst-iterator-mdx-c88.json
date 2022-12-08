@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinarySearchTree/bst_iterator",
+  "id": "Tree/BinarySearchTree/bst_iterator",
+  "title": "Binary Search Tree Iterator",
+  "description": "Level - Medium",
+  "source": "@site/docs/Tree/BinarySearchTree/bst_iterator.mdx",
+  "sourceDirName": "Tree/BinarySearchTree",
+  "slug": "/Tree/BinarySearchTree/bst_iterator",
+  "permalink": "/docs/Tree/BinarySearchTree/bst_iterator",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinarySearchTree/bst_iterator.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "title": "Binary Search Tree Iterator"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Recover Binary Search Tree",
+    "permalink": "/docs/Tree/BinarySearchTree/recover_bst"
+  },
+  "next": {
+    "title": "delete_node_bst",
+    "permalink": "/docs/Tree/BinarySearchTree/delete_node_bst"
+  }
+}

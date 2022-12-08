@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Strings/Recursive/restore_ip",
+  "id": "Strings/Recursive/restore_ip",
+  "title": "restore_ip",
+  "description": "",
+  "source": "@site/docs/Strings/Recursive/restore_ip.mdx",
+  "sourceDirName": "Strings/Recursive",
+  "slug": "/Strings/Recursive/restore_ip",
+  "permalink": "/docs/Strings/Recursive/restore_ip",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Strings/Recursive/restore_ip.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "palindrome_partitioning",
+    "permalink": "/docs/Strings/Recursive/palindrome_partitioning"
+  },
+  "next": {
+    "title": "all_anagrams",
+    "permalink": "/docs/Strings/all_anagrams"
+  }
+}

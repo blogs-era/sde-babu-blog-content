@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Graph/TarjanAlgo/introduction",
+  "id": "Graph/TarjanAlgo/introduction",
+  "title": "introduction",
+  "description": "",
+  "source": "@site/docs/Graph/TarjanAlgo/introduction.mdx",
+  "sourceDirName": "Graph/TarjanAlgo",
+  "slug": "/Graph/TarjanAlgo/introduction",
+  "permalink": "/docs/Graph/TarjanAlgo/introduction",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Graph/TarjanAlgo/introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "cheapest-flights-within-k-stops",
+    "permalink": "/docs/Graph/ShortestPath/Dijkstra/cheapest-flights-within-k-stops"
+  },
+  "next": {
+    "title": "introduction",
+    "permalink": "/docs/Graph/TopoSort/introduction"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "LinkedList/remove_duplicate_1",
+  "id": "LinkedList/remove_duplicate_1",
+  "title": "remove_duplicate_1",
+  "description": "",
+  "source": "@site/docs/LinkedList/remove_duplicate_1.mdx",
+  "sourceDirName": "LinkedList",
+  "slug": "/LinkedList/remove_duplicate_1",
+  "permalink": "/docs/LinkedList/remove_duplicate_1",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/LinkedList/remove_duplicate_1.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "intersection_linked_list",
+    "permalink": "/docs/LinkedList/intersection_linked_list"
+  },
+  "next": {
+    "title": "Queue",
+    "permalink": "/docs/category/queue"
+  }
+}

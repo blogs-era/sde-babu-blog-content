@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinaryTree/PathSum/max_path_sum",
+  "id": "Tree/BinaryTree/PathSum/max_path_sum",
+  "title": "Binary Tree Maximum Path Sum",
+  "description": "Level - Hard",
+  "source": "@site/docs/Tree/BinaryTree/PathSum/max_path_sum.mdx",
+  "sourceDirName": "Tree/BinaryTree/PathSum",
+  "slug": "/Tree/BinaryTree/PathSum/max_path_sum",
+  "permalink": "/docs/Tree/BinaryTree/PathSum/max_path_sum",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/PathSum/max_path_sum.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7,
+    "title": "Binary Tree Maximum Path Sum"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Path Sum 3",
+    "permalink": "/docs/Tree/BinaryTree/PathSum/path_sum_3"
+  },
+  "next": {
+    "title": "Path Sum II",
+    "permalink": "/docs/Tree/BinaryTree/PathSum/path_sum_2"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinarySearchTree/kth_smallest_elemnt_bst",
+  "id": "Tree/BinarySearchTree/kth_smallest_elemnt_bst",
+  "title": "Kth Smallest Element in a BST",
+  "description": "Level - Medium",
+  "source": "@site/docs/Tree/BinarySearchTree/kth_smallest_elemnt_bst.mdx",
+  "sourceDirName": "Tree/BinarySearchTree",
+  "slug": "/Tree/BinarySearchTree/kth_smallest_elemnt_bst",
+  "permalink": "/docs/Tree/BinarySearchTree/kth_smallest_elemnt_bst",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinarySearchTree/kth_smallest_elemnt_bst.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Kth Smallest Element in a BST"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Balance a Binary Search Tree",
+    "permalink": "/docs/Tree/BinarySearchTree/balance_binary_search_tree"
+  },
+  "next": {
+    "title": "Recover Binary Search Tree",
+    "permalink": "/docs/Tree/BinarySearchTree/recover_bst"
+  }
+}

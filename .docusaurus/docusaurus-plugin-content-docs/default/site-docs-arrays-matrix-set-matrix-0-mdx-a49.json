@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Arrays/Matrix/set_matrix_0",
+  "id": "Arrays/Matrix/set_matrix_0",
+  "title": "Set Matrix Zero",
+  "description": "Level - Medium",
+  "source": "@site/docs/Arrays/Matrix/set_matrix_0.mdx",
+  "sourceDirName": "Arrays/Matrix",
+  "slug": "/Arrays/Matrix/set_matrix_0",
+  "permalink": "/docs/Arrays/Matrix/set_matrix_0",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/Matrix/set_matrix_0.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Set Matrix Zero"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "max_product_subarray",
+    "permalink": "/docs/Arrays/KadaneAlgo/max_product_subarray"
+  },
+  "next": {
+    "title": "spiral_matrix",
+    "permalink": "/docs/Arrays/Matrix/spiral_matrix"
+  }
+}

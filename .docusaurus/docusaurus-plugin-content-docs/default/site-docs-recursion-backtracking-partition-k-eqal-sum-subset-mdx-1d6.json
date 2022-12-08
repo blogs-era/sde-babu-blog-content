@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Recursion/Backtracking/partition_k_eqal_sum_subset",
+  "id": "Recursion/Backtracking/partition_k_eqal_sum_subset",
+  "title": "partition_k_eqal_sum_subset",
+  "description": "",
+  "source": "@site/docs/Recursion/Backtracking/partition_k_eqal_sum_subset.mdx",
+  "sourceDirName": "Recursion/Backtracking",
+  "slug": "/Recursion/Backtracking/partition_k_eqal_sum_subset",
+  "permalink": "/docs/Recursion/Backtracking/partition_k_eqal_sum_subset",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Recursion/Backtracking/partition_k_eqal_sum_subset.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "generate_paranthesis",
+    "permalink": "/docs/Recursion/Backtracking/generate_paranthesis"
+  },
+  "next": {
+    "title": "subset_1",
+    "permalink": "/docs/Recursion/Backtracking/subset_1"
+  }
+}

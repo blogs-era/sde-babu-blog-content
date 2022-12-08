@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Arrays/TwoPointers/move_zeroes",
+  "id": "Arrays/TwoPointers/move_zeroes",
+  "title": "move_zeroes",
+  "description": "",
+  "source": "@site/docs/Arrays/TwoPointers/move_zeroes.mdx",
+  "sourceDirName": "Arrays/TwoPointers",
+  "slug": "/Arrays/TwoPointers/move_zeroes",
+  "permalink": "/docs/Arrays/TwoPointers/move_zeroes",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/TwoPointers/move_zeroes.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "merge_sorted_arrays",
+    "permalink": "/docs/Arrays/TwoPointers/merge_sorted_arrays"
+  },
+  "next": {
+    "title": "remove-duplicates-from-sorted-array",
+    "permalink": "/docs/Arrays/TwoPointers/remove-duplicates-from-sorted-array"
+  }
+}

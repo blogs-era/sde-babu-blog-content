@@ -1,0 +1,24 @@
+{
+  "unversionedId": "LinkedList/Basic/reorder_list",
+  "id": "LinkedList/Basic/reorder_list",
+  "title": "reorder_list",
+  "description": "",
+  "source": "@site/docs/LinkedList/Basic/reorder_list.mdx",
+  "sourceDirName": "LinkedList/Basic",
+  "slug": "/LinkedList/Basic/reorder_list",
+  "permalink": "/docs/LinkedList/Basic/reorder_list",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/LinkedList/Basic/reorder_list.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "merge_2_sorted_list",
+    "permalink": "/docs/LinkedList/Basic/merge_2_sorted_list"
+  },
+  "next": {
+    "title": "swap_nodes_in_pair",
+    "permalink": "/docs/LinkedList/Basic/swap_nodes_in_pair"
+  }
+}

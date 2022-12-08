@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Recursion/Backtracking/subset_1",
+  "id": "Recursion/Backtracking/subset_1",
+  "title": "subset_1",
+  "description": "",
+  "source": "@site/docs/Recursion/Backtracking/subset_1.mdx",
+  "sourceDirName": "Recursion/Backtracking",
+  "slug": "/Recursion/Backtracking/subset_1",
+  "permalink": "/docs/Recursion/Backtracking/subset_1",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Recursion/Backtracking/subset_1.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "partition_k_eqal_sum_subset",
+    "permalink": "/docs/Recursion/Backtracking/partition_k_eqal_sum_subset"
+  },
+  "next": {
+    "title": "Longest Increasing Path in a Matrix",
+    "permalink": "/docs/Recursion/DFS/longest_increasing_path_matrix"
+  }
+}

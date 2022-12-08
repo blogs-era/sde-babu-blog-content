@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Maths/pow_x_n",
+  "id": "Maths/pow_x_n",
+  "title": "pow_x_n",
+  "description": "",
+  "source": "@site/docs/Maths/pow_x_n.mdx",
+  "sourceDirName": "Maths",
+  "slug": "/Maths/pow_x_n",
+  "permalink": "/docs/Maths/pow_x_n",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Maths/pow_x_n.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "plus_one",
+    "permalink": "/docs/Maths/plus_one"
+  },
+  "next": {
+    "title": "combination_sum_1",
+    "permalink": "/docs/Recursion/Backtracking/combination_sum_1"
+  }
+}

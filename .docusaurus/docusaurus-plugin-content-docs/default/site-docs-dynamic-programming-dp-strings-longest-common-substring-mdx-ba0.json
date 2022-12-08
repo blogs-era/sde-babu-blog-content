@@ -1,0 +1,24 @@
+{
+  "unversionedId": "DynamicProgramming/DPStrings/longest_common_substring",
+  "id": "DynamicProgramming/DPStrings/longest_common_substring",
+  "title": "longest_common_substring",
+  "description": "",
+  "source": "@site/docs/DynamicProgramming/DPStrings/longest_common_substring.mdx",
+  "sourceDirName": "DynamicProgramming/DPStrings",
+  "slug": "/DynamicProgramming/DPStrings/longest_common_substring",
+  "permalink": "/docs/DynamicProgramming/DPStrings/longest_common_substring",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/DynamicProgramming/DPStrings/longest_common_substring.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "longest_common_subsequence",
+    "permalink": "/docs/DynamicProgramming/DPStrings/longest_common_subsequence"
+  },
+  "next": {
+    "title": "longest_valid_paranthesis",
+    "permalink": "/docs/DynamicProgramming/DPStrings/longest_valid_paranthesis"
+  }
+}

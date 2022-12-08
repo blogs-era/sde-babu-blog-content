@@ -1,0 +1,24 @@
+{
+  "unversionedId": "LinkedList/ListCycle/first_node_in_cycle",
+  "id": "LinkedList/ListCycle/first_node_in_cycle",
+  "title": "first_node_in_cycle",
+  "description": "",
+  "source": "@site/docs/LinkedList/ListCycle/first_node_in_cycle.mdx",
+  "sourceDirName": "LinkedList/ListCycle",
+  "slug": "/LinkedList/ListCycle/first_node_in_cycle",
+  "permalink": "/docs/LinkedList/ListCycle/first_node_in_cycle",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/LinkedList/ListCycle/first_node_in_cycle.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "swap_nodes_in_pair",
+    "permalink": "/docs/LinkedList/Basic/swap_nodes_in_pair"
+  },
+  "next": {
+    "title": "Add Two Numbers",
+    "permalink": "/docs/LinkedList/Maths/add_two_numers"
+  }
+}

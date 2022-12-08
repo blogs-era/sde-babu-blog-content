@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Stack/MonotonicStack/next_greater_element",
+  "id": "Stack/MonotonicStack/next_greater_element",
+  "title": "Next Greater Element",
+  "description": "Level - Medium",
+  "source": "@site/docs/Stack/MonotonicStack/next_greater_element.mdx",
+  "sourceDirName": "Stack/MonotonicStack",
+  "slug": "/Stack/MonotonicStack/next_greater_element",
+  "permalink": "/docs/Stack/MonotonicStack/next_greater_element",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Stack/MonotonicStack/next_greater_element.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Next Greater Element"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sum of Subarray Minimums",
+    "permalink": "/docs/Stack/sum-of-subarray-minimums"
+  },
+  "next": {
+    "title": "introduction",
+    "permalink": "/docs/Stack/MonotonicStack/introduction"
+  }
+}

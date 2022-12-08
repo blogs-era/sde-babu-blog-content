@@ -1,0 +1,24 @@
+{
+  "unversionedId": "DynamicProgramming/2D-DP/minimum-difficulty-of-a-job-schedule",
+  "id": "DynamicProgramming/2D-DP/minimum-difficulty-of-a-job-schedule",
+  "title": "minimum-difficulty-of-a-job-schedule",
+  "description": "",
+  "source": "@site/docs/DynamicProgramming/2D-DP/minimum-difficulty-of-a-job-schedule.mdx",
+  "sourceDirName": "DynamicProgramming/2D-DP",
+  "slug": "/DynamicProgramming/2D-DP/minimum-difficulty-of-a-job-schedule",
+  "permalink": "/docs/DynamicProgramming/2D-DP/minimum-difficulty-of-a-job-schedule",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/DynamicProgramming/2D-DP/minimum-difficulty-of-a-job-schedule.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Maximum Length of Repeated Subarray",
+    "permalink": "/docs/DynamicProgramming/2D-DP/maxlen_repeated_subarray"
+  },
+  "next": {
+    "title": "Best Time to Buy and Sell Stock",
+    "permalink": "/docs/DynamicProgramming/BuySellStocks/buy_sell_stocks_1"
+  }
+}

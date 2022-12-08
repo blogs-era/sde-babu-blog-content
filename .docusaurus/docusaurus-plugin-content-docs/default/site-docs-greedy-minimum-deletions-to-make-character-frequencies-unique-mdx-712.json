@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Greedy/minimum-deletions-to-make-character-frequencies-unique",
+  "id": "Greedy/minimum-deletions-to-make-character-frequencies-unique",
+  "title": "minimum-deletions-to-make-character-frequencies-unique",
+  "description": "",
+  "source": "@site/docs/Greedy/minimum-deletions-to-make-character-frequencies-unique.mdx",
+  "sourceDirName": "Greedy",
+  "slug": "/Greedy/minimum-deletions-to-make-character-frequencies-unique",
+  "permalink": "/docs/Greedy/minimum-deletions-to-make-character-frequencies-unique",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Greedy/minimum-deletions-to-make-character-frequencies-unique.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "min_time_to_make_rope_colorful",
+    "permalink": "/docs/Greedy/min_time_to_make_rope_colorful"
+  },
+  "next": {
+    "title": "non_overlapping_intervals",
+    "permalink": "/docs/Greedy/non_overlapping_intervals"
+  }
+}

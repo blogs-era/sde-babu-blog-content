@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Tree/BinaryTree/CompleteTree/count_complete_tree_nodes",
+  "id": "Tree/BinaryTree/CompleteTree/count_complete_tree_nodes",
+  "title": "count_complete_tree_nodes",
+  "description": "",
+  "source": "@site/docs/Tree/BinaryTree/CompleteTree/count_complete_tree_nodes.mdx",
+  "sourceDirName": "Tree/BinaryTree/CompleteTree",
+  "slug": "/Tree/BinaryTree/CompleteTree/count_complete_tree_nodes",
+  "permalink": "/docs/Tree/BinaryTree/CompleteTree/count_complete_tree_nodes",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/CompleteTree/count_complete_tree_nodes.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "step-by-step-directions-from-a-binary-tree-node-to-another",
+    "permalink": "/docs/Tree/BinaryTree/CommonAncestor/step-by-step-directions-from-a-binary-tree-node-to-another"
+  },
+  "next": {
+    "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+    "permalink": "/docs/Tree/BinaryTree/ConstructBinaryTreeFromTraversal/construct_from_inorder_preorder"
+  }
+}

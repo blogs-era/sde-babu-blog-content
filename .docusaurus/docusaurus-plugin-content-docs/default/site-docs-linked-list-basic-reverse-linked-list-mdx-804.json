@@ -1,0 +1,28 @@
+{
+  "unversionedId": "LinkedList/Basic/reverse_linked_list",
+  "id": "LinkedList/Basic/reverse_linked_list",
+  "title": "Reverse Linked List 2",
+  "description": "Level - Medium",
+  "source": "@site/docs/LinkedList/Basic/reverse_linked_list.mdx",
+  "sourceDirName": "LinkedList/Basic",
+  "slug": "/LinkedList/Basic/reverse_linked_list",
+  "permalink": "/docs/LinkedList/Basic/reverse_linked_list",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/LinkedList/Basic/reverse_linked_list.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6,
+    "title": "Reverse Linked List 2"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Remove Nth Node From End of List",
+    "permalink": "/docs/LinkedList/remove_nth_node_from_end"
+  },
+  "next": {
+    "title": "merge_2_sorted_list",
+    "permalink": "/docs/LinkedList/Basic/merge_2_sorted_list"
+  }
+}

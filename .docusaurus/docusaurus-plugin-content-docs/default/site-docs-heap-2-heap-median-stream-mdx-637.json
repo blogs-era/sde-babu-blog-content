@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Heap/Heap/median_stream",
+  "id": "Heap/Heap/median_stream",
+  "title": "median_stream",
+  "description": "",
+  "source": "@site/docs/Heap/2-Heap/median_stream.mdx",
+  "sourceDirName": "Heap/2-Heap",
+  "slug": "/Heap/Heap/median_stream",
+  "permalink": "/docs/Heap/Heap/median_stream",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Heap/2-Heap/median_stream.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction to Heap Data Structure",
+    "permalink": "/docs/Heap/introduction"
+  },
+  "next": {
+    "title": "Find K Closest Elements",
+    "permalink": "/docs/Heap/PriorityQueue/k-closest-points"
+  }
+}

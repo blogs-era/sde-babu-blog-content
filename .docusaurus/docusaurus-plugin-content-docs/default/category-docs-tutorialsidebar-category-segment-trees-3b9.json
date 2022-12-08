@@ -1,0 +1,16 @@
+{
+  "title": "Segment Trees",
+  "description": "segment tree is a tree data structure used to store information in intervals and segments, and we can query the results for a given range",
+  "slug": "/category/segment-trees",
+  "permalink": "/docs/category/segment-trees",
+  "navigation": {
+    "previous": {
+      "title": "squares_sorted_arr",
+      "permalink": "/docs/Arrays/TwoPointers/squares_sorted_arr"
+    },
+    "next": {
+      "title": "Segment Trees",
+      "permalink": "/docs/SegmentTrees/intro"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Tree/BinaryTree/BasicTreeQues/symmetric_tree",
+  "id": "Tree/BinaryTree/BasicTreeQues/symmetric_tree",
+  "title": "symmetric_tree",
+  "description": "",
+  "source": "@site/docs/Tree/BinaryTree/BasicTreeQues/symmetric_tree.mdx",
+  "sourceDirName": "Tree/BinaryTree/BasicTreeQues",
+  "slug": "/Tree/BinaryTree/BasicTreeQues/symmetric_tree",
+  "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/symmetric_tree",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/BasicTreeQues/symmetric_tree.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "sum_left_leaf",
+    "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/sum_left_leaf"
+  },
+  "next": {
+    "title": "Lowest Common Ancestor of a Binary Tree",
+    "permalink": "/docs/Tree/BinaryTree/CommonAncestor/lca"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Arrays/TwoPointers/next_permutation",
+  "id": "Arrays/TwoPointers/next_permutation",
+  "title": "Next Permutation of a given array",
+  "description": "Level - Medium",
+  "source": "@site/docs/Arrays/TwoPointers/next_permutation.mdx",
+  "sourceDirName": "Arrays/TwoPointers",
+  "slug": "/Arrays/TwoPointers/next_permutation",
+  "permalink": "/docs/Arrays/TwoPointers/next_permutation",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/TwoPointers/next_permutation.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Next Permutation of a given array"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Trapping Rain Water",
+    "permalink": "/docs/Arrays/TwoPointers/trapping_rain_water"
+  },
+  "next": {
+    "title": "container_with_most_water",
+    "permalink": "/docs/Arrays/TwoPointers/container_with_most_water"
+  }
+}

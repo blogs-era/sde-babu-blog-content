@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Recursion/DFS/longest_increasing_path_matrix",
+  "id": "Recursion/DFS/longest_increasing_path_matrix",
+  "title": "Longest Increasing Path in a Matrix",
+  "description": "Level - Hard",
+  "source": "@site/docs/Recursion/DFS/longest_increasing_path_matrix.mdx",
+  "sourceDirName": "Recursion/DFS",
+  "slug": "/Recursion/DFS/longest_increasing_path_matrix",
+  "permalink": "/docs/Recursion/DFS/longest_increasing_path_matrix",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Recursion/DFS/longest_increasing_path_matrix.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Longest Increasing Path in a Matrix"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "subset_1",
+    "permalink": "/docs/Recursion/Backtracking/subset_1"
+  },
+  "next": {
+    "title": "Shortest Bridge",
+    "permalink": "/docs/Recursion/DFS/shortest_bridge"
+  }
+}

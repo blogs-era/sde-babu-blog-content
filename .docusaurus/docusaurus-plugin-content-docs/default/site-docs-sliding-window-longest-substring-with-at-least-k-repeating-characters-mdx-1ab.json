@@ -1,0 +1,24 @@
+{
+  "unversionedId": "SlidingWindow/longest-substring-with-at-least-k-repeating-characters",
+  "id": "SlidingWindow/longest-substring-with-at-least-k-repeating-characters",
+  "title": "longest-substring-with-at-least-k-repeating-characters",
+  "description": "",
+  "source": "@site/docs/SlidingWindow/longest-substring-with-at-least-k-repeating-characters.mdx",
+  "sourceDirName": "SlidingWindow",
+  "slug": "/SlidingWindow/longest-substring-with-at-least-k-repeating-characters",
+  "permalink": "/docs/SlidingWindow/longest-substring-with-at-least-k-repeating-characters",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/SlidingWindow/longest-substring-with-at-least-k-repeating-characters.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "longest-repeating-character-replacement",
+    "permalink": "/docs/SlidingWindow/longest-repeating-character-replacement"
+  },
+  "next": {
+    "title": "longest_substring_without_repeat",
+    "permalink": "/docs/SlidingWindow/longest_substring_without_repeat"
+  }
+}

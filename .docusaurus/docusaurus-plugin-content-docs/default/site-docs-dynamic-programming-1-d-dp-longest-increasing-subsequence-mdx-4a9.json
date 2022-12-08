@@ -1,0 +1,28 @@
+{
+  "unversionedId": "DynamicProgramming/1D-DP/longest_increasing_subsequence",
+  "id": "DynamicProgramming/1D-DP/longest_increasing_subsequence",
+  "title": "Longest Increasing Subsequence",
+  "description": "Level - Medium",
+  "source": "@site/docs/DynamicProgramming/1D-DP/longest_increasing_subsequence.mdx",
+  "sourceDirName": "DynamicProgramming/1D-DP",
+  "slug": "/DynamicProgramming/1D-DP/longest_increasing_subsequence",
+  "permalink": "/docs/DynamicProgramming/1D-DP/longest_increasing_subsequence",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/DynamicProgramming/1D-DP/longest_increasing_subsequence.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Longest Increasing Subsequence"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Unique Binary Search Trees / Catalan Numbers",
+    "permalink": "/docs/DynamicProgramming/1D-DP/unique_binary_search_trees"
+  },
+  "next": {
+    "title": "Jump Game",
+    "permalink": "/docs/DynamicProgramming/1D-DP/jump_game"
+  }
+}

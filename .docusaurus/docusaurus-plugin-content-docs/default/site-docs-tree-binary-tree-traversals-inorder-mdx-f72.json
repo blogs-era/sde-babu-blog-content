@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Tree/BinaryTree/Traversals/inorder",
+  "id": "Tree/BinaryTree/Traversals/inorder",
+  "title": "inorder",
+  "description": "",
+  "source": "@site/docs/Tree/BinaryTree/Traversals/inorder.mdx",
+  "sourceDirName": "Tree/BinaryTree/Traversals",
+  "slug": "/Tree/BinaryTree/Traversals/inorder",
+  "permalink": "/docs/Tree/BinaryTree/Traversals/inorder",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/Traversals/inorder.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "serialize_deserialize_bt",
+    "permalink": "/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/serialize_deserialize_bt"
+  },
+  "next": {
+    "title": "postorder",
+    "permalink": "/docs/Tree/BinaryTree/Traversals/postorder"
+  }
+}

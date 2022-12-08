@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Arrays/Prefix-Sum/subarray_sum_divisible_k",
+  "id": "Arrays/Prefix-Sum/subarray_sum_divisible_k",
+  "title": "subarray_sum_divisible_k",
+  "description": "",
+  "source": "@site/docs/Arrays/Prefix-Sum/subarray_sum_divisible_k.mdx",
+  "sourceDirName": "Arrays/Prefix-Sum",
+  "slug": "/Arrays/Prefix-Sum/subarray_sum_divisible_k",
+  "permalink": "/docs/Arrays/Prefix-Sum/subarray_sum_divisible_k",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/Prefix-Sum/subarray_sum_divisible_k.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "pivot_index",
+    "permalink": "/docs/Arrays/Prefix-Sum/pivot_index"
+  },
+  "next": {
+    "title": "subarray_sum_equals_k",
+    "permalink": "/docs/Arrays/Prefix-Sum/subarray_sum_equals_k"
+  }
+}

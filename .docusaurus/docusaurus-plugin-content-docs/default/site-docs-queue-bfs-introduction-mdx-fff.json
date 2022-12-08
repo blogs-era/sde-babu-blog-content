@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Queue/BFS/introduction",
+  "id": "Queue/BFS/introduction",
+  "title": "Introduction for BFS(Breath First Search)",
+  "description": "What is BFS ?",
+  "source": "@site/docs/Queue/BFS/introduction.mdx",
+  "sourceDirName": "Queue/BFS",
+  "slug": "/Queue/BFS/introduction",
+  "permalink": "/docs/Queue/BFS/introduction",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Queue/BFS/introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Introduction for BFS(Breath First Search)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sliding Window Maximum",
+    "permalink": "/docs/Queue/sliding_window_maximum"
+  },
+  "next": {
+    "title": "Number of Islands",
+    "permalink": "/docs/Queue/BFS/number_of_island"
+  }
+}

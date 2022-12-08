@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Arrays/KadaneAlgo/max_subarray",
+  "id": "Arrays/KadaneAlgo/max_subarray",
+  "title": "Maximum Subarray",
+  "description": "Level - Medium",
+  "source": "@site/docs/Arrays/KadaneAlgo/max_subarray.mdx",
+  "sourceDirName": "Arrays/KadaneAlgo",
+  "slug": "/Arrays/KadaneAlgo/max_subarray",
+  "permalink": "/docs/Arrays/KadaneAlgo/max_subarray",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/KadaneAlgo/max_subarray.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Maximum Subarray"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Merge Intervals",
+    "permalink": "/docs/Arrays/Interval/merge_intervals"
+  },
+  "next": {
+    "title": "max_product_subarray",
+    "permalink": "/docs/Arrays/KadaneAlgo/max_product_subarray"
+  }
+}

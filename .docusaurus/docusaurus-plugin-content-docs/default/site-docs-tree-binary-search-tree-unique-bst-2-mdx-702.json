@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Tree/BinarySearchTree/unique_bst_2",
+  "id": "Tree/BinarySearchTree/unique_bst_2",
+  "title": "unique_bst_2",
+  "description": "",
+  "source": "@site/docs/Tree/BinarySearchTree/unique_bst_2.mdx",
+  "sourceDirName": "Tree/BinarySearchTree",
+  "slug": "/Tree/BinarySearchTree/unique_bst_2",
+  "permalink": "/docs/Tree/BinarySearchTree/unique_bst_2",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinarySearchTree/unique_bst_2.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "range_sum_bst",
+    "permalink": "/docs/Tree/BinarySearchTree/range_sum_bst"
+  },
+  "next": {
+    "title": "Nodes at K Distance",
+    "permalink": "/docs/Tree/BinaryTree/AncestorPath/nodes_at_k_dis"
+  }
+}

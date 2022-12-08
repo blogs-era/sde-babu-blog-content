@@ -1,0 +1,28 @@
+{
+  "unversionedId": "LinkedList/segregate_even_odd",
+  "id": "LinkedList/segregate_even_odd",
+  "title": "Segregate even and odd nodes in a Link List",
+  "description": "Level - Medium",
+  "source": "@site/docs/LinkedList/segregate_even_odd.mdx",
+  "sourceDirName": "LinkedList",
+  "slug": "/LinkedList/segregate_even_odd",
+  "permalink": "/docs/LinkedList/segregate_even_odd",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/LinkedList/segregate_even_odd.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Segregate even and odd nodes in a Link List"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Odd Even Linked List By Index",
+    "permalink": "/docs/LinkedList/odd_even"
+  },
+  "next": {
+    "title": "Rotate the Linked List",
+    "permalink": "/docs/LinkedList/rotate_list"
+  }
+}

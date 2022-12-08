@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Searching/BinarySearch/min_in_roated_sorted_array",
+  "id": "Searching/BinarySearch/min_in_roated_sorted_array",
+  "title": "min_in_roated_sorted_array",
+  "description": "",
+  "source": "@site/docs/Searching/BinarySearch/min_in_roated_sorted_array.mdx",
+  "sourceDirName": "Searching/BinarySearch",
+  "slug": "/Searching/BinarySearch/min_in_roated_sorted_array",
+  "permalink": "/docs/Searching/BinarySearch/min_in_roated_sorted_array",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Searching/BinarySearch/min_in_roated_sorted_array.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "first_last_pos",
+    "permalink": "/docs/Searching/BinarySearch/first_last_pos"
+  },
+  "next": {
+    "title": "min_roated_sorted_array_with_duplicates",
+    "permalink": "/docs/Searching/BinarySearch/min_roated_sorted_array_with_duplicates"
+  }
+}

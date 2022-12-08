@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Heap/introduction",
+  "id": "Heap/introduction",
+  "title": "Introduction to Heap Data Structure",
+  "description": "what is heap data structure ?",
+  "source": "@site/docs/Heap/introduction.mdx",
+  "sourceDirName": "Heap",
+  "slug": "/Heap/introduction",
+  "permalink": "/docs/Heap/introduction",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Heap/introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Introduction to Heap Data Structure"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "non_overlapping_intervals",
+    "permalink": "/docs/Greedy/non_overlapping_intervals"
+  },
+  "next": {
+    "title": "median_stream",
+    "permalink": "/docs/Heap/Heap/median_stream"
+  }
+}

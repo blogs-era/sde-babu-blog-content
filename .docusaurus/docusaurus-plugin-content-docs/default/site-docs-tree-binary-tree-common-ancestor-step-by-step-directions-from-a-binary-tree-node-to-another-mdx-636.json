@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Tree/BinaryTree/CommonAncestor/step-by-step-directions-from-a-binary-tree-node-to-another",
+  "id": "Tree/BinaryTree/CommonAncestor/step-by-step-directions-from-a-binary-tree-node-to-another",
+  "title": "step-by-step-directions-from-a-binary-tree-node-to-another",
+  "description": "",
+  "source": "@site/docs/Tree/BinaryTree/CommonAncestor/step-by-step-directions-from-a-binary-tree-node-to-another.mdx",
+  "sourceDirName": "Tree/BinaryTree/CommonAncestor",
+  "slug": "/Tree/BinaryTree/CommonAncestor/step-by-step-directions-from-a-binary-tree-node-to-another",
+  "permalink": "/docs/Tree/BinaryTree/CommonAncestor/step-by-step-directions-from-a-binary-tree-node-to-another",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/CommonAncestor/step-by-step-directions-from-a-binary-tree-node-to-another.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "lca_bst",
+    "permalink": "/docs/Tree/BinaryTree/CommonAncestor/lca_bst"
+  },
+  "next": {
+    "title": "count_complete_tree_nodes",
+    "permalink": "/docs/Tree/BinaryTree/CompleteTree/count_complete_tree_nodes"
+  }
+}

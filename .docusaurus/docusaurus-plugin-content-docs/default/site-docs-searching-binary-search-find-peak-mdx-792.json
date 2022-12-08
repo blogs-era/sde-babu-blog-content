@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Searching/BinarySearch/find_peak",
+  "id": "Searching/BinarySearch/find_peak",
+  "title": "find_peak",
+  "description": "",
+  "source": "@site/docs/Searching/BinarySearch/find_peak.mdx",
+  "sourceDirName": "Searching/BinarySearch",
+  "slug": "/Searching/BinarySearch/find_peak",
+  "permalink": "/docs/Searching/BinarySearch/find_peak",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Searching/BinarySearch/find_peak.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Median of Two Sorted Arrays",
+    "permalink": "/docs/Searching/BinarySearch/median_2_sorted_arrays"
+  },
+  "next": {
+    "title": "first_last_pos",
+    "permalink": "/docs/Searching/BinarySearch/first_last_pos"
+  }
+}

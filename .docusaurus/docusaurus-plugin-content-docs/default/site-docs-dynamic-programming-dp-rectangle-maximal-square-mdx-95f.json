@@ -1,0 +1,28 @@
+{
+  "unversionedId": "DynamicProgramming/DP-Rectangle/maximal_square",
+  "id": "DynamicProgramming/DP-Rectangle/maximal_square",
+  "title": "Maximal Squares",
+  "description": "Level - Medium",
+  "source": "@site/docs/DynamicProgramming/DP-Rectangle/maximal_square.mdx",
+  "sourceDirName": "DynamicProgramming/DP-Rectangle",
+  "slug": "/DynamicProgramming/DP-Rectangle/maximal_square",
+  "permalink": "/docs/DynamicProgramming/DP-Rectangle/maximal_square",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/DynamicProgramming/DP-Rectangle/maximal_square.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Maximal Squares"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Count Square Submatrices with All Ones",
+    "permalink": "/docs/DynamicProgramming/DP-Rectangle/count-square-submatrices-with-all-ones"
+  },
+  "next": {
+    "title": "maximal_rectangle",
+    "permalink": "/docs/DynamicProgramming/DP-Rectangle/maximal_rectangle"
+  }
+}

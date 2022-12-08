@@ -1,0 +1,24 @@
+{
+  "unversionedId": "LinkedList/Basic/merge_2_sorted_list",
+  "id": "LinkedList/Basic/merge_2_sorted_list",
+  "title": "merge_2_sorted_list",
+  "description": "",
+  "source": "@site/docs/LinkedList/Basic/merge_2_sorted_list.mdx",
+  "sourceDirName": "LinkedList/Basic",
+  "slug": "/LinkedList/Basic/merge_2_sorted_list",
+  "permalink": "/docs/LinkedList/Basic/merge_2_sorted_list",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/LinkedList/Basic/merge_2_sorted_list.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Reverse Linked List 2",
+    "permalink": "/docs/LinkedList/Basic/reverse_linked_list"
+  },
+  "next": {
+    "title": "reorder_list",
+    "permalink": "/docs/LinkedList/Basic/reorder_list"
+  }
+}

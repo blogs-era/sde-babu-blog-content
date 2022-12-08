@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Strings/minimum-remove-to-make-valid-parentheses",
+  "id": "Strings/minimum-remove-to-make-valid-parentheses",
+  "title": "Minimum Remove to Make Valid Parentheses",
+  "description": "Level - Medium",
+  "source": "@site/docs/Strings/minimum-remove-to-make-valid-parentheses.mdx",
+  "sourceDirName": "Strings",
+  "slug": "/Strings/minimum-remove-to-make-valid-parentheses",
+  "permalink": "/docs/Strings/minimum-remove-to-make-valid-parentheses",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Strings/minimum-remove-to-make-valid-parentheses.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Minimum Remove to Make Valid Parentheses"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "reverse_pairs",
+    "permalink": "/docs/Sorting/MergeSort/reverse_pairs"
+  },
+  "next": {
+    "title": "Number of Palindromic Substrings",
+    "permalink": "/docs/Strings/number_of_palindromic_substrings"
+  }
+}

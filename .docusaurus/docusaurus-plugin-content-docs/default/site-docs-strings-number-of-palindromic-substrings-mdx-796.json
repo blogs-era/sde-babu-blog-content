@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Strings/number_of_palindromic_substrings",
+  "id": "Strings/number_of_palindromic_substrings",
+  "title": "Number of Palindromic Substrings",
+  "description": "Level - Medium",
+  "source": "@site/docs/Strings/number_of_palindromic_substrings.mdx",
+  "sourceDirName": "Strings",
+  "slug": "/Strings/number_of_palindromic_substrings",
+  "permalink": "/docs/Strings/number_of_palindromic_substrings",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Strings/number_of_palindromic_substrings.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Number of Palindromic Substrings"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Minimum Remove to Make Valid Parentheses",
+    "permalink": "/docs/Strings/minimum-remove-to-make-valid-parentheses"
+  },
+  "next": {
+    "title": "Reorganize String",
+    "permalink": "/docs/Strings/reorganize_strings"
+  }
+}

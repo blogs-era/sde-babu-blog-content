@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Sorting/MergeSort/introduction",
+  "id": "Sorting/MergeSort/introduction",
+  "title": "Introduction of Merge Sort",
+  "description": "Definition",
+  "source": "@site/docs/Sorting/MergeSort/introduction.mdx",
+  "sourceDirName": "Sorting/MergeSort",
+  "slug": "/Sorting/MergeSort/introduction",
+  "permalink": "/docs/Sorting/MergeSort/introduction",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Sorting/MergeSort/introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Introduction of Merge Sort"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "min_window_substring",
+    "permalink": "/docs/SlidingWindow/min_window_substring"
+  },
+  "next": {
+    "title": "reverse_pairs",
+    "permalink": "/docs/Sorting/MergeSort/reverse_pairs"
+  }
+}

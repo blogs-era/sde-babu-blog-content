@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Recursion/DFS/shortest_bridge",
+  "id": "Recursion/DFS/shortest_bridge",
+  "title": "Shortest Bridge",
+  "description": "Level - Medium",
+  "source": "@site/docs/Recursion/DFS/shortest_bridge.mdx",
+  "sourceDirName": "Recursion/DFS",
+  "slug": "/Recursion/DFS/shortest_bridge",
+  "permalink": "/docs/Recursion/DFS/shortest_bridge",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Recursion/DFS/shortest_bridge.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Shortest Bridge"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Longest Increasing Path in a Matrix",
+    "permalink": "/docs/Recursion/DFS/longest_increasing_path_matrix"
+  },
+  "next": {
+    "title": "Number of Closed Island",
+    "permalink": "/docs/Recursion/DFS/number_of_closed_island"
+  }
+}

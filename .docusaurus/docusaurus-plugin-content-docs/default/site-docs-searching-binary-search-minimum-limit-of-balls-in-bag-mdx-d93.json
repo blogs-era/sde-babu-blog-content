@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Searching/BinarySearch/minimum_limit_of_balls_in_bag",
+  "id": "Searching/BinarySearch/minimum_limit_of_balls_in_bag",
+  "title": "Minimum Limit of Balls In Bag",
+  "description": "Level - Medium",
+  "source": "@site/docs/Searching/BinarySearch/minimum_limit_of_balls_in_bag.mdx",
+  "sourceDirName": "Searching/BinarySearch",
+  "slug": "/Searching/BinarySearch/minimum_limit_of_balls_in_bag",
+  "permalink": "/docs/Searching/BinarySearch/minimum_limit_of_balls_in_bag",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Searching/BinarySearch/minimum_limit_of_balls_in_bag.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Minimum Limit of Balls In Bag"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Capacity To Ship Packages Within D Days",
+    "permalink": "/docs/Searching/BinarySearch/capacity_to_ship_package_within_ddays"
+  },
+  "next": {
+    "title": "Search in Rotated Sorted Array",
+    "permalink": "/docs/Searching/BinarySearch/search_in_rotated"
+  }
+}

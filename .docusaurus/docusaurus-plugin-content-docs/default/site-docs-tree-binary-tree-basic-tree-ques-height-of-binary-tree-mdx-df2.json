@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinaryTree/BasicTreeQues/height_of_binary_tree",
+  "id": "Tree/BinaryTree/BasicTreeQues/height_of_binary_tree",
+  "title": "Height of Binary Tree",
+  "description": "Level - Easy",
+  "source": "@site/docs/Tree/BinaryTree/BasicTreeQues/height_of_binary_tree.mdx",
+  "sourceDirName": "Tree/BinaryTree/BasicTreeQues",
+  "slug": "/Tree/BinaryTree/BasicTreeQues/height_of_binary_tree",
+  "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/height_of_binary_tree",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/BasicTreeQues/height_of_binary_tree.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Height of Binary Tree"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Vertical Order Traversal of a Binary Tree",
+    "permalink": "/docs/Tree/BinaryTree/BTView/vertical_view_bt"
+  },
+  "next": {
+    "title": "Balanced Binary Tree",
+    "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/balanced_binary_tree"
+  }
+}

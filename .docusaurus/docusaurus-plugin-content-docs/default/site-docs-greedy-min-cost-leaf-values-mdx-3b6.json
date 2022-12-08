@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Greedy/min_cost_leaf_values",
+  "id": "Greedy/min_cost_leaf_values",
+  "title": "min_cost_leaf_values",
+  "description": "Brute Force Approach",
+  "source": "@site/docs/Greedy/min_cost_leaf_values.mdx",
+  "sourceDirName": "Greedy",
+  "slug": "/Greedy/min_cost_leaf_values",
+  "permalink": "/docs/Greedy/min_cost_leaf_values",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Greedy/min_cost_leaf_values.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "max_events_canbe_attended",
+    "permalink": "/docs/Greedy/max_events_canbe_attended"
+  },
+  "next": {
+    "title": "min_time_to_make_rope_colorful",
+    "permalink": "/docs/Greedy/min_time_to_make_rope_colorful"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "BitManipulation/power_of_2",
+  "id": "BitManipulation/power_of_2",
+  "title": "power_of_2",
+  "description": "",
+  "source": "@site/docs/BitManipulation/power_of_2.mdx",
+  "sourceDirName": "BitManipulation",
+  "slug": "/BitManipulation/power_of_2",
+  "permalink": "/docs/BitManipulation/power_of_2",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/BitManipulation/power_of_2.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Segment Trees",
+    "permalink": "/docs/SegmentTrees/intro"
+  },
+  "next": {
+    "title": "lfu_cache",
+    "permalink": "/docs/Design/lfu_cache"
+  }
+}

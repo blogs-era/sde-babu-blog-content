@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Recursion/DFS/introduction",
+  "id": "Recursion/DFS/introduction",
+  "title": "introduction",
+  "description": "",
+  "source": "@site/docs/Recursion/DFS/introduction.mdx",
+  "sourceDirName": "Recursion/DFS",
+  "slug": "/Recursion/DFS/introduction",
+  "permalink": "/docs/Recursion/DFS/introduction",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Recursion/DFS/introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Making a Large Island",
+    "permalink": "/docs/Recursion/DFS/making_large_island"
+  },
+  "next": {
+    "title": "number_of_island",
+    "permalink": "/docs/Recursion/DFS/number_of_island"
+  }
+}

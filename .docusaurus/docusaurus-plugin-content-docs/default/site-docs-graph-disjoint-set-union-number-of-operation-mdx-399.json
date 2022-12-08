@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Graph/DisjointSetUnion/number_of_operation",
+  "id": "Graph/DisjointSetUnion/number_of_operation",
+  "title": "Number of Operations to Make Network Connected",
+  "description": "Level - Medium",
+  "source": "@site/docs/Graph/DisjointSetUnion/number_of_operation.mdx",
+  "sourceDirName": "Graph/DisjointSetUnion",
+  "slug": "/Graph/DisjointSetUnion/number_of_operation",
+  "permalink": "/docs/Graph/DisjointSetUnion/number_of_operation",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Graph/DisjointSetUnion/number_of_operation.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Number of Operations to Make Network Connected"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Redundant Connection",
+    "permalink": "/docs/Graph/DisjointSetUnion/redundant_connection"
+  },
+  "next": {
+    "title": "Introduction to Flood Fill Algorithm",
+    "permalink": "/docs/Graph/FloodFill/introduction"
+  }
+}

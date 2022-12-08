@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Sorting/MergeSort/reverse_pairs",
+  "id": "Sorting/MergeSort/reverse_pairs",
+  "title": "reverse_pairs",
+  "description": "",
+  "source": "@site/docs/Sorting/MergeSort/reverse_pairs.mdx",
+  "sourceDirName": "Sorting/MergeSort",
+  "slug": "/Sorting/MergeSort/reverse_pairs",
+  "permalink": "/docs/Sorting/MergeSort/reverse_pairs",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Sorting/MergeSort/reverse_pairs.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction of Merge Sort",
+    "permalink": "/docs/Sorting/MergeSort/introduction"
+  },
+  "next": {
+    "title": "Minimum Remove to Make Valid Parentheses",
+    "permalink": "/docs/Strings/minimum-remove-to-make-valid-parentheses"
+  }
+}

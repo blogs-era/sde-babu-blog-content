@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinaryTree/CommonAncestor/lca",
+  "id": "Tree/BinaryTree/CommonAncestor/lca",
+  "title": "Lowest Common Ancestor of a Binary Tree",
+  "description": "Level - Medium",
+  "source": "@site/docs/Tree/BinaryTree/CommonAncestor/lca.mdx",
+  "sourceDirName": "Tree/BinaryTree/CommonAncestor",
+  "slug": "/Tree/BinaryTree/CommonAncestor/lca",
+  "permalink": "/docs/Tree/BinaryTree/CommonAncestor/lca",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/CommonAncestor/lca.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Lowest Common Ancestor of a Binary Tree"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "symmetric_tree",
+    "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/symmetric_tree"
+  },
+  "next": {
+    "title": "Min distance between two given nodes of a Binary Tree",
+    "permalink": "/docs/Tree/BinaryTree/CommonAncestor/min_distance_bw_2_nodes"
+  }
+}

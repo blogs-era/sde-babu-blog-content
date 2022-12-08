@@ -1,0 +1,24 @@
+{
+  "unversionedId": "HashMaps/introduction",
+  "id": "HashMaps/introduction",
+  "title": "introduction",
+  "description": "",
+  "source": "@site/docs/HashMaps/introduction.mdx",
+  "sourceDirName": "HashMaps",
+  "slug": "/HashMaps/introduction",
+  "permalink": "/docs/HashMaps/introduction",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/HashMaps/introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "First Unique Character in a String",
+    "permalink": "/docs/HashMaps/first_unique_character_in_string"
+  },
+  "next": {
+    "title": "top_k_freq",
+    "permalink": "/docs/HashMaps/top_k_freq"
+  }
+}

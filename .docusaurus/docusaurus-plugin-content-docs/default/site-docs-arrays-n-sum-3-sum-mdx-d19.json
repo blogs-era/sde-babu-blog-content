@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Arrays/N-Sum/sum",
+  "id": "Arrays/N-Sum/sum",
+  "title": "sum",
+  "description": "",
+  "source": "@site/docs/Arrays/N-Sum/3-sum.mdx",
+  "sourceDirName": "Arrays/N-Sum",
+  "slug": "/Arrays/N-Sum/sum",
+  "permalink": "/docs/Arrays/N-Sum/sum",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/N-Sum/3-sum.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "sum-closest",
+    "permalink": "/docs/Arrays/N-Sum/sum-closest"
+  },
+  "next": {
+    "title": "sum",
+    "permalink": "/docs/Arrays/N-Sum/sum"
+  }
+}

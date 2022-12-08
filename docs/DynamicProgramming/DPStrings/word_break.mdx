@@ -1,0 +1,23 @@
+```js
+class Solution {
+    public boolean wordBreak(String s, List<String> wordDict) {
+        int len = s.length();
+        int[] dp = new int[len];
+        for(int i=0;i<len;i++){
+            for(int j=0;j<=i;j++){
+                String substr = s.substring(j,i+1);
+                if(wordDict.contains(substr)){
+                    if(j==0){
+                        dp[i] += 1;
+                    }else{
+                        dp[i]+=dp[j-1];
+                    }
+                }
+            }
+        }
+        for(int d: dp)System.out.println(d);
+        return dp[len-1] > 0 ? true : false;
+    }
+}
+
+```

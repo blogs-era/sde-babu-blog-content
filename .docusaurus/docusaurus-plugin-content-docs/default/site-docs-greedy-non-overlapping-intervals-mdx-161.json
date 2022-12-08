@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Greedy/non_overlapping_intervals",
+  "id": "Greedy/non_overlapping_intervals",
+  "title": "non_overlapping_intervals",
+  "description": "",
+  "source": "@site/docs/Greedy/non_overlapping_intervals.mdx",
+  "sourceDirName": "Greedy",
+  "slug": "/Greedy/non_overlapping_intervals",
+  "permalink": "/docs/Greedy/non_overlapping_intervals",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Greedy/non_overlapping_intervals.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "minimum-deletions-to-make-character-frequencies-unique",
+    "permalink": "/docs/Greedy/minimum-deletions-to-make-character-frequencies-unique"
+  },
+  "next": {
+    "title": "Introduction to Heap Data Structure",
+    "permalink": "/docs/Heap/introduction"
+  }
+}

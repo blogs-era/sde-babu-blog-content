@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Tree/BinaryTree/BasicTreeQues/subtree_of_another_tree",
+  "id": "Tree/BinaryTree/BasicTreeQues/subtree_of_another_tree",
+  "title": "subtree_of_another_tree",
+  "description": "",
+  "source": "@site/docs/Tree/BinaryTree/BasicTreeQues/subtree_of_another_tree.mdx",
+  "sourceDirName": "Tree/BinaryTree/BasicTreeQues",
+  "slug": "/Tree/BinaryTree/BasicTreeQues/subtree_of_another_tree",
+  "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/subtree_of_another_tree",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/BasicTreeQues/subtree_of_another_tree.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "same_tree",
+    "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/same_tree"
+  },
+  "next": {
+    "title": "sum_left_leaf",
+    "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/sum_left_leaf"
+  }
+}

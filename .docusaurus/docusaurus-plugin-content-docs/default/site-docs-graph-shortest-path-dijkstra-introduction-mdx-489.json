@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Graph/ShortestPath/Dijkstra/introduction",
+  "id": "Graph/ShortestPath/Dijkstra/introduction",
+  "title": "Introduction of Dijkstra's algorithm",
+  "description": "Why Dijkstra's algorithm Exist ?",
+  "source": "@site/docs/Graph/ShortestPath/Dijkstra/introduction.mdx",
+  "sourceDirName": "Graph/ShortestPath/Dijkstra",
+  "slug": "/Graph/ShortestPath/Dijkstra/introduction",
+  "permalink": "/docs/Graph/ShortestPath/Dijkstra/introduction",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Graph/ShortestPath/Dijkstra/introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Introduction of Dijkstra's algorithm"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Given a matrix of ‘O’ and ‘X’, replace ‘O’ with ‘X’ if surrounded by ‘X’",
+    "permalink": "/docs/Graph/FloodFill/replace_o_x_surrounded_x"
+  },
+  "next": {
+    "title": "Network Delay Time",
+    "permalink": "/docs/Graph/ShortestPath/Dijkstra/network_delay_time"
+  }
+}

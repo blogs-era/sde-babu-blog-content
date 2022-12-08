@@ -8,7 +8,7 @@
   "slug": "/Queue/sliding_window_maximum",
   "permalink": "/docs/Queue/sliding_window_maximum",
   "draft": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Queue/sliding_window_maximum.mdx",
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Queue/sliding_window_maximum.mdx",
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,
@@ -22,7 +22,7 @@
     "permalink": "/docs/category/queue"
   },
   "next": {
-    "title": "Arrays",
-    "permalink": "/docs/category/arrays"
+    "title": "Introduction for BFS(Breath First Search)",
+    "permalink": "/docs/Queue/BFS/introduction"
   }
 }

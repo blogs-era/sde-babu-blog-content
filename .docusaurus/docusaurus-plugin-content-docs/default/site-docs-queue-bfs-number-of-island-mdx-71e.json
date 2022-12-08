@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Queue/BFS/number_of_island",
+  "id": "Queue/BFS/number_of_island",
+  "title": "Number of Islands",
+  "description": "Level - Medium",
+  "source": "@site/docs/Queue/BFS/number_of_island.mdx",
+  "sourceDirName": "Queue/BFS",
+  "slug": "/Queue/BFS/number_of_island",
+  "permalink": "/docs/Queue/BFS/number_of_island",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Queue/BFS/number_of_island.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Number of Islands"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction for BFS(Breath First Search)",
+    "permalink": "/docs/Queue/BFS/introduction"
+  },
+  "next": {
+    "title": "DynamicProgramming",
+    "permalink": "/docs/category/dynamicprogramming"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Recursion/Backtracking/combination_sum_1",
+  "id": "Recursion/Backtracking/combination_sum_1",
+  "title": "combination_sum_1",
+  "description": "",
+  "source": "@site/docs/Recursion/Backtracking/combination_sum_1.mdx",
+  "sourceDirName": "Recursion/Backtracking",
+  "slug": "/Recursion/Backtracking/combination_sum_1",
+  "permalink": "/docs/Recursion/Backtracking/combination_sum_1",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Recursion/Backtracking/combination_sum_1.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "pow_x_n",
+    "permalink": "/docs/Maths/pow_x_n"
+  },
+  "next": {
+    "title": "generate_paranthesis",
+    "permalink": "/docs/Recursion/Backtracking/generate_paranthesis"
+  }
+}

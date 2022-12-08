@@ -1,0 +1,24 @@
+{
+  "unversionedId": "DynamicProgramming/DP-Rectangle/maximal_rectangle",
+  "id": "DynamicProgramming/DP-Rectangle/maximal_rectangle",
+  "title": "maximal_rectangle",
+  "description": "",
+  "source": "@site/docs/DynamicProgramming/DP-Rectangle/maximal_rectangle.mdx",
+  "sourceDirName": "DynamicProgramming/DP-Rectangle",
+  "slug": "/DynamicProgramming/DP-Rectangle/maximal_rectangle",
+  "permalink": "/docs/DynamicProgramming/DP-Rectangle/maximal_rectangle",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/DynamicProgramming/DP-Rectangle/maximal_rectangle.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Maximal Squares",
+    "permalink": "/docs/DynamicProgramming/DP-Rectangle/maximal_square"
+  },
+  "next": {
+    "title": "longest_common_subsequence",
+    "permalink": "/docs/DynamicProgramming/DPStrings/longest_common_subsequence"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Tree/BinaryTree/Traversals/postorder",
+  "id": "Tree/BinaryTree/Traversals/postorder",
+  "title": "postorder",
+  "description": "",
+  "source": "@site/docs/Tree/BinaryTree/Traversals/postorder.mdx",
+  "sourceDirName": "Tree/BinaryTree/Traversals",
+  "slug": "/Tree/BinaryTree/Traversals/postorder",
+  "permalink": "/docs/Tree/BinaryTree/Traversals/postorder",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/Traversals/postorder.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "inorder",
+    "permalink": "/docs/Tree/BinaryTree/Traversals/inorder"
+  },
+  "next": {
+    "title": "preorder",
+    "permalink": "/docs/Tree/BinaryTree/Traversals/preorder"
+  }
+}

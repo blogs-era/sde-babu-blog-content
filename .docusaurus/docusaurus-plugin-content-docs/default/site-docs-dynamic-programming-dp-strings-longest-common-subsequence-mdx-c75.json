@@ -1,0 +1,24 @@
+{
+  "unversionedId": "DynamicProgramming/DPStrings/longest_common_subsequence",
+  "id": "DynamicProgramming/DPStrings/longest_common_subsequence",
+  "title": "longest_common_subsequence",
+  "description": "",
+  "source": "@site/docs/DynamicProgramming/DPStrings/longest_common_subsequence.mdx",
+  "sourceDirName": "DynamicProgramming/DPStrings",
+  "slug": "/DynamicProgramming/DPStrings/longest_common_subsequence",
+  "permalink": "/docs/DynamicProgramming/DPStrings/longest_common_subsequence",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/DynamicProgramming/DPStrings/longest_common_subsequence.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "maximal_rectangle",
+    "permalink": "/docs/DynamicProgramming/DP-Rectangle/maximal_rectangle"
+  },
+  "next": {
+    "title": "longest_common_substring",
+    "permalink": "/docs/DynamicProgramming/DPStrings/longest_common_substring"
+  }
+}

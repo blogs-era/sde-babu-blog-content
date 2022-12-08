@@ -1,0 +1,28 @@
+{
+  "unversionedId": "LinkedList/remove_duplicate_2",
+  "id": "LinkedList/remove_duplicate_2",
+  "title": "Remove Duplicates from Sorted List II",
+  "description": "Level - Medium",
+  "source": "@site/docs/LinkedList/remove_duplicate_2.mdx",
+  "sourceDirName": "LinkedList",
+  "slug": "/LinkedList/remove_duplicate_2",
+  "permalink": "/docs/LinkedList/remove_duplicate_2",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/LinkedList/remove_duplicate_2.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7,
+    "title": "Remove Duplicates from Sorted List II"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Rotate the Linked List",
+    "permalink": "/docs/LinkedList/rotate_list"
+  },
+  "next": {
+    "title": "Copy List with Random Pointer",
+    "permalink": "/docs/LinkedList/copy_list_random_pointer"
+  }
+}

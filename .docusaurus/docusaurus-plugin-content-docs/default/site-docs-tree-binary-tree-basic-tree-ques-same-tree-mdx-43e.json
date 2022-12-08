@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Tree/BinaryTree/BasicTreeQues/same_tree",
+  "id": "Tree/BinaryTree/BasicTreeQues/same_tree",
+  "title": "same_tree",
+  "description": "",
+  "source": "@site/docs/Tree/BinaryTree/BasicTreeQues/same_tree.mdx",
+  "sourceDirName": "Tree/BinaryTree/BasicTreeQues",
+  "slug": "/Tree/BinaryTree/BasicTreeQues/same_tree",
+  "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/same_tree",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/BasicTreeQues/same_tree.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "merge_2_binary_trees",
+    "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/merge_2_binary_trees"
+  },
+  "next": {
+    "title": "subtree_of_another_tree",
+    "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/subtree_of_another_tree"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "DynamicProgramming/DPStrings/longest_valid_paranthesis",
+  "id": "DynamicProgramming/DPStrings/longest_valid_paranthesis",
+  "title": "longest_valid_paranthesis",
+  "description": "",
+  "source": "@site/docs/DynamicProgramming/DPStrings/longest_valid_paranthesis.mdx",
+  "sourceDirName": "DynamicProgramming/DPStrings",
+  "slug": "/DynamicProgramming/DPStrings/longest_valid_paranthesis",
+  "permalink": "/docs/DynamicProgramming/DPStrings/longest_valid_paranthesis",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/DynamicProgramming/DPStrings/longest_valid_paranthesis.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "longest_common_substring",
+    "permalink": "/docs/DynamicProgramming/DPStrings/longest_common_substring"
+  },
+  "next": {
+    "title": "product_except_self",
+    "permalink": "/docs/DynamicProgramming/PreComputation/product_except_self"
+  }
+}

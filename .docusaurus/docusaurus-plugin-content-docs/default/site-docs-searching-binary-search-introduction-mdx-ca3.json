@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Searching/BinarySearch/introduction",
+  "id": "Searching/BinarySearch/introduction",
+  "title": "Introduction of Binary Search",
+  "description": "Definition",
+  "source": "@site/docs/Searching/BinarySearch/introduction.mdx",
+  "sourceDirName": "Searching/BinarySearch",
+  "slug": "/Searching/BinarySearch/introduction",
+  "permalink": "/docs/Searching/BinarySearch/introduction",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Searching/BinarySearch/introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Introduction of Binary Search"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "word_search_2",
+    "permalink": "/docs/Recursion/DFS/word_search_2"
+  },
+  "next": {
+    "title": "Capacity To Ship Packages Within D Days",
+    "permalink": "/docs/Searching/BinarySearch/capacity_to_ship_package_within_ddays"
+  }
+}

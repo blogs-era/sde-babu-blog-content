@@ -1,0 +1,17 @@
+```js
+class Solution {
+    public int numPairsDivisibleBy60(int[] time) {
+        HashMap<Integer,Integer> mod_freq = new HashMap<>();
+        int n = time.length;
+        int res = 0;
+        for(int i=0;i<n;i++){
+            int mod = time[i]%60;
+            if(mod_freq.containsKey(60-mod))res+=mod_freq.get(60-mod);
+            if(mod==0)mod_freq.put((60-mod),mod_freq.getOrDefault(mod,0)+1);
+            mod_freq.put(mod,mod_freq.getOrDefault(mod,0)+1);
+        }     
+        return res;
+    }
+}
+
+```

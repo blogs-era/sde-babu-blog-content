@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Stack/MonotonicStack/maximum_binary_tree",
+  "id": "Stack/MonotonicStack/maximum_binary_tree",
+  "title": "maximum_binary_tree",
+  "description": "",
+  "source": "@site/docs/Stack/MonotonicStack/maximum_binary_tree.mdx",
+  "sourceDirName": "Stack/MonotonicStack",
+  "slug": "/Stack/MonotonicStack/maximum_binary_tree",
+  "permalink": "/docs/Stack/MonotonicStack/maximum_binary_tree",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Stack/MonotonicStack/maximum_binary_tree.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "largest_rectange_histogram",
+    "permalink": "/docs/Stack/MonotonicStack/largest_rectange_histogram"
+  },
+  "next": {
+    "title": "most_competitive_subsequence",
+    "permalink": "/docs/Stack/MonotonicStack/most_competitive_subsequence"
+  }
+}

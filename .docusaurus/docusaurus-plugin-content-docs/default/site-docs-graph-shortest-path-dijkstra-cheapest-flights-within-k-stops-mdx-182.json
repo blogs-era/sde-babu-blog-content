@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Graph/ShortestPath/Dijkstra/cheapest-flights-within-k-stops",
+  "id": "Graph/ShortestPath/Dijkstra/cheapest-flights-within-k-stops",
+  "title": "cheapest-flights-within-k-stops",
+  "description": "",
+  "source": "@site/docs/Graph/ShortestPath/Dijkstra/cheapest-flights-within-k-stops.mdx",
+  "sourceDirName": "Graph/ShortestPath/Dijkstra",
+  "slug": "/Graph/ShortestPath/Dijkstra/cheapest-flights-within-k-stops",
+  "permalink": "/docs/Graph/ShortestPath/Dijkstra/cheapest-flights-within-k-stops",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Graph/ShortestPath/Dijkstra/cheapest-flights-within-k-stops.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Network Delay Time",
+    "permalink": "/docs/Graph/ShortestPath/Dijkstra/network_delay_time"
+  },
+  "next": {
+    "title": "introduction",
+    "permalink": "/docs/Graph/TarjanAlgo/introduction"
+  }
+}

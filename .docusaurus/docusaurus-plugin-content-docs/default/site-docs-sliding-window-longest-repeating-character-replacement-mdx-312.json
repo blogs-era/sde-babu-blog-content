@@ -1,0 +1,24 @@
+{
+  "unversionedId": "SlidingWindow/longest-repeating-character-replacement",
+  "id": "SlidingWindow/longest-repeating-character-replacement",
+  "title": "longest-repeating-character-replacement",
+  "description": "",
+  "source": "@site/docs/SlidingWindow/longest-repeating-character-replacement.mdx",
+  "sourceDirName": "SlidingWindow",
+  "slug": "/SlidingWindow/longest-repeating-character-replacement",
+  "permalink": "/docs/SlidingWindow/longest-repeating-character-replacement",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/SlidingWindow/longest-repeating-character-replacement.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "min_roated_sorted_array_with_duplicates",
+    "permalink": "/docs/Searching/BinarySearch/min_roated_sorted_array_with_duplicates"
+  },
+  "next": {
+    "title": "longest-substring-with-at-least-k-repeating-characters",
+    "permalink": "/docs/SlidingWindow/longest-substring-with-at-least-k-repeating-characters"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Arrays/TwoPointers/squares_sorted_arr",
+  "id": "Arrays/TwoPointers/squares_sorted_arr",
+  "title": "squares_sorted_arr",
+  "description": "2 pointer method",
+  "source": "@site/docs/Arrays/TwoPointers/squares_sorted_arr.mdx",
+  "sourceDirName": "Arrays/TwoPointers",
+  "slug": "/Arrays/TwoPointers/squares_sorted_arr",
+  "permalink": "/docs/Arrays/TwoPointers/squares_sorted_arr",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/TwoPointers/squares_sorted_arr.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "sort_colors",
+    "permalink": "/docs/Arrays/TwoPointers/sort_colors"
+  },
+  "next": {
+    "title": "Segment Trees",
+    "permalink": "/docs/category/segment-trees"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Graph/clone_graph",
+  "id": "Graph/clone_graph",
+  "title": "clone_graph",
+  "description": "",
+  "source": "@site/docs/Graph/clone_graph.mdx",
+  "sourceDirName": "Graph",
+  "slug": "/Graph/clone_graph",
+  "permalink": "/docs/Graph/clone_graph",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Graph/clone_graph.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "introduction",
+    "permalink": "/docs/Graph/TopoSort/introduction"
+  },
+  "next": {
+    "title": "is_graph_bipartite",
+    "permalink": "/docs/Graph/is_graph_bipartite"
+  }
+}

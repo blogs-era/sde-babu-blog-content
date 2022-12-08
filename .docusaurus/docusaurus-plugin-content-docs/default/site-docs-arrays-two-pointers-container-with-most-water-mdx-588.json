@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Arrays/TwoPointers/container_with_most_water",
+  "id": "Arrays/TwoPointers/container_with_most_water",
+  "title": "container_with_most_water",
+  "description": "Optimal Approach using Two Pointer Technique",
+  "source": "@site/docs/Arrays/TwoPointers/container_with_most_water.mdx",
+  "sourceDirName": "Arrays/TwoPointers",
+  "slug": "/Arrays/TwoPointers/container_with_most_water",
+  "permalink": "/docs/Arrays/TwoPointers/container_with_most_water",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/TwoPointers/container_with_most_water.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Next Permutation of a given array",
+    "permalink": "/docs/Arrays/TwoPointers/next_permutation"
+  },
+  "next": {
+    "title": "merge_sorted_arrays",
+    "permalink": "/docs/Arrays/TwoPointers/merge_sorted_arrays"
+  }
+}

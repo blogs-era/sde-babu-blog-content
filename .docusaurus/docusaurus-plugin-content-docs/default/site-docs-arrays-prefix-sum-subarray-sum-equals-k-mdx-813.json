@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Arrays/Prefix-Sum/subarray_sum_equals_k",
+  "id": "Arrays/Prefix-Sum/subarray_sum_equals_k",
+  "title": "subarray_sum_equals_k",
+  "description": "",
+  "source": "@site/docs/Arrays/Prefix-Sum/subarray_sum_equals_k.mdx",
+  "sourceDirName": "Arrays/Prefix-Sum",
+  "slug": "/Arrays/Prefix-Sum/subarray_sum_equals_k",
+  "permalink": "/docs/Arrays/Prefix-Sum/subarray_sum_equals_k",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/Prefix-Sum/subarray_sum_equals_k.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "subarray_sum_divisible_k",
+    "permalink": "/docs/Arrays/Prefix-Sum/subarray_sum_divisible_k"
+  },
+  "next": {
+    "title": "Trapping Rain Water",
+    "permalink": "/docs/Arrays/TwoPointers/trapping_rain_water"
+  }
+}

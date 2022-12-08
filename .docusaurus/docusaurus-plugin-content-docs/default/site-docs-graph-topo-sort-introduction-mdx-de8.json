@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Graph/TopoSort/introduction",
+  "id": "Graph/TopoSort/introduction",
+  "title": "introduction",
+  "description": "",
+  "source": "@site/docs/Graph/TopoSort/introduction.mdx",
+  "sourceDirName": "Graph/TopoSort",
+  "slug": "/Graph/TopoSort/introduction",
+  "permalink": "/docs/Graph/TopoSort/introduction",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Graph/TopoSort/introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "introduction",
+    "permalink": "/docs/Graph/TarjanAlgo/introduction"
+  },
+  "next": {
+    "title": "clone_graph",
+    "permalink": "/docs/Graph/clone_graph"
+  }
+}

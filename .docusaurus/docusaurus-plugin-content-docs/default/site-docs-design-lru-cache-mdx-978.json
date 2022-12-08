@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Design/lru_cache",
+  "id": "Design/lru_cache",
+  "title": "lru_cache",
+  "description": "",
+  "source": "@site/docs/Design/lru_cache.mdx",
+  "sourceDirName": "Design",
+  "slug": "/Design/lru_cache",
+  "permalink": "/docs/Design/lru_cache",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Design/lru_cache.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "lfu_cache",
+    "permalink": "/docs/Design/lfu_cache"
+  },
+  "next": {
+    "title": "min_stack",
+    "permalink": "/docs/Design/min_stack"
+  }
+}

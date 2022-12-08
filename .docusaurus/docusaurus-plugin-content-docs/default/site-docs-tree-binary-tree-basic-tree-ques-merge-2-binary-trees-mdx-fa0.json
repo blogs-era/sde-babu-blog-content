@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Tree/BinaryTree/BasicTreeQues/merge_2_binary_trees",
+  "id": "Tree/BinaryTree/BasicTreeQues/merge_2_binary_trees",
+  "title": "merge_2_binary_trees",
+  "description": "",
+  "source": "@site/docs/Tree/BinaryTree/BasicTreeQues/merge_2_binary_trees.mdx",
+  "sourceDirName": "Tree/BinaryTree/BasicTreeQues",
+  "slug": "/Tree/BinaryTree/BasicTreeQues/merge_2_binary_trees",
+  "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/merge_2_binary_trees",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/BasicTreeQues/merge_2_binary_trees.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "invert_binary_tree",
+    "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/invert_binary_tree"
+  },
+  "next": {
+    "title": "same_tree",
+    "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/same_tree"
+  }
+}

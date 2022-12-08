@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinaryTree/BasicTreeQues/count_good_node_inbt",
+  "id": "Tree/BinaryTree/BasicTreeQues/count_good_node_inbt",
+  "title": "Count Good Nodes in Binary Tree",
+  "description": "Level - Medium",
+  "source": "@site/docs/Tree/BinaryTree/BasicTreeQues/count_good_node_inbt.mdx",
+  "sourceDirName": "Tree/BinaryTree/BasicTreeQues",
+  "slug": "/Tree/BinaryTree/BasicTreeQues/count_good_node_inbt",
+  "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/count_good_node_inbt",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/BasicTreeQues/count_good_node_inbt.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Count Good Nodes in Binary Tree"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Binary Tree Paths",
+    "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/binary_tree_paths"
+  },
+  "next": {
+    "title": "Flatten Binary Tree to Linked List",
+    "permalink": "/docs/Tree/BinaryTree/BasicTreeQues/flatten_bt_to_linkedlist"
+  }
+}

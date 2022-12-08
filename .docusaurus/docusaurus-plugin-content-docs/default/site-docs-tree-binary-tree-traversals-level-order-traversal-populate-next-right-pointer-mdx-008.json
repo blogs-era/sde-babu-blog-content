@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinaryTree/Traversals/LevelOrderTraversal/populate_next_right_pointer",
+  "id": "Tree/BinaryTree/Traversals/LevelOrderTraversal/populate_next_right_pointer",
+  "title": "Populating Next Right Pointers in Each Node",
+  "description": "Level - Medium",
+  "source": "@site/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/populate_next_right_pointer.mdx",
+  "sourceDirName": "Tree/BinaryTree/Traversals/LevelOrderTraversal",
+  "slug": "/Tree/BinaryTree/Traversals/LevelOrderTraversal/populate_next_right_pointer",
+  "permalink": "/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/populate_next_right_pointer",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/populate_next_right_pointer.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "sidebar_position": 11,
+    "title": "Populating Next Right Pointers in Each Node"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Maximum Width of Binary Tree",
+    "permalink": "/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/maximum_width_bt"
+  },
+  "next": {
+    "title": "serialize_deserialize_bt",
+    "permalink": "/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/serialize_deserialize_bt"
+  }
+}

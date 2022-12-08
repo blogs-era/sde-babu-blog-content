@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Graph/FloodFill/pacific_atlantic_water_flow",
+  "id": "Graph/FloodFill/pacific_atlantic_water_flow",
+  "title": "Pacific Atlantic Water Flow",
+  "description": "",
+  "source": "@site/docs/Graph/FloodFill/pacific_atlantic_water_flow.mdx",
+  "sourceDirName": "Graph/FloodFill",
+  "slug": "/Graph/FloodFill/pacific_atlantic_water_flow",
+  "permalink": "/docs/Graph/FloodFill/pacific_atlantic_water_flow",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Graph/FloodFill/pacific_atlantic_water_flow.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Pacific Atlantic Water Flow"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction to Flood Fill Algorithm",
+    "permalink": "/docs/Graph/FloodFill/introduction"
+  },
+  "next": {
+    "title": "Given a matrix of ‘O’ and ‘X’, replace ‘O’ with ‘X’ if surrounded by ‘X’",
+    "permalink": "/docs/Graph/FloodFill/replace_o_x_surrounded_x"
+  }
+}

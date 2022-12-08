@@ -5,8 +5,8 @@
   "permalink": "/docs/category/queue",
   "navigation": {
     "previous": {
-      "title": "First Unique Character in a String",
-      "permalink": "/docs/HashMaps/first_unique_character_in_string"
+      "title": "remove_duplicate_1",
+      "permalink": "/docs/LinkedList/remove_duplicate_1"
     },
     "next": {
       "title": "Sliding Window Maximum",

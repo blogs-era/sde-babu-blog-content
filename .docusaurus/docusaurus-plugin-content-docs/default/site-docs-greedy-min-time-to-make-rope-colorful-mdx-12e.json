@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Greedy/min_time_to_make_rope_colorful",
+  "id": "Greedy/min_time_to_make_rope_colorful",
+  "title": "min_time_to_make_rope_colorful",
+  "description": "",
+  "source": "@site/docs/Greedy/min_time_to_make_rope_colorful.mdx",
+  "sourceDirName": "Greedy",
+  "slug": "/Greedy/min_time_to_make_rope_colorful",
+  "permalink": "/docs/Greedy/min_time_to_make_rope_colorful",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Greedy/min_time_to_make_rope_colorful.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "min_cost_leaf_values",
+    "permalink": "/docs/Greedy/min_cost_leaf_values"
+  },
+  "next": {
+    "title": "minimum-deletions-to-make-character-frequencies-unique",
+    "permalink": "/docs/Greedy/minimum-deletions-to-make-character-frequencies-unique"
+  }
+}

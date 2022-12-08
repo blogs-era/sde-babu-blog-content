@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Maths/min_moves_for_equal_array",
+  "id": "Maths/min_moves_for_equal_array",
+  "title": "min_moves_for_equal_array",
+  "description": "",
+  "source": "@site/docs/Maths/min_moves_for_equal_array.mdx",
+  "sourceDirName": "Maths",
+  "slug": "/Maths/min_moves_for_equal_array",
+  "permalink": "/docs/Maths/min_moves_for_equal_array",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Maths/min_moves_for_equal_array.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "atoi",
+    "permalink": "/docs/Maths/atoi"
+  },
+  "next": {
+    "title": "multiply_string",
+    "permalink": "/docs/Maths/multiply_string"
+  }
+}

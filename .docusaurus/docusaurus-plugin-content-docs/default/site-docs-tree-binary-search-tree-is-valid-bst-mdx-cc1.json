@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Tree/BinarySearchTree/is_valid_bst",
+  "id": "Tree/BinarySearchTree/is_valid_bst",
+  "title": "is_valid_bst",
+  "description": "",
+  "source": "@site/docs/Tree/BinarySearchTree/is_valid_bst.mdx",
+  "sourceDirName": "Tree/BinarySearchTree",
+  "slug": "/Tree/BinarySearchTree/is_valid_bst",
+  "permalink": "/docs/Tree/BinarySearchTree/is_valid_bst",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinarySearchTree/is_valid_bst.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "delete_node_bst",
+    "permalink": "/docs/Tree/BinarySearchTree/delete_node_bst"
+  },
+  "next": {
+    "title": "range_sum_bst",
+    "permalink": "/docs/Tree/BinarySearchTree/range_sum_bst"
+  }
+}

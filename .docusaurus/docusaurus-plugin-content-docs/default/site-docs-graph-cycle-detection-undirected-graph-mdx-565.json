@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Graph/CycleDetection/undirected_graph",
+  "id": "Graph/CycleDetection/undirected_graph",
+  "title": "Detect cycle in a undirected graph",
+  "description": "Level - Medium",
+  "source": "@site/docs/Graph/CycleDetection/undirected_graph.mdx",
+  "sourceDirName": "Graph/CycleDetection",
+  "slug": "/Graph/CycleDetection/undirected_graph",
+  "permalink": "/docs/Graph/CycleDetection/undirected_graph",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Graph/CycleDetection/undirected_graph.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Detect cycle in a undirected graph"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Detect cycle in a directed graph",
+    "permalink": "/docs/Graph/CycleDetection/directed_graph"
+  },
+  "next": {
+    "title": "Introduction to Disjoin Set Union",
+    "permalink": "/docs/Graph/DisjointSetUnion/introduction"
+  }
+}

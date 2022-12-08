@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Graph/DisjointSetUnion/redundant_connection",
+  "id": "Graph/DisjointSetUnion/redundant_connection",
+  "title": "Redundant Connection",
+  "description": "Level - Medium",
+  "source": "@site/docs/Graph/DisjointSetUnion/redundant_connection.mdx",
+  "sourceDirName": "Graph/DisjointSetUnion",
+  "slug": "/Graph/DisjointSetUnion/redundant_connection",
+  "permalink": "/docs/Graph/DisjointSetUnion/redundant_connection",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Graph/DisjointSetUnion/redundant_connection.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Redundant Connection"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction to Disjoin Set Union",
+    "permalink": "/docs/Graph/DisjointSetUnion/introduction"
+  },
+  "next": {
+    "title": "Number of Operations to Make Network Connected",
+    "permalink": "/docs/Graph/DisjointSetUnion/number_of_operation"
+  }
+}

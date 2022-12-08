@@ -1,0 +1,24 @@
+{
+  "unversionedId": "SegmentTrees/intro",
+  "id": "SegmentTrees/intro",
+  "title": "Segment Trees",
+  "description": "Definition",
+  "source": "@site/docs/SegmentTrees/intro.mdx",
+  "sourceDirName": "SegmentTrees",
+  "slug": "/SegmentTrees/intro",
+  "permalink": "/docs/SegmentTrees/intro",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/SegmentTrees/intro.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Segment Trees",
+    "permalink": "/docs/category/segment-trees"
+  },
+  "next": {
+    "title": "power_of_2",
+    "permalink": "/docs/BitManipulation/power_of_2"
+  }
+}

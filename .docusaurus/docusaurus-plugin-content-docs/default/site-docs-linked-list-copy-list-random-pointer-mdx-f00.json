@@ -1,0 +1,28 @@
+{
+  "unversionedId": "LinkedList/copy_list_random_pointer",
+  "id": "LinkedList/copy_list_random_pointer",
+  "title": "Copy List with Random Pointer",
+  "description": "Level - Medium",
+  "source": "@site/docs/LinkedList/copy_list_random_pointer.mdx",
+  "sourceDirName": "LinkedList",
+  "slug": "/LinkedList/copy_list_random_pointer",
+  "permalink": "/docs/LinkedList/copy_list_random_pointer",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/LinkedList/copy_list_random_pointer.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8,
+    "title": "Copy List with Random Pointer"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Remove Duplicates from Sorted List II",
+    "permalink": "/docs/LinkedList/remove_duplicate_2"
+  },
+  "next": {
+    "title": "Remove Nth Node From End of List",
+    "permalink": "/docs/LinkedList/remove_nth_node_from_end"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Trie/introduction",
+  "id": "Trie/introduction",
+  "title": "Introduction to Trie",
+  "description": "What is Trie ?",
+  "source": "@site/docs/Trie/introduction.mdx",
+  "sourceDirName": "Trie",
+  "slug": "/Trie/introduction",
+  "permalink": "/docs/Trie/introduction",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Trie/introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Introduction to Trie"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "preorder",
+    "permalink": "/docs/Tree/BinaryTree/Traversals/preorder"
+  },
+  "next": {
+    "title": "Replace Words",
+    "permalink": "/docs/Trie/replace_words"
+  }
+}

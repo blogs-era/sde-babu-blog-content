@@ -26,7 +26,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "/home/runner/sde-babu-blog-content/sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/"
         },
         "theme": {
           "customCss": "/home/runner/sde-babu-blog-content/src/css/custom.css"
@@ -67,16 +67,8 @@ export default {
           "title": "Community",
           "items": [
             {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
-            },
-            {
-              "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
-            },
-            {
-              "label": "Twitter",
-              "href": "https://twitter.com/docusaurus"
+              "label": "LeetCode",
+              "href": "https://leetcode.com/kumarnitesh2000/"
             }
           ]
         },
@@ -89,7 +81,7 @@ export default {
             },
             {
               "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "href": "https://github.com/blogs-era/sde-babu-blog-content"
             }
           ]
         }

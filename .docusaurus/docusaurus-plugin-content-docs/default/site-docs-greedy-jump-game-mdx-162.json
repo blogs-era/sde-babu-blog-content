@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Greedy/jump_game",
+  "id": "Greedy/jump_game",
+  "title": "jump_game",
+  "description": "",
+  "source": "@site/docs/Greedy/jump_game.mdx",
+  "sourceDirName": "Greedy",
+  "slug": "/Greedy/jump_game",
+  "permalink": "/docs/Greedy/jump_game",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Greedy/jump_game.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Maximum no of 1's row",
+    "permalink": "/docs/Greedy/max_number_1s"
+  },
+  "next": {
+    "title": "max_events_canbe_attended",
+    "permalink": "/docs/Greedy/max_events_canbe_attended"
+  }
+}

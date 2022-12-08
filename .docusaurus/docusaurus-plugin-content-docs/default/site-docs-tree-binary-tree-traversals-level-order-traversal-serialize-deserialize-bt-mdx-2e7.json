@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Tree/BinaryTree/Traversals/LevelOrderTraversal/serialize_deserialize_bt",
+  "id": "Tree/BinaryTree/Traversals/LevelOrderTraversal/serialize_deserialize_bt",
+  "title": "serialize_deserialize_bt",
+  "description": "",
+  "source": "@site/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/serialize_deserialize_bt.mdx",
+  "sourceDirName": "Tree/BinaryTree/Traversals/LevelOrderTraversal",
+  "slug": "/Tree/BinaryTree/Traversals/LevelOrderTraversal/serialize_deserialize_bt",
+  "permalink": "/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/serialize_deserialize_bt",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/serialize_deserialize_bt.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Populating Next Right Pointers in Each Node",
+    "permalink": "/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/populate_next_right_pointer"
+  },
+  "next": {
+    "title": "inorder",
+    "permalink": "/docs/Tree/BinaryTree/Traversals/inorder"
+  }
+}

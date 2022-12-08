@@ -1,0 +1,24 @@
+{
+  "unversionedId": "LinkedList/Maths/add_number_2",
+  "id": "LinkedList/Maths/add_number_2",
+  "title": "add_number_2",
+  "description": "",
+  "source": "@site/docs/LinkedList/Maths/add_number_2.mdx",
+  "sourceDirName": "LinkedList/Maths",
+  "slug": "/LinkedList/Maths/add_number_2",
+  "permalink": "/docs/LinkedList/Maths/add_number_2",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/LinkedList/Maths/add_number_2.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Add Two Numbers",
+    "permalink": "/docs/LinkedList/Maths/add_two_numers"
+  },
+  "next": {
+    "title": "intersection_linked_list",
+    "permalink": "/docs/LinkedList/intersection_linked_list"
+  }
+}

@@ -1,0 +1,84 @@
+```js
+class Solution {
+    public List<List<String>> accountsMerge(List<List<String>> accounts) {
+        int n = accounts.size();
+        DSU dsu = new DSU(n);
+        HashMap<String,Integer> map = new HashMap<>(); 
+        for(int i=0;i<n;i++){
+            List<String> record = accounts.get(i);
+            for(int j=1;j<record.size();j++){
+                String email = record.get(j);
+                if(map.containsKey(email)){
+                    // already present hence connect both the List<String> if not same
+                    int curr_id = dsu.findPar(i);
+                    int prev_id = dsu.findPar(map.get(email)); 
+                    if(curr_id!=prev_id){
+                        // union both 
+                        dsu.union(curr_id,prev_id);
+                    }
+                } else{
+                    map.put(email,i);
+                }
+            }
+        }
+        // dsu now consists of different components so loop through the compoenents
+        // component_id -> HashSet<>
+        HashMap<Integer,HashSet<String>> hm = new HashMap<>();
+        for(int i=0;i<n;i++){
+            int component_id = dsu.findPar(i);
+            if(!hm.containsKey(component_id))hm.put(component_id,new HashSet<>());
+            for(int j=1;j<accounts.get(i).size();j++){
+                HashSet<String> hs = hm.get(component_id);
+                hs.add(accounts.get(i).get(j));
+                hm.put(component_id,hs);
+            }
+        }
+        // add it to the ans 
+        List<List<String>> ans = new ArrayList<>();
+        for(Integer id : hm.keySet()){
+            ans.add(new ArrayList<>());
+            ans.get(ans.size()-1).add(accounts.get(id).get(0));
+            
+            List<String> addemails = new ArrayList<>(hm.get(id));
+            Collections.sort(addemails);
+            ans.get(ans.size()-1).addAll(addemails);
+        }
+        return ans;
+    }
+}
+
+class DSU{
+    int n;
+    int[] parent,size; 
+    DSU(int n){
+        this.n = n;
+        this.parent = new int[n];
+        this.size = new int[n];
+        for(int i=0;i<n;i++){
+            parent[i] = i;
+            size[i] = 1;
+        } 
+    }
+
+    int findPar(int node){
+        if(parent[node]==node)return node;
+        int ultimate_parent = findPar(parent[node]);
+        parent[node] = ultimate_parent;
+        return ultimate_parent;
+    }
+    void union(int u,int v){
+        int pu = findPar(u);
+        int pv = findPar(v);
+        if(pu==pv)return;
+
+        if(size[pu] > size[pv]){
+            parent[pv] = pu;
+            size[pu]+=size[pv];
+        }else{
+            parent[pu] = pv;
+            size[pv]+=size[pu];
+        }
+    }
+}
+
+```

@@ -11,8 +11,368 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "Arrays/BasicQues/majority_element",
+              "path": "/docs/Arrays/BasicQues/majority_element",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/CycleTechniques/duplicate_in_array",
+              "path": "/docs/Arrays/CycleTechniques/duplicate_in_array",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/CycleTechniques/find_all_duplicates",
+              "path": "/docs/Arrays/CycleTechniques/find_all_duplicates",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/CycleTechniques/first_missing_pos",
+              "path": "/docs/Arrays/CycleTechniques/first_missing_pos",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/Interval/merge_intervals",
+              "path": "/docs/Arrays/Interval/merge_intervals",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/KadaneAlgo/max_product_subarray",
+              "path": "/docs/Arrays/KadaneAlgo/max_product_subarray",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/KadaneAlgo/max_subarray",
+              "path": "/docs/Arrays/KadaneAlgo/max_subarray",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/Matrix/set_matrix_0",
+              "path": "/docs/Arrays/Matrix/set_matrix_0",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/Matrix/spiral_matrix",
+              "path": "/docs/Arrays/Matrix/spiral_matrix",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/N-Sum/sum",
+              "path": "/docs/Arrays/N-Sum/sum",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/N-Sum/sum",
+              "path": "/docs/Arrays/N-Sum/sum",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/N-Sum/sum",
+              "path": "/docs/Arrays/N-Sum/sum",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/N-Sum/sum-closest",
+              "path": "/docs/Arrays/N-Sum/sum-closest",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/Prefix-Sum/continuous-subarray-sum",
+              "path": "/docs/Arrays/Prefix-Sum/continuous-subarray-sum",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/Prefix-Sum/pivot_index",
+              "path": "/docs/Arrays/Prefix-Sum/pivot_index",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Arrays/Prefix-Sum/running_sum",
               "path": "/docs/Arrays/Prefix-Sum/running_sum",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/Prefix-Sum/subarray_sum_divisible_k",
+              "path": "/docs/Arrays/Prefix-Sum/subarray_sum_divisible_k",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/Prefix-Sum/subarray_sum_equals_k",
+              "path": "/docs/Arrays/Prefix-Sum/subarray_sum_equals_k",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/TwoPointers/container_with_most_water",
+              "path": "/docs/Arrays/TwoPointers/container_with_most_water",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/TwoPointers/merge_sorted_arrays",
+              "path": "/docs/Arrays/TwoPointers/merge_sorted_arrays",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/TwoPointers/move_zeroes",
+              "path": "/docs/Arrays/TwoPointers/move_zeroes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/TwoPointers/next_permutation",
+              "path": "/docs/Arrays/TwoPointers/next_permutation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/TwoPointers/remove-duplicates-from-sorted-array",
+              "path": "/docs/Arrays/TwoPointers/remove-duplicates-from-sorted-array",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/TwoPointers/sort_colors",
+              "path": "/docs/Arrays/TwoPointers/sort_colors",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/TwoPointers/squares_sorted_arr",
+              "path": "/docs/Arrays/TwoPointers/squares_sorted_arr",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Arrays/TwoPointers/trapping_rain_water",
+              "path": "/docs/Arrays/TwoPointers/trapping_rain_water",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "BitManipulation/power_of_2",
+              "path": "/docs/BitManipulation/power_of_2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Design/lfu_cache",
+              "path": "/docs/Design/lfu_cache",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Design/lru_cache",
+              "path": "/docs/Design/lru_cache",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Design/min_stack",
+              "path": "/docs/Design/min_stack",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Design/time-based-key-value-store",
+              "path": "/docs/Design/time-based-key-value-store",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/1D-DP/coin_change",
+              "path": "/docs/DynamicProgramming/1D-DP/coin_change",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/1D-DP/decode_ways",
+              "path": "/docs/DynamicProgramming/1D-DP/decode_ways",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/1D-DP/jump_game",
+              "path": "/docs/DynamicProgramming/1D-DP/jump_game",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/1D-DP/longest_increasing_subsequence",
+              "path": "/docs/DynamicProgramming/1D-DP/longest_increasing_subsequence",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/1D-DP/unique_binary_search_trees",
+              "path": "/docs/DynamicProgramming/1D-DP/unique_binary_search_trees",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/2D-DP/maxlen_repeated_subarray",
+              "path": "/docs/DynamicProgramming/2D-DP/maxlen_repeated_subarray",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/2D-DP/minimum-difficulty-of-a-job-schedule",
+              "path": "/docs/DynamicProgramming/2D-DP/minimum-difficulty-of-a-job-schedule",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/BuySellStocks/buy_sell_stocks_1",
+              "path": "/docs/DynamicProgramming/BuySellStocks/buy_sell_stocks_1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/BuySellStocks/buy_sell_stocks_2",
+              "path": "/docs/DynamicProgramming/BuySellStocks/buy_sell_stocks_2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/BuySellStocks/buy_sell_stocks_3",
+              "path": "/docs/DynamicProgramming/BuySellStocks/buy_sell_stocks_3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/BuySellStocks/buy_sell_stocks_4",
+              "path": "/docs/DynamicProgramming/BuySellStocks/buy_sell_stocks_4",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/DP-Rectangle/count-square-submatrices-with-all-ones",
+              "path": "/docs/DynamicProgramming/DP-Rectangle/count-square-submatrices-with-all-ones",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/DP-Rectangle/maximal_rectangle",
+              "path": "/docs/DynamicProgramming/DP-Rectangle/maximal_rectangle",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/DP-Rectangle/maximal_square",
+              "path": "/docs/DynamicProgramming/DP-Rectangle/maximal_square",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/DPStrings/longest_common_subsequence",
+              "path": "/docs/DynamicProgramming/DPStrings/longest_common_subsequence",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/DPStrings/longest_common_substring",
+              "path": "/docs/DynamicProgramming/DPStrings/longest_common_substring",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/DPStrings/longest_valid_paranthesis",
+              "path": "/docs/DynamicProgramming/DPStrings/longest_valid_paranthesis",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/frog_jump",
+              "path": "/docs/DynamicProgramming/frog_jump",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DynamicProgramming/PreComputation/product_except_self",
+              "path": "/docs/DynamicProgramming/PreComputation/product_except_self",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Graph/clone_graph",
+              "path": "/docs/Graph/clone_graph",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Graph/CycleDetection/directed_graph",
+              "path": "/docs/Graph/CycleDetection/directed_graph",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Graph/CycleDetection/undirected_graph",
+              "path": "/docs/Graph/CycleDetection/undirected_graph",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Graph/DisjointSetUnion/introduction",
+              "path": "/docs/Graph/DisjointSetUnion/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Graph/DisjointSetUnion/number_of_operation",
+              "path": "/docs/Graph/DisjointSetUnion/number_of_operation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Graph/DisjointSetUnion/redundant_connection",
+              "path": "/docs/Graph/DisjointSetUnion/redundant_connection",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Graph/FloodFill/introduction",
+              "path": "/docs/Graph/FloodFill/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Graph/FloodFill/pacific_atlantic_water_flow",
+              "path": "/docs/Graph/FloodFill/pacific_atlantic_water_flow",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Graph/FloodFill/replace_o_x_surrounded_x",
+              "path": "/docs/Graph/FloodFill/replace_o_x_surrounded_x",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Graph/is_graph_bipartite",
+              "path": "/docs/Graph/is_graph_bipartite",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Graph/ShortestPath/Dijkstra/cheapest-flights-within-k-stops",
+              "path": "/docs/Graph/ShortestPath/Dijkstra/cheapest-flights-within-k-stops",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Graph/ShortestPath/Dijkstra/introduction",
+              "path": "/docs/Graph/ShortestPath/Dijkstra/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Graph/ShortestPath/Dijkstra/network_delay_time",
+              "path": "/docs/Graph/ShortestPath/Dijkstra/network_delay_time",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Graph/TarjanAlgo/introduction",
+              "path": "/docs/Graph/TarjanAlgo/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Graph/TopoSort/introduction",
+              "path": "/docs/Graph/TopoSort/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Greedy/gas_station",
+              "path": "/docs/Greedy/gas_station",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Greedy/jump_game",
+              "path": "/docs/Greedy/jump_game",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Greedy/max_events_canbe_attended",
+              "path": "/docs/Greedy/max_events_canbe_attended",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Greedy/max_number_1s",
+              "path": "/docs/Greedy/max_number_1s",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Greedy/min_cost_leaf_values",
+              "path": "/docs/Greedy/min_cost_leaf_values",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Greedy/min_time_to_make_rope_colorful",
+              "path": "/docs/Greedy/min_time_to_make_rope_colorful",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Greedy/minimum-deletions-to-make-character-frequencies-unique",
+              "path": "/docs/Greedy/minimum-deletions-to-make-character-frequencies-unique",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Greedy/non_overlapping_intervals",
+              "path": "/docs/Greedy/non_overlapping_intervals",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -21,8 +381,158 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "HashMaps/introduction",
+              "path": "/docs/HashMaps/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HashMaps/top_k_freq",
+              "path": "/docs/HashMaps/top_k_freq",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Heap/Heap/median_stream",
+              "path": "/docs/Heap/Heap/median_stream",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Heap/introduction",
+              "path": "/docs/Heap/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Heap/PriorityQueue/k-closest-points",
+              "path": "/docs/Heap/PriorityQueue/k-closest-points",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "intro",
               "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "LinkedList/Basic/merge_2_sorted_list",
+              "path": "/docs/LinkedList/Basic/merge_2_sorted_list",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "LinkedList/Basic/reorder_list",
+              "path": "/docs/LinkedList/Basic/reorder_list",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "LinkedList/Basic/reverse_linked_list",
+              "path": "/docs/LinkedList/Basic/reverse_linked_list",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "LinkedList/Basic/swap_nodes_in_pair",
+              "path": "/docs/LinkedList/Basic/swap_nodes_in_pair",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "LinkedList/copy_list_random_pointer",
+              "path": "/docs/LinkedList/copy_list_random_pointer",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "LinkedList/intersection_linked_list",
+              "path": "/docs/LinkedList/intersection_linked_list",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "LinkedList/ListCycle/first_node_in_cycle",
+              "path": "/docs/LinkedList/ListCycle/first_node_in_cycle",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "LinkedList/Maths/add_number_2",
+              "path": "/docs/LinkedList/Maths/add_number_2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "LinkedList/Maths/add_two_numers",
+              "path": "/docs/LinkedList/Maths/add_two_numers",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "LinkedList/odd_even",
+              "path": "/docs/LinkedList/odd_even",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "LinkedList/partition_list",
+              "path": "/docs/LinkedList/partition_list",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "LinkedList/remove_duplicate_1",
+              "path": "/docs/LinkedList/remove_duplicate_1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "LinkedList/remove_duplicate_2",
+              "path": "/docs/LinkedList/remove_duplicate_2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "LinkedList/remove_nth_node_from_end",
+              "path": "/docs/LinkedList/remove_nth_node_from_end",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "LinkedList/rotate_list",
+              "path": "/docs/LinkedList/rotate_list",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "LinkedList/segregate_even_odd",
+              "path": "/docs/LinkedList/segregate_even_odd",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Maths/atoi",
+              "path": "/docs/Maths/atoi",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Maths/min_moves_for_equal_array",
+              "path": "/docs/Maths/min_moves_for_equal_array",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Maths/missing_num",
+              "path": "/docs/Maths/missing_num",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Maths/multiply_string",
+              "path": "/docs/Maths/multiply_string",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Maths/permutation_sequence",
+              "path": "/docs/Maths/permutation_sequence",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Maths/plus_one",
+              "path": "/docs/Maths/plus_one",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Maths/pow_x_n",
+              "path": "/docs/Maths/pow_x_n",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Queue/BFS/introduction",
+              "path": "/docs/Queue/BFS/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Queue/BFS/number_of_island",
+              "path": "/docs/Queue/BFS/number_of_island",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -31,8 +541,238 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Recursion/Backtracking/combination_sum_1",
+              "path": "/docs/Recursion/Backtracking/combination_sum_1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Recursion/Backtracking/generate_paranthesis",
+              "path": "/docs/Recursion/Backtracking/generate_paranthesis",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Recursion/Backtracking/partition_k_eqal_sum_subset",
+              "path": "/docs/Recursion/Backtracking/partition_k_eqal_sum_subset",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Recursion/Backtracking/subset_1",
+              "path": "/docs/Recursion/Backtracking/subset_1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Recursion/DFS/introduction",
+              "path": "/docs/Recursion/DFS/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Recursion/DFS/longest_increasing_path_matrix",
+              "path": "/docs/Recursion/DFS/longest_increasing_path_matrix",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Recursion/DFS/making_large_island",
+              "path": "/docs/Recursion/DFS/making_large_island",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Recursion/DFS/number_of_closed_island",
+              "path": "/docs/Recursion/DFS/number_of_closed_island",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Recursion/DFS/number_of_island",
+              "path": "/docs/Recursion/DFS/number_of_island",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Recursion/DFS/shortest_bridge",
+              "path": "/docs/Recursion/DFS/shortest_bridge",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Recursion/DFS/word_search",
+              "path": "/docs/Recursion/DFS/word_search",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Recursion/DFS/word_search_2",
+              "path": "/docs/Recursion/DFS/word_search_2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Searching/BinarySearch/capacity_to_ship_package_within_ddays",
+              "path": "/docs/Searching/BinarySearch/capacity_to_ship_package_within_ddays",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Searching/BinarySearch/find_peak",
+              "path": "/docs/Searching/BinarySearch/find_peak",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Searching/BinarySearch/first_last_pos",
+              "path": "/docs/Searching/BinarySearch/first_last_pos",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Searching/BinarySearch/introduction",
+              "path": "/docs/Searching/BinarySearch/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Searching/BinarySearch/median_2_sorted_arrays",
+              "path": "/docs/Searching/BinarySearch/median_2_sorted_arrays",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Searching/BinarySearch/min_in_roated_sorted_array",
+              "path": "/docs/Searching/BinarySearch/min_in_roated_sorted_array",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Searching/BinarySearch/min_roated_sorted_array_with_duplicates",
+              "path": "/docs/Searching/BinarySearch/min_roated_sorted_array_with_duplicates",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Searching/BinarySearch/minimum_limit_of_balls_in_bag",
+              "path": "/docs/Searching/BinarySearch/minimum_limit_of_balls_in_bag",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Searching/BinarySearch/search_in_rotated",
+              "path": "/docs/Searching/BinarySearch/search_in_rotated",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "SegmentTrees/intro",
+              "path": "/docs/SegmentTrees/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "SlidingWindow/longest_substring_without_repeat",
+              "path": "/docs/SlidingWindow/longest_substring_without_repeat",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "SlidingWindow/longest-repeating-character-replacement",
+              "path": "/docs/SlidingWindow/longest-repeating-character-replacement",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "SlidingWindow/longest-substring-with-at-least-k-repeating-characters",
+              "path": "/docs/SlidingWindow/longest-substring-with-at-least-k-repeating-characters",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "SlidingWindow/min_window_substring",
+              "path": "/docs/SlidingWindow/min_window_substring",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Sorting/MergeSort/introduction",
+              "path": "/docs/Sorting/MergeSort/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Sorting/MergeSort/reverse_pairs",
+              "path": "/docs/Sorting/MergeSort/reverse_pairs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Stack/MonotonicStack/introduction",
+              "path": "/docs/Stack/MonotonicStack/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Stack/MonotonicStack/largest_rectange_histogram",
+              "path": "/docs/Stack/MonotonicStack/largest_rectange_histogram",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Stack/MonotonicStack/maximum_binary_tree",
+              "path": "/docs/Stack/MonotonicStack/maximum_binary_tree",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Stack/MonotonicStack/most_competitive_subsequence",
+              "path": "/docs/Stack/MonotonicStack/most_competitive_subsequence",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Stack/MonotonicStack/next_greater_element",
+              "path": "/docs/Stack/MonotonicStack/next_greater_element",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Stack/MonotonicStack/remove_k_digits",
+              "path": "/docs/Stack/MonotonicStack/remove_k_digits",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Stack/reverse_polish_notation",
+              "path": "/docs/Stack/reverse_polish_notation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Stack/sum-of-subarray-minimums",
+              "path": "/docs/Stack/sum-of-subarray-minimums",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Strings/all_anagrams",
+              "path": "/docs/Strings/all_anagrams",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Strings/count_say",
+              "path": "/docs/Strings/count_say",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Strings/group_anagrams",
+              "path": "/docs/Strings/group_anagrams",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Strings/minimum-remove-to-make-valid-parentheses",
+              "path": "/docs/Strings/minimum-remove-to-make-valid-parentheses",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Strings/number_of_palindromic_substrings",
+              "path": "/docs/Strings/number_of_palindromic_substrings",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Strings/Recursive/palindrome_partitioning",
+              "path": "/docs/Strings/Recursive/palindrome_partitioning",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Strings/Recursive/restore_ip",
+              "path": "/docs/Strings/Recursive/restore_ip",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Strings/reorganize_strings",
+              "path": "/docs/Strings/reorganize_strings",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Strings/substring_search",
+              "path": "/docs/Strings/substring_search",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Tree/BinarySearchTree/balance_binary_search_tree",
               "path": "/docs/Tree/BinarySearchTree/balance_binary_search_tree",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinarySearchTree/bst_iterator",
+              "path": "/docs/Tree/BinarySearchTree/bst_iterator",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -41,13 +781,208 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Tree/BinaryTree/balanced_binary_tree",
-              "path": "/docs/Tree/BinaryTree/balanced_binary_tree",
+              "id": "Tree/BinarySearchTree/delete_node_bst",
+              "path": "/docs/Tree/BinarySearchTree/delete_node_bst",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Tree/BinaryTree/height_of_binary_tree",
-              "path": "/docs/Tree/BinaryTree/height_of_binary_tree",
+              "id": "Tree/BinarySearchTree/is_valid_bst",
+              "path": "/docs/Tree/BinarySearchTree/is_valid_bst",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinarySearchTree/kth_smallest_elemnt_bst",
+              "path": "/docs/Tree/BinarySearchTree/kth_smallest_elemnt_bst",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinarySearchTree/range_sum_bst",
+              "path": "/docs/Tree/BinarySearchTree/range_sum_bst",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinarySearchTree/recover_bst",
+              "path": "/docs/Tree/BinarySearchTree/recover_bst",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinarySearchTree/unique_bst_2",
+              "path": "/docs/Tree/BinarySearchTree/unique_bst_2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/AncestorPath/burn_tree",
+              "path": "/docs/Tree/BinaryTree/AncestorPath/burn_tree",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/AncestorPath/nodes_at_k_dis",
+              "path": "/docs/Tree/BinaryTree/AncestorPath/nodes_at_k_dis",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/BasicTreeQues/balanced_binary_tree",
+              "path": "/docs/Tree/BinaryTree/BasicTreeQues/balanced_binary_tree",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/BasicTreeQues/binary_tree_paths",
+              "path": "/docs/Tree/BinaryTree/BasicTreeQues/binary_tree_paths",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/BasicTreeQues/count_good_node_inbt",
+              "path": "/docs/Tree/BinaryTree/BasicTreeQues/count_good_node_inbt",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/BasicTreeQues/flatten_bt_to_linkedlist",
+              "path": "/docs/Tree/BinaryTree/BasicTreeQues/flatten_bt_to_linkedlist",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/BasicTreeQues/height_of_binary_tree",
+              "path": "/docs/Tree/BinaryTree/BasicTreeQues/height_of_binary_tree",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/BasicTreeQues/invert_binary_tree",
+              "path": "/docs/Tree/BinaryTree/BasicTreeQues/invert_binary_tree",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/BasicTreeQues/merge_2_binary_trees",
+              "path": "/docs/Tree/BinaryTree/BasicTreeQues/merge_2_binary_trees",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/BasicTreeQues/same_tree",
+              "path": "/docs/Tree/BinaryTree/BasicTreeQues/same_tree",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/BasicTreeQues/subtree_of_another_tree",
+              "path": "/docs/Tree/BinaryTree/BasicTreeQues/subtree_of_another_tree",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/BasicTreeQues/sum_left_leaf",
+              "path": "/docs/Tree/BinaryTree/BasicTreeQues/sum_left_leaf",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/BasicTreeQues/symmetric_tree",
+              "path": "/docs/Tree/BinaryTree/BasicTreeQues/symmetric_tree",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/BTView/vertical_view_bt",
+              "path": "/docs/Tree/BinaryTree/BTView/vertical_view_bt",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/CommonAncestor/lca",
+              "path": "/docs/Tree/BinaryTree/CommonAncestor/lca",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/CommonAncestor/lca_bst",
+              "path": "/docs/Tree/BinaryTree/CommonAncestor/lca_bst",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/CommonAncestor/min_distance_bw_2_nodes",
+              "path": "/docs/Tree/BinaryTree/CommonAncestor/min_distance_bw_2_nodes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/CommonAncestor/step-by-step-directions-from-a-binary-tree-node-to-another",
+              "path": "/docs/Tree/BinaryTree/CommonAncestor/step-by-step-directions-from-a-binary-tree-node-to-another",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/CompleteTree/count_complete_tree_nodes",
+              "path": "/docs/Tree/BinaryTree/CompleteTree/count_complete_tree_nodes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/ConstructBinaryTreeFromTraversal/construct_from_inorder_preorder",
+              "path": "/docs/Tree/BinaryTree/ConstructBinaryTreeFromTraversal/construct_from_inorder_preorder",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/ConstructBinaryTreeFromTraversal/construct_from_preorder_postorder",
+              "path": "/docs/Tree/BinaryTree/ConstructBinaryTreeFromTraversal/construct_from_preorder_postorder",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/PathSum/max_path_sum",
+              "path": "/docs/Tree/BinaryTree/PathSum/max_path_sum",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/PathSum/path_sum",
+              "path": "/docs/Tree/BinaryTree/PathSum/path_sum",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/PathSum/path_sum_2",
+              "path": "/docs/Tree/BinaryTree/PathSum/path_sum_2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/PathSum/path_sum_3",
+              "path": "/docs/Tree/BinaryTree/PathSum/path_sum_3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/PathSum/sum_of_distances_intree",
+              "path": "/docs/Tree/BinaryTree/PathSum/sum_of_distances_intree",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/Traversals/inorder",
+              "path": "/docs/Tree/BinaryTree/Traversals/inorder",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/Traversals/LevelOrderTraversal/level_order_traversal",
+              "path": "/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/level_order_traversal",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/Traversals/LevelOrderTraversal/maximum_width_bt",
+              "path": "/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/maximum_width_bt",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/Traversals/LevelOrderTraversal/populate_next_right_pointer",
+              "path": "/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/populate_next_right_pointer",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/Traversals/LevelOrderTraversal/serialize_deserialize_bt",
+              "path": "/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/serialize_deserialize_bt",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/Traversals/postorder",
+              "path": "/docs/Tree/BinaryTree/Traversals/postorder",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tree/BinaryTree/Traversals/preorder",
+              "path": "/docs/Tree/BinaryTree/Traversals/preorder",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Trie/introduction",
+              "path": "/docs/Trie/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Trie/replace_words",
+              "path": "/docs/Trie/replace_words",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -56,13 +991,33 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "/category/linkedlist",
+              "path": "/docs/category/linkedlist",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "/category/queue",
               "path": "/docs/category/queue",
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "/category/dynamicprogramming",
+              "path": "/docs/category/dynamicprogramming",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/stack",
+              "path": "/docs/category/stack",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "/category/arrays",
               "path": "/docs/category/arrays",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/segment-trees",
+              "path": "/docs/category/segment-trees",
               "sidebar": "tutorialSidebar"
             }
           ],

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Tree/BinaryTree/Traversals/preorder",
+  "id": "Tree/BinaryTree/Traversals/preorder",
+  "title": "preorder",
+  "description": "",
+  "source": "@site/docs/Tree/BinaryTree/Traversals/preorder.mdx",
+  "sourceDirName": "Tree/BinaryTree/Traversals",
+  "slug": "/Tree/BinaryTree/Traversals/preorder",
+  "permalink": "/docs/Tree/BinaryTree/Traversals/preorder",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/Traversals/preorder.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "postorder",
+    "permalink": "/docs/Tree/BinaryTree/Traversals/postorder"
+  },
+  "next": {
+    "title": "Introduction to Trie",
+    "permalink": "/docs/Trie/introduction"
+  }
+}

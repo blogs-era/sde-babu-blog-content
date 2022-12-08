@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Arrays/Matrix/spiral_matrix",
+  "id": "Arrays/Matrix/spiral_matrix",
+  "title": "spiral_matrix",
+  "description": "",
+  "source": "@site/docs/Arrays/Matrix/spiral_matrix.mdx",
+  "sourceDirName": "Arrays/Matrix",
+  "slug": "/Arrays/Matrix/spiral_matrix",
+  "permalink": "/docs/Arrays/Matrix/spiral_matrix",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/Matrix/spiral_matrix.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Set Matrix Zero",
+    "permalink": "/docs/Arrays/Matrix/set_matrix_0"
+  },
+  "next": {
+    "title": "sum-closest",
+    "permalink": "/docs/Arrays/N-Sum/sum-closest"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Strings/substring_search",
+  "id": "Strings/substring_search",
+  "title": "substring_search",
+  "description": "",
+  "source": "@site/docs/Strings/substring_search.mdx",
+  "sourceDirName": "Strings",
+  "slug": "/Strings/substring_search",
+  "permalink": "/docs/Strings/substring_search",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Strings/substring_search.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "group_anagrams",
+    "permalink": "/docs/Strings/group_anagrams"
+  },
+  "next": {
+    "title": "Create a Balanced Binary Search Tree with sorted Array",
+    "permalink": "/docs/Tree/BinarySearchTree/create_bst_with_sorted_array"
+  }
+}

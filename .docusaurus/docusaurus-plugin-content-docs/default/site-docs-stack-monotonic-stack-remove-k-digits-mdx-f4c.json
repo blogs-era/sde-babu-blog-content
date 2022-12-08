@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Stack/MonotonicStack/remove_k_digits",
+  "id": "Stack/MonotonicStack/remove_k_digits",
+  "title": "remove_k_digits",
+  "description": "hence we need to make sure that that output should be nearly sorted in strictly increasing manner then only its possibly mini",
+  "source": "@site/docs/Stack/MonotonicStack/remove_k_digits.mdx",
+  "sourceDirName": "Stack/MonotonicStack",
+  "slug": "/Stack/MonotonicStack/remove_k_digits",
+  "permalink": "/docs/Stack/MonotonicStack/remove_k_digits",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Stack/MonotonicStack/remove_k_digits.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "most_competitive_subsequence",
+    "permalink": "/docs/Stack/MonotonicStack/most_competitive_subsequence"
+  },
+  "next": {
+    "title": "reverse_polish_notation",
+    "permalink": "/docs/Stack/reverse_polish_notation"
+  }
+}

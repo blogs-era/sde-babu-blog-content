@@ -1,0 +1,16 @@
+{
+  "title": "Stack",
+  "description": "Queue data structure [LIFO] which is used in so many problems and the most important data structure",
+  "slug": "/category/stack",
+  "permalink": "/docs/category/stack",
+  "navigation": {
+    "previous": {
+      "title": "product_except_self",
+      "permalink": "/docs/DynamicProgramming/PreComputation/product_except_self"
+    },
+    "next": {
+      "title": "Sum of Subarray Minimums",
+      "permalink": "/docs/Stack/sum-of-subarray-minimums"
+    }
+  }
+}

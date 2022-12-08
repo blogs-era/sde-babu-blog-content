@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Tree/BinaryTree/Traversals/LevelOrderTraversal/level_order_traversal",
+  "id": "Tree/BinaryTree/Traversals/LevelOrderTraversal/level_order_traversal",
+  "title": "Level Order Traversal",
+  "description": "Level - Medium",
+  "source": "@site/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/level_order_traversal.mdx",
+  "sourceDirName": "Tree/BinaryTree/Traversals/LevelOrderTraversal",
+  "slug": "/Tree/BinaryTree/Traversals/LevelOrderTraversal/level_order_traversal",
+  "permalink": "/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/level_order_traversal",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/level_order_traversal.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6,
+    "title": "Level Order Traversal"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Path Sum II",
+    "permalink": "/docs/Tree/BinaryTree/PathSum/path_sum_2"
+  },
+  "next": {
+    "title": "Maximum Width of Binary Tree",
+    "permalink": "/docs/Tree/BinaryTree/Traversals/LevelOrderTraversal/maximum_width_bt"
+  }
+}

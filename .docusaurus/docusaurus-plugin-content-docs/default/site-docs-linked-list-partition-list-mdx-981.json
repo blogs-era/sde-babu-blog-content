@@ -1,0 +1,28 @@
+{
+  "unversionedId": "LinkedList/partition_list",
+  "id": "LinkedList/partition_list",
+  "title": "Partition List",
+  "description": "Level - Medium",
+  "source": "@site/docs/LinkedList/partition_list.mdx",
+  "sourceDirName": "LinkedList",
+  "slug": "/LinkedList/partition_list",
+  "permalink": "/docs/LinkedList/partition_list",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/LinkedList/partition_list.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Partition List"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LinkedList",
+    "permalink": "/docs/category/linkedlist"
+  },
+  "next": {
+    "title": "Odd Even Linked List By Index",
+    "permalink": "/docs/LinkedList/odd_even"
+  }
+}

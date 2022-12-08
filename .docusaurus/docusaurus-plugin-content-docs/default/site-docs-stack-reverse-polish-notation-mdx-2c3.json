@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Stack/reverse_polish_notation",
+  "id": "Stack/reverse_polish_notation",
+  "title": "reverse_polish_notation",
+  "description": "",
+  "source": "@site/docs/Stack/reverse_polish_notation.mdx",
+  "sourceDirName": "Stack",
+  "slug": "/Stack/reverse_polish_notation",
+  "permalink": "/docs/Stack/reverse_polish_notation",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Stack/reverse_polish_notation.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "remove_k_digits",
+    "permalink": "/docs/Stack/MonotonicStack/remove_k_digits"
+  },
+  "next": {
+    "title": "Arrays",
+    "permalink": "/docs/category/arrays"
+  }
+}

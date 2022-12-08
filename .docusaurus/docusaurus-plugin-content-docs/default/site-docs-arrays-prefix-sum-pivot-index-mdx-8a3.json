@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Arrays/Prefix-Sum/pivot_index",
+  "id": "Arrays/Prefix-Sum/pivot_index",
+  "title": "pivot_index",
+  "description": "",
+  "source": "@site/docs/Arrays/Prefix-Sum/pivot_index.mdx",
+  "sourceDirName": "Arrays/Prefix-Sum",
+  "slug": "/Arrays/Prefix-Sum/pivot_index",
+  "permalink": "/docs/Arrays/Prefix-Sum/pivot_index",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/Prefix-Sum/pivot_index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "continuous-subarray-sum",
+    "permalink": "/docs/Arrays/Prefix-Sum/continuous-subarray-sum"
+  },
+  "next": {
+    "title": "subarray_sum_divisible_k",
+    "permalink": "/docs/Arrays/Prefix-Sum/subarray_sum_divisible_k"
+  }
+}

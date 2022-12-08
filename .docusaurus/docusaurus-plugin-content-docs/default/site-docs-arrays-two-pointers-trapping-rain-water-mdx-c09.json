@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Arrays/TwoPointers/trapping_rain_water",
+  "id": "Arrays/TwoPointers/trapping_rain_water",
+  "title": "Trapping Rain Water",
+  "description": "Level - Hard",
+  "source": "@site/docs/Arrays/TwoPointers/trapping_rain_water.mdx",
+  "sourceDirName": "Arrays/TwoPointers",
+  "slug": "/Arrays/TwoPointers/trapping_rain_water",
+  "permalink": "/docs/Arrays/TwoPointers/trapping_rain_water",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/TwoPointers/trapping_rain_water.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Trapping Rain Water"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "subarray_sum_equals_k",
+    "permalink": "/docs/Arrays/Prefix-Sum/subarray_sum_equals_k"
+  },
+  "next": {
+    "title": "Next Permutation of a given array",
+    "permalink": "/docs/Arrays/TwoPointers/next_permutation"
+  }
+}

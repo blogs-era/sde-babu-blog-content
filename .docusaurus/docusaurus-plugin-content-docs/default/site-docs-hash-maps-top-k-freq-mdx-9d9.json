@@ -1,0 +1,24 @@
+{
+  "unversionedId": "HashMaps/top_k_freq",
+  "id": "HashMaps/top_k_freq",
+  "title": "top_k_freq",
+  "description": "",
+  "source": "@site/docs/HashMaps/top_k_freq.mdx",
+  "sourceDirName": "HashMaps",
+  "slug": "/HashMaps/top_k_freq",
+  "permalink": "/docs/HashMaps/top_k_freq",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/HashMaps/top_k_freq.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "introduction",
+    "permalink": "/docs/HashMaps/introduction"
+  },
+  "next": {
+    "title": "LinkedList",
+    "permalink": "/docs/category/linkedlist"
+  }
+}

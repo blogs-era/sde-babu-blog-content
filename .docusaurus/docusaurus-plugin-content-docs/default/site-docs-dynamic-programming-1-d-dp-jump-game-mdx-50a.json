@@ -1,0 +1,28 @@
+{
+  "unversionedId": "DynamicProgramming/1D-DP/jump_game",
+  "id": "DynamicProgramming/1D-DP/jump_game",
+  "title": "Jump Game",
+  "description": "Level - Medium",
+  "source": "@site/docs/DynamicProgramming/1D-DP/jump_game.mdx",
+  "sourceDirName": "DynamicProgramming/1D-DP",
+  "slug": "/DynamicProgramming/1D-DP/jump_game",
+  "permalink": "/docs/DynamicProgramming/1D-DP/jump_game",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/DynamicProgramming/1D-DP/jump_game.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Jump Game"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Longest Increasing Subsequence",
+    "permalink": "/docs/DynamicProgramming/1D-DP/longest_increasing_subsequence"
+  },
+  "next": {
+    "title": "coin_change",
+    "permalink": "/docs/DynamicProgramming/1D-DP/coin_change"
+  }
+}

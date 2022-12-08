@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Searching/BinarySearch/capacity_to_ship_package_within_ddays",
+  "id": "Searching/BinarySearch/capacity_to_ship_package_within_ddays",
+  "title": "Capacity To Ship Packages Within D Days",
+  "description": "Level - Medium",
+  "source": "@site/docs/Searching/BinarySearch/capacity_to_ship_package_within_ddays.mdx",
+  "sourceDirName": "Searching/BinarySearch",
+  "slug": "/Searching/BinarySearch/capacity_to_ship_package_within_ddays",
+  "permalink": "/docs/Searching/BinarySearch/capacity_to_ship_package_within_ddays",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Searching/BinarySearch/capacity_to_ship_package_within_ddays.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Capacity To Ship Packages Within D Days"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction of Binary Search",
+    "permalink": "/docs/Searching/BinarySearch/introduction"
+  },
+  "next": {
+    "title": "Minimum Limit of Balls In Bag",
+    "permalink": "/docs/Searching/BinarySearch/minimum_limit_of_balls_in_bag"
+  }
+}

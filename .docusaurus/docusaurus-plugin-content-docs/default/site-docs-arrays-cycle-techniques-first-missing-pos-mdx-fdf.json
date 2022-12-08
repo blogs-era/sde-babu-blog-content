@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Arrays/CycleTechniques/first_missing_pos",
+  "id": "Arrays/CycleTechniques/first_missing_pos",
+  "title": "First Missing Positive",
+  "description": "Level - Hard",
+  "source": "@site/docs/Arrays/CycleTechniques/first_missing_pos.mdx",
+  "sourceDirName": "Arrays/CycleTechniques",
+  "slug": "/Arrays/CycleTechniques/first_missing_pos",
+  "permalink": "/docs/Arrays/CycleTechniques/first_missing_pos",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Arrays/CycleTechniques/first_missing_pos.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "First Missing Positive"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Duplicate in Array",
+    "permalink": "/docs/Arrays/CycleTechniques/duplicate_in_array"
+  },
+  "next": {
+    "title": "find_all_duplicates",
+    "permalink": "/docs/Arrays/CycleTechniques/find_all_duplicates"
+  }
+}

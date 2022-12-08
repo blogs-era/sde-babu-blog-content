@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Greedy/max_events_canbe_attended",
+  "id": "Greedy/max_events_canbe_attended",
+  "title": "max_events_canbe_attended",
+  "description": "",
+  "source": "@site/docs/Greedy/max_events_canbe_attended.mdx",
+  "sourceDirName": "Greedy",
+  "slug": "/Greedy/max_events_canbe_attended",
+  "permalink": "/docs/Greedy/max_events_canbe_attended",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Greedy/max_events_canbe_attended.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "jump_game",
+    "permalink": "/docs/Greedy/jump_game"
+  },
+  "next": {
+    "title": "min_cost_leaf_values",
+    "permalink": "/docs/Greedy/min_cost_leaf_values"
+  }
+}

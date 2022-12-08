@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Trie/replace_words",
+  "id": "Trie/replace_words",
+  "title": "Replace Words",
+  "description": "Level - Medium",
+  "source": "@site/docs/Trie/replace_words.mdx",
+  "sourceDirName": "Trie",
+  "slug": "/Trie/replace_words",
+  "permalink": "/docs/Trie/replace_words",
+  "draft": false,
+  "editUrl": "https://github.com/blogs-era/sde-babu-blog-content/tree/main/docs/Trie/replace_words.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Replace Words"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction to Trie",
+    "permalink": "/docs/Trie/introduction"
+  }
+}
