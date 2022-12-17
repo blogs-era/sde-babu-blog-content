@@ -1,0 +1,19 @@
+```js
+class Solution {
+    public int longestArithSeqLength(int[] A) {
+        int max = 0;
+        Map<Integer, Integer> differToNum[] = new Map[A.length];
+        for(int i = 0; i < A.length; i++)
+            differToNum[i] = new HashMap<Integer, Integer>();
+        for(int i = 1; i < A.length; i++) {
+            for(int j = 0; j < i; j++) {
+                int prev = differToNum[j].getOrDefault(A[i] - A[j], 1);
+                differToNum[i].put(A[i] - A[j], prev + 1);
+                max = Math.max(prev + 1, max);
+            }
+        }
+        return max;
+    }
+    
+}
+```
