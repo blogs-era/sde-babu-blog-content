@@ -1,0 +1,26 @@
+```js
+class Solution {
+    public int deleteAndEarn(int[] nums) {
+        HashMap<Integer,Integer> freq = new HashMap<>();
+        for(int num: nums)freq.put(num,freq.getOrDefault(num,0)+1);
+        ArrayList<Integer> arr = new ArrayList<>();
+        for(Integer key: freq.keySet())arr.add(key);
+        Collections.sort(arr);
+
+        int[] dp = new int[arr.size()];
+        dp[0] = arr.get(0)*freq.get(arr.get(0));
+        for(int i=1;i<arr.size();i++){
+            dp[i] = arr.get(i)*freq.get(arr.get(i));
+            if(Math.abs(arr.get(i)-arr.get(i-1))==1){
+                if(i==1)dp[i] = Math.max(dp[i-1],dp[i]);
+                else dp[i] = Math.max(dp[i-1],dp[i]+dp[i-2]);
+            }else{
+                dp[i] = dp[i] + dp[i-1];
+            }
+        }
+
+        return dp[arr.size()-1];
+    }
+}
+
+```
