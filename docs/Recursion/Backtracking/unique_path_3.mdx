@@ -1,0 +1,38 @@
+```js
+class Solution {
+    int res = 0;
+    public void dfs(int[][] grid,int x,int y,int non_obstacle,int count){
+        System.out.println(non_obstacle+" "+count+" "+grid[x][y]);
+        if(grid[x][y]==2 && count==non_obstacle+1)res++;
+
+        int[] dx = {-1,1,0,0};
+        int[] dy = {0,0,-1,1};
+        int val = grid[x][y];
+        for(int i=0;i<4;i++){
+            int new_x = x+dx[i],new_y = y+dy[i];
+            grid[x][y] = -1;
+            if(new_x>=0 && new_x<grid.length && new_y>=0 && new_y<grid[0].length && (grid[new_x][new_y]==0 || grid[new_x][new_y]==2)){
+                dfs(grid,new_x,new_y,non_obstacle,count+1);
+            }
+            grid[x][y] = val;
+        }
+
+    }
+    public int uniquePathsIII(int[][] grid) {
+        int n = grid.length, m = grid[0].length;
+        int non_obstacle = 0;
+        int[] start = {-1,-1};
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(grid[i][j]==1){
+                    start[0] = i;
+                    start[1] = j;
+                }
+                else if(grid[i][j]==0)non_obstacle++;
+            }
+        }
+        dfs(grid,start[0],start[1],non_obstacle,0);
+        return res;
+    }
+}
+```

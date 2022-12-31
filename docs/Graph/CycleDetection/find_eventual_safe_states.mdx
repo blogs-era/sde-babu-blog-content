@@ -1,0 +1,23 @@
+```js
+class Solution {
+    public boolean dfs(int[][] graph,int node,HashMap<Integer,Boolean> safe_nodes_status){
+        if(safe_nodes_status.containsKey(node))return safe_nodes_status.get(node);
+        safe_nodes_status.put(node,false);        
+        for(int neigh: graph[node]){
+            if(!dfs(graph,neigh,safe_nodes_status))return false;
+        } 
+        safe_nodes_status.put(node,true);
+        return true;
+    }
+    public List<Integer> eventualSafeNodes(int[][] graph) {
+        int n = graph.length;
+        HashMap<Integer,Boolean> safe_nodes_status = new HashMap<>();
+        List<Integer> res = new ArrayList<>();
+        for(int i=0;i<n;i++){
+            if(dfs(graph,i,safe_nodes_status))res.add(i);
+        } 
+        return res;
+    }
+}
+
+```

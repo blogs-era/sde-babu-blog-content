@@ -1,0 +1,28 @@
+```
+class Solution {
+    public int numOfMinutes(int n, int headID, int[] manager, int[] informTime) {
+        ArrayList<ArrayList<Integer>> adj_list = new ArrayList<>();
+        for(int i=0;i<n;i++)adj_list.add(new ArrayList<>());
+        
+        for(int i=0;i<n;i++){
+            if(i!=headID)
+            adj_list.get(manager[i]).add(i);
+        }
+        Queue<int[]> q = new LinkedList<>();
+        q.add(new int[]{headID,0}); // means how much time taken to reach headID which is 0 as it is at root
+        int tot_time = 0;
+        while(!q.isEmpty()){
+            int size = q.size();
+            for(int i=0;i<size;i++){
+                int[] poll = q.poll();
+                int emp = poll[0],time = poll[1];
+                for(Integer neigh: adj_list.get(emp)){
+                    q.add(new int[]{neigh,informTime[emp]+time});
+                }
+                tot_time = Math.max(tot_time,time);
+            }
+        }
+        return tot_time;
+    }
+}
+```
